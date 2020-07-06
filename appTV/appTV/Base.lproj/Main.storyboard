@@ -19,60 +19,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4B-Uo-Wcb">
-                                <rect key="frame" x="785" y="687" width="350" height="133"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secretaria" translatesAutoresizingMaskIntoConstraints="NO" id="0Vk-Wa-uIq">
+                                <rect key="frame" x="30" y="260" width="360" height="670"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brazilmapa" translatesAutoresizingMaskIntoConstraints="NO" id="uRH-8m-jCY">
+                                <rect key="frame" x="1200" y="0.0" width="745" height="980"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planetatutorial" translatesAutoresizingMaskIntoConstraints="NO" id="nGr-q2-tA1">
+                                <rect key="frame" x="0.0" y="510" width="1920" height="570"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocovitoriamensagem" translatesAutoresizingMaskIntoConstraints="NO" id="RDp-0F-dUA">
+                                <rect key="frame" x="440" y="100" width="790" height="720"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-xw-A1N">
+                                <rect key="frame" x="465" y="110" width="725" height="710"/>
+                                <string key="text">Olá, eu sou a Secretária do Brasil e vou te ajudar a se tornar Governador/a dos Estados.
+ 
+Você deverá responder corretamente 3 de 5 perguntas a respeito de cada Estado brasileiro. 
+Vence quando você tornar-se o Governador de todos os Estados.  
+Boa sorte!</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSJ-17-GcC">
+                                <rect key="frame" x="700" y="920" width="520" height="160"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal">
+                                <state key="normal" backgroundImage="botaoacao">
                                     <attributedString key="attributedTitle">
                                         <fragment content="JOGAR">
                                             <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="80" name="SFMono-Semibold"/>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="72" name="SFMono-Semibold"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Vk-Wa-uIq">
-                                <rect key="frame" x="136" y="393" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RDp-0F-dUA">
-                                <rect key="frame" x="812" y="393" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uRH-8m-jCY">
-                                <rect key="frame" x="1525" y="144" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVU-Ee-lWr">
-                                <rect key="frame" x="856" y="892" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2C-z1-km4">
-                                <rect key="frame" x="1599" y="353" width="92" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.056304119530000002" green="0.1484674513" blue="0.1803969741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.012215757739999999" green="0.22275716070000001" blue="0.26667362449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="p4B-Uo-Wcb" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="fAg-Yo-3MG"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p4B-Uo-Wcb" secondAttribute="bottom" constant="200" id="jjK-zH-AMb"/>
+                            <constraint firstItem="iSJ-17-GcC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="700" id="0xk-4K-XrD"/>
+                            <constraint firstItem="0Vk-Wa-uIq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="2Xn-Dt-xCC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RDp-0F-dUA" secondAttribute="bottom" constant="200" id="4F9-8S-ZT6"/>
+                            <constraint firstItem="0Vk-Wa-uIq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="57X-ge-LRv"/>
+                            <constraint firstItem="wrb-xw-A1N" firstAttribute="leading" secondItem="0Vk-Wa-uIq" secondAttribute="trailing" constant="75" id="7JE-G9-qeB"/>
+                            <constraint firstAttribute="trailing" secondItem="iSJ-17-GcC" secondAttribute="trailing" constant="700" id="7eR-P9-K4i"/>
+                            <constraint firstItem="RDp-0F-dUA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="9tb-Tb-sIG"/>
+                            <constraint firstItem="nGr-q2-tA1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="450" id="BEN-4w-Ljq"/>
+                            <constraint firstItem="RDp-0F-dUA" firstAttribute="leading" secondItem="0Vk-Wa-uIq" secondAttribute="trailing" constant="50" id="FdT-UP-uJW"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="wrb-xw-A1N" secondAttribute="trailing" constant="640" id="LRH-Ue-6VW"/>
+                            <constraint firstItem="nGr-q2-tA1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O7i-Yf-IWz"/>
+                            <constraint firstItem="uRH-8m-jCY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QWG-0z-aGj"/>
+                            <constraint firstAttribute="bottom" secondItem="nGr-q2-tA1" secondAttribute="bottom" id="UcB-dr-p0f"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="leading" secondItem="0Vk-Wa-uIq" secondAttribute="trailing" constant="-300" id="Wi5-k1-Mvi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wrb-xw-A1N" secondAttribute="bottom" constant="200" id="e5M-Fi-5jG"/>
+                            <constraint firstAttribute="trailing" secondItem="uRH-8m-jCY" secondAttribute="trailing" constant="-25" id="hXY-WZ-WTg"/>
+                            <constraint firstAttribute="bottom" secondItem="0Vk-Wa-uIq" secondAttribute="bottom" constant="150" id="i9s-PG-eCC"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="RDp-0F-dUA" secondAttribute="trailing" constant="600" id="isP-gL-SYM"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="leading" secondItem="0Vk-Wa-uIq" secondAttribute="trailing" constant="-300" id="kt9-1X-ZKZ"/>
+                            <constraint firstAttribute="bottom" secondItem="iSJ-17-GcC" secondAttribute="bottom" id="pcm-Z6-lYC"/>
+                            <constraint firstAttribute="trailing" secondItem="nGr-q2-tA1" secondAttribute="trailing" id="tdl-Bc-v29"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uRH-8m-jCY" secondAttribute="bottom" constant="40" id="vTB-rx-mwq"/>
+                            <constraint firstItem="wrb-xw-A1N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="xiH-tZ-y7R"/>
+                            <constraint firstItem="iSJ-17-GcC" firstAttribute="top" secondItem="RDp-0F-dUA" secondAttribute="bottom" constant="100" id="zei-pg-hGo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
                     <navigationItem key="navigationItem" id="snD-m0-MzC"/>
-                    <connections>
-                        <outlet property="backgroundLabel" destination="uRH-8m-jCY" id="Fdp-yO-y63"/>
-                        <outlet property="playButton" destination="p4B-Uo-Wcb" id="HcT-0c-eMA"/>
-                        <outlet property="presentation" destination="x2C-z1-km4" id="iKh-Zy-cH5"/>
-                        <outlet property="secretary" destination="0Vk-Wa-uIq" id="6sw-aC-se2"/>
-                        <outlet property="world" destination="kVU-Ee-lWr" id="mi6-C9-CiH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -250,6 +264,70 @@
                     <view key="view" contentMode="scaleToFill" id="nuh-bR-7Wz">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundvitoria" translatesAutoresizingMaskIntoConstraints="NO" id="lqA-65-q4m">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="principalcomfaixa" translatesAutoresizingMaskIntoConstraints="NO" id="nZT-gr-oBL">
+                                <rect key="frame" x="540" y="85" width="840" height="435"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="presidenteatual" translatesAutoresizingMaskIntoConstraints="NO" id="g8P-OL-1dw">
+                                <rect key="frame" x="950" y="322" width="840" height="436"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="blocovitoriamensagem" translatesAutoresizingMaskIntoConstraints="NO" id="VR7-ho-1Ie">
+                                <rect key="frame" x="1350" y="104" width="440" height="210"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtw-XW-cvP">
+                                <rect key="frame" x="1360" y="120" width="400" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="Mu2-nH-j10"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">PARABÉNS!
+Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da República!</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="30" name="SFMono-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secretaria" translatesAutoresizingMaskIntoConstraints="NO" id="d6V-wQ-ifz">
+                                <rect key="frame" x="130" y="240" width="840" height="437"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.143278718" green="0.16858226060000001" blue="0.34119319920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lqA-65-q4m" secondAttribute="trailing" id="1iw-Pa-utF"/>
+                            <constraint firstItem="vtw-XW-cvP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d6V-wQ-ifz" secondAttribute="trailing" constant="8" symbolic="YES" id="3ze-H2-dVg"/>
+                            <constraint firstItem="g8P-OL-1dw" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="262" id="6Qb-vc-3Pd"/>
+                            <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="VR7-ho-1Ie" secondAttribute="trailing" constant="40" id="6Y9-VA-zCD"/>
+                            <constraint firstItem="hBH-pT-QnM" firstAttribute="top" secondItem="d6V-wQ-ifz" secondAttribute="bottom" constant="343" id="A1z-iE-UF2"/>
+                            <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="g8P-OL-1dw" secondAttribute="trailing" constant="40" id="A5G-Vq-TBU"/>
+                            <constraint firstItem="hBH-pT-QnM" firstAttribute="top" secondItem="nZT-gr-oBL" secondAttribute="bottom" constant="500" id="AdU-SP-vUM"/>
+                            <constraint firstItem="nZT-gr-oBL" firstAttribute="centerX" secondItem="nuh-bR-7Wz" secondAttribute="centerX" id="AjV-q5-uuE"/>
+                            <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="vtw-XW-cvP" secondAttribute="trailing" constant="70" id="JUG-Qy-e1V"/>
+                            <constraint firstItem="g8P-OL-1dw" firstAttribute="top" secondItem="VR7-ho-1Ie" secondAttribute="bottom" constant="8" id="Kjh-WE-Iqz"/>
+                            <constraint firstItem="d6V-wQ-ifz" firstAttribute="leading" secondItem="mwy-0Q-Y6b" secondAttribute="leading" constant="40" id="LPj-kR-IG3"/>
+                            <constraint firstItem="vtw-XW-cvP" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="60" id="OiK-di-nan"/>
+                            <constraint firstItem="d6V-wQ-ifz" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="180" id="aq4-yZ-lyo"/>
+                            <constraint firstItem="hBH-pT-QnM" firstAttribute="top" secondItem="g8P-OL-1dw" secondAttribute="bottom" constant="262" id="mF6-H3-bRO"/>
+                            <constraint firstItem="nZT-gr-oBL" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="25" id="mH4-6k-rMB"/>
+                            <constraint firstItem="lqA-65-q4m" firstAttribute="leading" secondItem="nuh-bR-7Wz" secondAttribute="leading" id="pgH-4A-Q7H"/>
+                            <constraint firstItem="VR7-ho-1Ie" firstAttribute="leading" secondItem="d6V-wQ-ifz" secondAttribute="trailing" constant="380" id="rwX-nE-nQO"/>
+                            <constraint firstItem="VR7-ho-1Ie" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="44" id="wr1-Jo-RVf"/>
+                            <constraint firstItem="lqA-65-q4m" firstAttribute="top" secondItem="nuh-bR-7Wz" secondAttribute="top" id="zZE-NO-8A4"/>
+                            <constraint firstAttribute="bottom" secondItem="lqA-65-q4m" secondAttribute="bottom" id="zwL-yl-M5I"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mwy-0Q-Y6b"/>
                     </view>
                 </viewController>
@@ -259,10 +337,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="OELOPERDIDO-1" width="1738" height="683"/>
+        <image name="blocovitoriamensagem" width="1001" height="481"/>
         <image name="botaoacao" width="800" height="256"/>
         <image name="brazilmapa" width="745" height="980"/>
-        <image name="planetamenu-1" width="600" height="745"/>
-        <image name="principal" width="840" height="1581"/>
+        <image name="planetatutorial" width="1366" height="483"/>
+        <image name="secretaria" width="840" height="1580"/>
     </resources>
 </document>
