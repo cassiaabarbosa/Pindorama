@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBB2334424B39BE100227391 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2334324B39BE100227391 /* TutorialViewController.swift */; };
 		CBB8E47B24B21BA2002F017E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB8E47A24B21BA2002F017E /* AppDelegate.swift */; };
-		CBB8E47D24B21BA2002F017E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB8E47C24B21BA2002F017E /* ViewController.swift */; };
 		CBB8E48024B21BA2002F017E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB8E47E24B21BA2002F017E /* Main.storyboard */; };
 		CBB8E48324B21BA2002F017E /* appTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBB8E48124B21BA2002F017E /* appTV.xcdatamodeld */; };
 		CBB8E48524B21BA4002F017E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB8E48424B21BA4002F017E /* Assets.xcassets */; };
@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CBB2334324B39BE100227391 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		CBB8E47724B21BA2002F017E /* appTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB8E47A24B21BA2002F017E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBB8E47C24B21BA2002F017E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBB8E47F24B21BA2002F017E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB8E48224B21BA2002F017E /* appTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = appTV.xcdatamodel; sourceTree = "<group>"; };
 		CBB8E48424B21BA4002F017E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +37,131 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBB2334524B39D4300227391 /* TutorialScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CBB2334824B39DDB00227391 /* Model */,
+				CBB2334724B39DD400227391 /* View */,
+				CBB2334624B39DC600227391 /* ViewModel */,
+			);
+			path = TutorialScreen;
+			sourceTree = "<group>";
+		};
+		CBB2334624B39DC600227391 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBB2334724B39DD400227391 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBB2334324B39BE100227391 /* TutorialViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBB2334824B39DDB00227391 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBB2334924B3A28100227391 /* MenuScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CBB2334E24B3A2C000227391 /* Model */,
+				CBB2334D24B3A2BA00227391 /* View */,
+				CBB2334C24B3A2B200227391 /* ViewModel */,
+			);
+			path = MenuScreen;
+			sourceTree = "<group>";
+		};
+		CBB2334A24B3A29700227391 /* SelectionScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CBB2335124B3A2F200227391 /* Model */,
+				CBB2335024B3A2EE00227391 /* View */,
+				CBB2334F24B3A2E700227391 /* ViewModel */,
+			);
+			path = SelectionScreen;
+			sourceTree = "<group>";
+		};
+		CBB2334B24B3A2A000227391 /* QuestionScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CBB2335424B3A30800227391 /* Model */,
+				CBB2335324B3A30000227391 /* View */,
+				CBB2335224B3A2F900227391 /* ViewModel */,
+			);
+			path = QuestionScreen;
+			sourceTree = "<group>";
+		};
+		CBB2334C24B3A2B200227391 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBB2334D24B3A2BA00227391 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBB2334E24B3A2C000227391 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBB2334F24B3A2E700227391 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBB2335024B3A2EE00227391 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBB2335124B3A2F200227391 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBB2335224B3A2F900227391 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBB2335324B3A30000227391 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBB2335424B3A30800227391 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CBB8E46E24B21BA2002F017E = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +181,11 @@
 		CBB8E47924B21BA2002F017E /* appTV */ = {
 			isa = PBXGroup;
 			children = (
+				CBB2334B24B3A2A000227391 /* QuestionScreen */,
+				CBB2334A24B3A29700227391 /* SelectionScreen */,
+				CBB2334524B39D4300227391 /* TutorialScreen */,
+				CBB2334924B3A28100227391 /* MenuScreen */,
 				CBB8E47A24B21BA2002F017E /* AppDelegate.swift */,
-				CBB8E47C24B21BA2002F017E /* ViewController.swift */,
 				CBB8E47E24B21BA2002F017E /* Main.storyboard */,
 				CBB8E48424B21BA4002F017E /* Assets.xcassets */,
 				CBB8E48624B21BA4002F017E /* LaunchScreen.storyboard */,
@@ -138,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB8E47D24B21BA2002F017E /* ViewController.swift in Sources */,
+				CBB2334424B39BE100227391 /* TutorialViewController.swift in Sources */,
 				CBB8E48324B21BA2002F017E /* appTV.xcdatamodeld in Sources */,
 				CBB8E47B24B21BA2002F017E /* AppDelegate.swift in Sources */,
 			);

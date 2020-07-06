@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		if !UserDefaults.standard.bool(forKey: "didSee") { //identificador da ação
+			UserDefaults.standard.set(true, forKey: "didSee")
+			
+			let storyboard = UIStoryboard(name: "Main", bundle: nil)
+			let viewController = storyboard.instantiateViewController(withIdentifier: "TutorialViewController") //identificador da tela que não deve apareecr nas outras vezes
+			
+			self.window?.rootViewController = viewController
+			self.window?.makeKeyAndVisible()
+		}
 		return true
 	}
 
