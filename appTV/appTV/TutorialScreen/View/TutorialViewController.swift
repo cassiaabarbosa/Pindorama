@@ -9,13 +9,7 @@
 import UIKit
 
 class TutorialViewController: UIViewController {
-
-	@IBOutlet var playButton: UIButton!
 	
-	@IBOutlet var secretary: UIImageView!
-	@IBOutlet var world: UIImageView!
-	@IBOutlet var backgroundLabel: UIImageView!
-	@IBOutlet var presentation: UILabel!
 	override func viewDidLoad() {
         super.viewDidLoad()
 
