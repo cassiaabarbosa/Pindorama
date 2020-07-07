@@ -17,6 +17,12 @@
 		CBB8E48324B21BA2002F017E /* appTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBB8E48124B21BA2002F017E /* appTV.xcdatamodeld */; };
 		CBB8E48524B21BA4002F017E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB8E48424B21BA4002F017E /* Assets.xcassets */; };
 		CBB8E48824B21BA4002F017E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB8E48624B21BA4002F017E /* LaunchScreen.storyboard */; };
+		CBDDE77424B52F5700D3CAE2 /* SelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE77324B52F5700D3CAE2 /* SelectionViewModel.swift */; };
+		CBDDE77624B5367F00D3CAE2 /* NorthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE77524B5367F00D3CAE2 /* NorthCollectionCell.swift */; };
+		CBDDE77824B5369000D3CAE2 /* NortheastCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE77724B5369000D3CAE2 /* NortheastCollectionCell.swift */; };
+		CBDDE77A24B5369D00D3CAE2 /* SouthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE77924B5369D00D3CAE2 /* SouthCollectionCell.swift */; };
+		CBDDE77C24B536AC00D3CAE2 /* SoutheastCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE77B24B536AC00D3CAE2 /* SoutheastCollectionCell.swift */; };
+		CBDDE77E24B536BD00D3CAE2 /* MidwestCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE77D24B536BD00D3CAE2 /* MidwestCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		CBB8E48424B21BA4002F017E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB8E48724B21BA4002F017E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB8E48924B21BA4002F017E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDDE77324B52F5700D3CAE2 /* SelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewModel.swift; sourceTree = "<group>"; };
+		CBDDE77524B5367F00D3CAE2 /* NorthCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthCollectionCell.swift; sourceTree = "<group>"; };
+		CBDDE77724B5369000D3CAE2 /* NortheastCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NortheastCollectionCell.swift; sourceTree = "<group>"; };
+		CBDDE77924B5369D00D3CAE2 /* SouthCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthCollectionCell.swift; sourceTree = "<group>"; };
+		CBDDE77B24B536AC00D3CAE2 /* SoutheastCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoutheastCollectionCell.swift; sourceTree = "<group>"; };
+		CBDDE77D24B536BD00D3CAE2 /* MidwestCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidwestCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +144,7 @@
 		CBB2334F24B3A2E700227391 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CBDDE77324B52F5700D3CAE2 /* SelectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -140,6 +153,11 @@
 			isa = PBXGroup;
 			children = (
 				CBB2335724B3A81100227391 /* SelectionViewController.swift */,
+				CBDDE77524B5367F00D3CAE2 /* NorthCollectionCell.swift */,
+				CBDDE77724B5369000D3CAE2 /* NortheastCollectionCell.swift */,
+				CBDDE77924B5369D00D3CAE2 /* SouthCollectionCell.swift */,
+				CBDDE77B24B536AC00D3CAE2 /* SoutheastCollectionCell.swift */,
+				CBDDE77D24B536BD00D3CAE2 /* MidwestCollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,8 +329,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB2335824B3A81100227391 /* SelectionViewController.swift in Sources */,
+				CBDDE77C24B536AC00D3CAE2 /* SoutheastCollectionCell.swift in Sources */,
+				CBDDE77624B5367F00D3CAE2 /* NorthCollectionCell.swift in Sources */,
+				CBDDE77424B52F5700D3CAE2 /* SelectionViewModel.swift in Sources */,
 				CBB2334424B39BE100227391 /* TutorialViewController.swift in Sources */,
 				CBB2336024B3A8E900227391 /* VictoryViewController.swift in Sources */,
+				CBDDE77824B5369000D3CAE2 /* NortheastCollectionCell.swift in Sources */,
+				CBDDE77A24B5369D00D3CAE2 /* SouthCollectionCell.swift in Sources */,
+				CBDDE77E24B536BD00D3CAE2 /* MidwestCollectionCell.swift in Sources */,
 				CBB2335A24B3A88900227391 /* QuestionViewController.swift in Sources */,
 				CBB8E48324B21BA2002F017E /* appTV.xcdatamodeld in Sources */,
 				CBB8E47B24B21BA2002F017E /* AppDelegate.swift in Sources */,
