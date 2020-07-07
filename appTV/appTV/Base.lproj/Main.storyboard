@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqG-yZ-d3Z">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqG-yZ-d3Z">
     <device id="appleTV" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,8 +42,9 @@ Boa sorte!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSJ-17-GcC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSJ-17-GcC">
                                 <rect key="frame" x="700" y="920" width="520" height="160"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="botaoacao">
                                     <attributedString key="attributedTitle">
@@ -57,7 +58,7 @@ Boa sorte!</string>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.012215757739999999" green="0.22275716070000001" blue="0.26667362449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.056304119530000002" green="0.1484674513" blue="0.1803969741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="iSJ-17-GcC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="700" id="0xk-4K-XrD"/>
                             <constraint firstItem="0Vk-Wa-uIq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="2Xn-Dt-xCC"/>
@@ -133,7 +134,7 @@ Boa sorte!</string>
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="ceD-dA-s9y" kind="show" id="CJY-yN-wXb"/>
+                                    <segue destination="ceD-dA-s9y" kind="show" id="kUu-r4-NQK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPs-Sv-UXC">
@@ -210,14 +211,17 @@ Boa sorte!</string>
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PLc-jE-Enm">
-                                <rect key="frame" x="1511" y="49" width="291" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PLc-jE-Enm">
+                                <rect key="frame" x="1290" y="60" width="540" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="5GG-s6-nCP"/>
+                                </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal">
+                                <state key="normal" backgroundImage="botaoacao">
                                     <attributedString key="attributedTitle">
                                         <fragment content="MENU">
                                             <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="72" name="SFMono-Semibold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -225,8 +229,59 @@ Boa sorte!</string>
                                     </attributedString>
                                 </state>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocoregiao" translatesAutoresizingMaskIntoConstraints="NO" id="D3f-MP-nrP">
+                                <rect key="frame" x="1518" y="250" width="312" height="770"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="312" id="cgz-5q-NIQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocoregiao" translatesAutoresizingMaskIntoConstraints="NO" id="Ud0-Ig-AAe">
+                                <rect key="frame" x="804" y="250" width="312" height="770"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="312" id="dGn-ET-Ze3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocoregiao" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-1B-aaF">
+                                <rect key="frame" x="447" y="250" width="312" height="770"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="312" id="fa8-nT-poy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocoregiao" translatesAutoresizingMaskIntoConstraints="NO" id="PE7-WN-jKT">
+                                <rect key="frame" x="90" y="250" width="312" height="770"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="312" id="xKv-if-5Q4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="blocoregiao" translatesAutoresizingMaskIntoConstraints="NO" id="PJb-ch-tiA">
+                                <rect key="frame" x="1161" y="250" width="312" height="770"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="312" id="X3F-bd-2wf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.056304119530000002" green="0.1484674513" blue="0.1803969741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="D3f-MP-nrP" firstAttribute="top" secondItem="PLc-jE-Enm" secondAttribute="bottom" constant="20" id="DiP-8y-eWg"/>
+                            <constraint firstItem="PLc-jE-Enm" firstAttribute="top" secondItem="ZWO-f9-cwo" secondAttribute="top" id="EbW-43-aqX"/>
+                            <constraint firstItem="ZWO-f9-cwo" firstAttribute="trailing" secondItem="PLc-jE-Enm" secondAttribute="trailing" id="HGw-ct-I6x"/>
+                            <constraint firstItem="PE7-WN-jKT" firstAttribute="leading" secondItem="ZWO-f9-cwo" secondAttribute="leading" id="J8n-y4-MZA"/>
+                            <constraint firstItem="Ud0-Ig-AAe" firstAttribute="leading" secondItem="jp1-1B-aaF" secondAttribute="trailing" constant="45" id="NGZ-G4-LKd"/>
+                            <constraint firstItem="3ht-So-CqT" firstAttribute="top" secondItem="D3f-MP-nrP" secondAttribute="bottom" id="Qpa-9Z-g1m"/>
+                            <constraint firstItem="Ud0-Ig-AAe" firstAttribute="top" secondItem="DEv-5T-kgJ" secondAttribute="bottom" constant="190" id="Wv5-Jz-2X7"/>
+                            <constraint firstItem="ZWO-f9-cwo" firstAttribute="trailing" secondItem="D3f-MP-nrP" secondAttribute="trailing" id="XyU-za-hHA"/>
+                            <constraint firstItem="jp1-1B-aaF" firstAttribute="top" secondItem="DEv-5T-kgJ" secondAttribute="bottom" constant="190" id="Z8l-S6-ReA"/>
+                            <constraint firstItem="PJb-ch-tiA" firstAttribute="top" secondItem="PLc-jE-Enm" secondAttribute="bottom" constant="20" id="cYZ-tN-5fv"/>
+                            <constraint firstItem="PE7-WN-jKT" firstAttribute="top" secondItem="DEv-5T-kgJ" secondAttribute="bottom" constant="190" id="ifq-FL-pUm"/>
+                            <constraint firstItem="D3f-MP-nrP" firstAttribute="leading" secondItem="PJb-ch-tiA" secondAttribute="trailing" constant="45" id="lfB-74-gbg"/>
+                            <constraint firstItem="PLc-jE-Enm" firstAttribute="leading" secondItem="ZWO-f9-cwo" secondAttribute="leading" constant="1200" id="mPx-zC-zEj"/>
+                            <constraint firstItem="jp1-1B-aaF" firstAttribute="leading" secondItem="PE7-WN-jKT" secondAttribute="trailing" constant="45" id="oYF-of-LTM"/>
+                            <constraint firstItem="PJb-ch-tiA" firstAttribute="leading" secondItem="Ud0-Ig-AAe" secondAttribute="trailing" constant="45" id="pQo-eb-gra"/>
+                            <constraint firstItem="3ht-So-CqT" firstAttribute="top" secondItem="Ud0-Ig-AAe" secondAttribute="bottom" id="pWc-YE-H6w"/>
+                            <constraint firstItem="3ht-So-CqT" firstAttribute="top" secondItem="jp1-1B-aaF" secondAttribute="bottom" id="rDj-6n-mD9"/>
+                            <constraint firstItem="3ht-So-CqT" firstAttribute="top" secondItem="PJb-ch-tiA" secondAttribute="bottom" id="wYj-QL-xcv"/>
+                            <constraint firstItem="3ht-So-CqT" firstAttribute="top" secondItem="PE7-WN-jKT" secondAttribute="bottom" id="yFq-6R-TDX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZWO-f9-cwo"/>
                     </view>
                     <navigationItem key="navigationItem" id="1JI-Q7-FbC"/>
@@ -337,10 +392,17 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
         </scene>
     </scenes>
     <resources>
+        <image name="OELOPERDIDO-1" width="1738" height="683"/>
+        <image name="backgroundvitoria" width="3168" height="2234"/>
+        <image name="blocoregiao" width="508" height="1811"/>
         <image name="blocovitoriamensagem" width="1001" height="481"/>
         <image name="botaoacao" width="800" height="256"/>
         <image name="brazilmapa" width="745" height="980"/>
+        <image name="planetamenu-1" width="600" height="745"/>
         <image name="planetatutorial" width="1366" height="483"/>
+        <image name="presidenteatual" width="840" height="1580"/>
+        <image name="principal" width="840" height="1581"/>
+        <image name="principalcomfaixa" width="840" height="1581"/>
         <image name="secretaria" width="840" height="1580"/>
     </resources>
 </document>
