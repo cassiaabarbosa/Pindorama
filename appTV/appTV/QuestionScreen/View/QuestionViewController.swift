@@ -10,13 +10,16 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet var question: UILabel!
+	@IBOutlet var firstAnswer: UIButton!
+	@IBOutlet var secondAnswer: UIButton!
+	@IBOutlet var thirdAnswer: UIButton!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-
     /*
     // MARK: - Navigation
 

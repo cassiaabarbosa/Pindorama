@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2FB07724B64B78007F893B /* Asking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2FB07624B64B78007F893B /* Asking.swift */; };
+		CB2FB07924B64C97007F893B /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2FB07824B64C97007F893B /* QuestionViewModel.swift */; };
 		CBB2334424B39BE100227391 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2334324B39BE100227391 /* TutorialViewController.swift */; };
 		CBB2335624B3A54700227391 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2335524B3A54700227391 /* MenuViewController.swift */; };
 		CBB2335824B3A81100227391 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2335724B3A81100227391 /* SelectionViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB2FB07624B64B78007F893B /* Asking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asking.swift; sourceTree = "<group>"; };
+		CB2FB07824B64C97007F893B /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		CBB2334324B39BE100227391 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		CBB2335524B3A54700227391 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CBB2335724B3A81100227391 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 		CBB2335224B3A2F900227391 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CB2FB07824B64C97007F893B /* QuestionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 		CBB2335424B3A30800227391 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CB2FB07624B64B78007F893B /* Asking.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,11 +341,13 @@
 				CBB2334424B39BE100227391 /* TutorialViewController.swift in Sources */,
 				CBB2336024B3A8E900227391 /* VictoryViewController.swift in Sources */,
 				CBDDE77824B5369000D3CAE2 /* NortheastCollectionCell.swift in Sources */,
+				CB2FB07924B64C97007F893B /* QuestionViewModel.swift in Sources */,
 				CBDDE77A24B5369D00D3CAE2 /* SouthCollectionCell.swift in Sources */,
 				CBDDE77E24B536BD00D3CAE2 /* MidwestCollectionCell.swift in Sources */,
 				CBB2335A24B3A88900227391 /* QuestionViewController.swift in Sources */,
 				CBB8E48324B21BA2002F017E /* appTV.xcdatamodeld in Sources */,
 				CBB8E47B24B21BA2002F017E /* AppDelegate.swift in Sources */,
+				CB2FB07724B64B78007F893B /* Asking.swift in Sources */,
 				CBB2335624B3A54700227391 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
