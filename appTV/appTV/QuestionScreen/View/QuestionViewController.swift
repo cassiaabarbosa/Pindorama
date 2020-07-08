@@ -14,11 +14,17 @@ class QuestionViewController: UIViewController {
 	@IBOutlet var firstAnswer: UIButton!
 	@IBOutlet var secondAnswer: UIButton!
 	@IBOutlet var thirdAnswer: UIButton!
-	
+	var state: String?
+	var viewModel = QuestionViewModel()
 	override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		
+		viewModel.setStates()
+		
+		question.text = viewModel.generateAsking(state: state!).question
+		firstAnswer.setTitle(viewModel.generateAsking(state: state!).rightAnswer, for: .normal)
+		secondAnswer.setTitle(viewModel.generateAsking(state: state!).rightAnswer, for: .normal)
+		thirdAnswer.setTitle(viewModel.generateAsking(state: state!).rightAnswer, for: .normal)
     }
     /*
     // MARK: - Navigation

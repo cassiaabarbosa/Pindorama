@@ -254,4 +254,49 @@ class QuestionViewModel {
 		matoGrossoDoSul.append(Asking(question: "O que significa a bandeira do Mato Grosso do Sul?", rightAnswer: "Simboliza o estado e riqueza produzida pelo trabalho", secondAnswer: "Simboliza prosperidade e conquista pelo trabalho", thirdAnswer: "Simboliza amor e compreensão pelo trabalho"))
 		matoGrossoDoSul.append(Asking(question: "Pode-se afirmar que o Mato Grosso do Sul faz fronteira com os seguintes países...", rightAnswer: "Paraguai e Peru", secondAnswer: "Paraguai e Uruguai ", thirdAnswer: "Paraguai e Bolívia"))
 	}
+	
+	func setStates() {
+		setAcre()
+		setAlagoas()
+		setAmazonas()
+		setPara()
+		setAmapa()
+		setRoraima()
+		setRondonia()
+		setBahia()
+		setCeara()
+		setMaranhao()
+		setParaiba()
+		setPernambuco()
+		setPiaui()
+		setTocantins()
+		setRioGrandeDoNorte()
+		setSergipe()
+		setParana()
+		setRioGrandeDoSul()
+		setSantaCatarina()
+		setEspiritoSanto()
+		setMinasGerais()
+		setRioDeJaneiro()
+		setSaoPaulo()
+		setGoias()
+		setDistritoFederal()
+		setMatoGrosso()
+		setMatoGrossoDoSul()
+	}
+	
+	func askingAC() {
+//		fazer a lógica de gerar uma pergunta random e embaralhar os botões
+	}
+	
+	func generateAsking(state: String) -> Asking {
+		switch state {
+			case "AC":
+				askingAC()
+			default:
+				askingAC()
+		}
+	
+		return Asking(question: "", rightAnswer: "", secondAnswer: "", thirdAnswer: "")
+	}
 }

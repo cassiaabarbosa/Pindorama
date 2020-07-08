@@ -30,21 +30,7 @@ class SelectionViewController: UIViewController {
 		southeast.dataSource = self
 		midwest.delegate = self
 		midwest.dataSource = self
-		
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension SelectionViewController: UICollectionViewDataSource {
@@ -67,27 +53,27 @@ extension SelectionViewController: UICollectionViewDataSource {
 		switch collectionView {
 			case north:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NorthCell", for: indexPath) as? NorthCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row])
+					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row])
 					return cell
 			}
 			case northeast:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NortheastCell", for: indexPath) as? NortheastCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 7])
+					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 7])
 					return cell
 			}
 			case south:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SouthCell", for: indexPath) as? SouthCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 16])
+					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 16])
 					return cell
 			}
 			case southeast:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SoutheastCell", for: indexPath) as? SoutheastCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 19])
+					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 19])
 					return cell
 			}
 			default:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MidwestCell", for: indexPath) as? MidwestCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 23])
+					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 23])
 					return cell
 			}
 		}
@@ -98,6 +84,25 @@ extension SelectionViewController: UICollectionViewDataSource {
 extension SelectionViewController: UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		return CGSize(width: self.view.frame.width * 0.06 * 1.77, height: self.view.frame.width * 0.06)
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		let specificVC = storyboard.instantiateViewController(withIdentifier: "QuestionViewController") as? QuestionViewController
+		
+		switch collectionView {
+			case north:
+				specificVC?.state = viewModel.flagImages[indexPath.row]
+			case northeast:
+				specificVC?.state = viewModel.flagImages[indexPath.row + 7]
+			case south:
+				specificVC?.state = viewModel.flagImages[indexPath.row + 16]
+			case southeast:
+				specificVC?.state = viewModel.flagImages[indexPath.row + 19]
+			default:
+				specificVC?.state = viewModel.flagImages[indexPath.row + 23]
+		}
+		self.show(specificVC ?? QuestionViewController(), sender: nil)
 	}
 }
 
