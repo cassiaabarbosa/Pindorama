@@ -177,7 +177,7 @@ class QuestionViewModel {
 	
 	func setRioGrandeDoSul() {
 		rioGrandeDoSul.append(Asking(question: "Qual a capital do Rio Grande do Sul?", rightAnswer: "Porto Alegre", secondAnswer: "Gravataí", thirdAnswer: "Rio Grande"))
-		rioGrandeDoSul.append(Asking(question: "Qual a comida típica mais famosa do Rio Grande do Sul", rightAnswer: "Churrasco", secondAnswer: "Carne de Sol", thirdAnswer: "Arroz carreteiro"))
+		rioGrandeDoSul.append(Asking(question: "Qual a comida típica mais famosa do Rio Grande do Sul?", rightAnswer: "Churrasco", secondAnswer: "Carne de Sol", thirdAnswer: "Arroz carreteiro"))
 		rioGrandeDoSul.append(Asking(question: "Qual o clima do Rio Grande do Sul?", rightAnswer: "Temperado", secondAnswer: "Seco", thirdAnswer: "Mediterrâneo"))
 		rioGrandeDoSul.append(Asking(question: "Quais são festas e eventos tradicionais do Rio Grande do Sul?", rightAnswer: "Congada", secondAnswer: "Oktoberfest", thirdAnswer: "Festa da Uva"))
 		rioGrandeDoSul.append(Asking(question: "Quantos municípios o Rio Grande do Sul possui?", rightAnswer: "497", secondAnswer: "450", thirdAnswer: "329"))
@@ -254,4 +254,129 @@ class QuestionViewModel {
 		matoGrossoDoSul.append(Asking(question: "O que significa a bandeira do Mato Grosso do Sul?", rightAnswer: "Simboliza o estado e riqueza produzida pelo trabalho", secondAnswer: "Simboliza prosperidade e conquista pelo trabalho", thirdAnswer: "Simboliza amor e compreensão pelo trabalho"))
 		matoGrossoDoSul.append(Asking(question: "Pode-se afirmar que o Mato Grosso do Sul faz fronteira com os seguintes países...", rightAnswer: "Paraguai e Peru", secondAnswer: "Paraguai e Uruguai ", thirdAnswer: "Paraguai e Bolívia"))
 	}
+	
+	func setStates() {
+		setAcre()
+		setAlagoas()
+		setAmazonas()
+		setPara()
+		setAmapa()
+		setRoraima()
+		setRondonia()
+		setBahia()
+		setCeara()
+		setMaranhao()
+		setParaiba()
+		setPernambuco()
+		setPiaui()
+		setTocantins()
+		setRioGrandeDoNorte()
+		setSergipe()
+		setParana()
+		setRioGrandeDoSul()
+		setSantaCatarina()
+		setEspiritoSanto()
+		setMinasGerais()
+		setRioDeJaneiro()
+		setSaoPaulo()
+		setGoias()
+		setDistritoFederal()
+		setMatoGrosso()
+		setMatoGrossoDoSul()
+	}
+	
+	func askingState(state: [Asking]) -> (Asking?, ModifiedAsking?)  {
+
+		let choosenAsking = state.randomElement()
+		var possibleAnswers: [String?] = [choosenAsking?.rightAnswer, choosenAsking?.secondAnswer, choosenAsking?.thirdAnswer]
+		
+		let firstButton: String! = possibleAnswers.randomElement()!
+		for index in 0...2 {
+			if possibleAnswers[index] == firstButton {
+				possibleAnswers.remove(at: index)
+				break
+			}
+		}
+		
+		let secondButton: String! = possibleAnswers.randomElement()!
+		for index in 0...2 {
+			if possibleAnswers[index] == secondButton {
+				possibleAnswers.remove(at: index)
+				break
+			}
+			
+		}
+		
+		let thirdButton: String! = possibleAnswers.randomElement()!
+		for index in 0...2 {
+			if possibleAnswers[index] == thirdButton {
+				possibleAnswers.remove(at: index)
+				break
+			}
+		}
+		
+		let modifiedAsking = ModifiedAsking(question: choosenAsking!.question, firstAnswer: firstButton, secondAnswer: secondButton, thirdAnswer: thirdButton)
+		
+		return(choosenAsking, modifiedAsking)
+	}
+	
+	func generateAsking(state: String) -> (Asking?, ModifiedAsking?) {
+		switch state {
+			case "AC":
+				return askingState(state: acre)
+			case "AP":
+				return askingState(state: amapa)
+			case "AM":
+				return askingState(state: amazonas)
+			case "PA":
+				return askingState(state: para)
+			case "RO":
+				return askingState(state: rondonia)
+			case "RR":
+				return askingState(state: roraima)
+			case "TO":
+				return askingState(state: tocantins)
+			case "AL":
+				return askingState(state: alagoas)
+			case "BA":
+				return askingState(state: bahia)
+			case "CE":
+				return askingState(state: ceara)
+			case "MA":
+				return askingState(state: maranhao)
+			case "PB":
+				return askingState(state: paraiba)
+			case "PE":
+				return askingState(state: pernambuco)
+			case "PI":
+				return askingState(state: piaui)
+			case "RN":
+				return askingState(state: rioGrandeDoNorte)
+			case "SE":
+				return askingState(state: sergipe)
+			case "PR":
+				return askingState(state: parana)
+			case "RS":
+				return askingState(state: rioGrandeDoSul)
+			case "SC":
+				return askingState(state: santaCatarina)
+			case "ES":
+				return askingState(state: espiritoSanto)
+			case "MG":
+				return askingState(state: minasGerais)
+			case "RJ":
+				return askingState(state: rioDeJaneiro)
+			case "SP":
+				return askingState(state: saoPaulo)
+			case "DF":
+				return askingState(state: distritoFederal)
+			case "GO":
+				return askingState(state: goias)
+			case "MT":
+				return askingState(state: matoGrosso)
+			default:
+				return askingState(state: matoGrossoDoSul)
+		}
+	}
 }
+
