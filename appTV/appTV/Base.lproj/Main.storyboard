@@ -645,7 +645,7 @@ Boa sorte!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBL-wT-xS4">
-                                <rect key="frame" x="735" y="760" width="450" height="256"/>
+                                <rect key="frame" x="735" y="760" width="450" height="253"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="GIC-nJ-eeQ"/>
                                 </constraints>
@@ -828,7 +828,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf7-vL-u30">
-                                <rect key="frame" x="790" y="110" width="340" height="112"/>
+                                <rect key="frame" x="790" y="110" width="340" height="172"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Você errou a resposta...">
                                         <attributes>
@@ -841,7 +841,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="presidenteatual" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-RT-ZKC">
-                                <rect key="frame" x="840" y="272" width="240" height="549"/>
+                                <rect key="frame" x="840" y="332" width="240" height="489"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC8-Ut-Cjq">
                                 <rect key="frame" x="640" y="871" width="267" height="99"/>
@@ -904,7 +904,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="COL-lj-pt1"/>
-        <segue reference="Z0d-No-TaZ"/>
+        <segue reference="9HN-dY-vtb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>
@@ -914,7 +914,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
         <image name="blocoregiao" width="508" height="1811"/>
         <image name="blocorespostaerrada" width="1366" height="1931"/>
         <image name="blocovitoriamensagem" width="1001" height="481"/>
-        <image name="botaoacao" width="800" height="256"/>
+        <image name="botaoacao" width="798" height="253"/>
         <image name="brazilmapa" width="745" height="980"/>
         <image name="planetamenu-1" width="600" height="745"/>
         <image name="planetatutorial" width="1366" height="483"/>
