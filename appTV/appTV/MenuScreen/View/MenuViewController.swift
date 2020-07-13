@@ -10,7 +10,6 @@ import UIKit
 import AVFoundation
 
 class MenuViewController: UIViewController {
-
     var player: AVAudioPlayer?
     
     override func viewDidLoad() {

@@ -15,7 +15,10 @@ class QuestionViewController: UIViewController {
 	@IBOutlet var firstAnswer: UIButton!
 	@IBOutlet var secondAnswer: UIButton!
 	@IBOutlet var thirdAnswer: UIButton!
+	@IBOutlet var background: UIImageView!
+	
 	var state: String?
+	var flagImages: [String] = ["AC", "AP", "AM", "PA", "RO", "RR", "TO", "AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE", "PR", "RS", "SC", "ES", "MG", "RJ","SP", "DF", "GO", "MT", "MS"]
 	var viewModel = QuestionViewModel()
 	var generatedAskings: (Asking, ModifiedAsking)?
     var player: AVAudioPlayer?
@@ -26,24 +29,25 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
 		
 		viewModel.setStates()
+		
 		generatedAskings = viewModel.generateAsking(state: state!) as? (Asking, ModifiedAsking)
-		
 		question.text = generatedAskings?.0.question
-
 		firstAnswer.setTitle(generatedAskings?.1.firstAnswer, for: .normal)
-
 		secondAnswer.setTitle(generatedAskings?.1.secondAnswer, for: .normal)
-		
 		thirdAnswer.setTitle(generatedAskings?.1.thirdAnswer, for: .normal)
     }
 	
-	
-	   
 	@IBAction func firstButtonAction(_ sender: Any) {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		let specificVC = storyboard.instantiateViewController(withIdentifier: "AnswerViewController") as? AnswerViewController
 		if generatedAskings?.0.rightAnswer == generatedAskings?.1.firstAnswer {
 			specificVC?.type = "right"
+			for (i, elemente) in flagImages.enumerated() {
+				if elemente == state {
+					StateManager.incrementAnswer(state: i)
+					break
+				}
+			}
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}else {
 			specificVC?.type = "wrong"
@@ -56,6 +60,12 @@ class QuestionViewController: UIViewController {
 		let specificVC = storyboard.instantiateViewController(withIdentifier: "AnswerViewController") as? AnswerViewController
 		if generatedAskings?.0.rightAnswer == generatedAskings?.1.secondAnswer {
 			specificVC?.type = "right"
+			for (i, elemente) in flagImages.enumerated() {
+				if elemente == state {
+					StateManager.incrementAnswer(state: i)
+					break
+				}
+			}
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}else {
 			specificVC?.type = "wrong"
@@ -66,8 +76,14 @@ class QuestionViewController: UIViewController {
 	@IBAction func thirdButtonAction(_ sender: Any) {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		let specificVC = storyboard.instantiateViewController(withIdentifier: "AnswerViewController") as? AnswerViewController
-		if generatedAskings?.0.rightAnswer == generatedAskings?.1.firstAnswer {
+		if generatedAskings?.0.rightAnswer == generatedAskings?.1.thirdAnswer {
 			specificVC?.type = "right"
+			for (i, elemente) in flagImages.enumerated() {
+				if elemente == state {
+					StateManager.incrementAnswer(state: i)
+					break
+				}
+			}
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}else {
 			specificVC?.type = "wrong"
