@@ -52,7 +52,7 @@ extension SelectionViewController: UICollectionViewDataSource {
 				return 4
 		}
 	}
-	
+//	precisa fazer das outras regiões
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		switch collectionView {
 			case north:
