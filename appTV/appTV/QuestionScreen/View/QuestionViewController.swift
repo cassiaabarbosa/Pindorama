@@ -37,8 +37,6 @@ class QuestionViewController: UIViewController {
 		
 		thirdAnswer.setTitle(generatedAskings?.1.thirdAnswer, for: .normal)
     }
-	
-	
 	   
 	@IBAction func firstButtonAction(_ sender: Any) {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -94,9 +92,11 @@ class QuestionViewController: UIViewController {
 		}
 		
 	}
+	
     override func viewDidDisappear(_ animated: Bool) {
         player?.stop()
     }
+	
     func playSound() {
         if let soundURL = Bundle.main.path(forResource: "Efeito-NORTE", ofType: "mp3") {
             do {

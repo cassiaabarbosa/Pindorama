@@ -26,7 +26,7 @@ class AnswerViewController: UIViewController {
 			case "right":
 				background.image = UIImage(named: "blocorespostacerta")
 				label.text = "Você acertou a resposta..."
-				person.image = UIImage(named: "presidenteatualcomfaixa")
+				person.image = UIImage(named: "presidentebravoatualcomfaixa")
 			default:
 				background.image = UIImage(named: "blocorespostaerrada")
 				label.text = "Você errou a resposta..."
