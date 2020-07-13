@@ -134,6 +134,7 @@ Boa sorte!</string>
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="playButton:" destination="sqG-yZ-d3Z" eventType="primaryActionTriggered" id="aL8-19-J4n"/>
                                     <segue destination="ceD-dA-s9y" kind="show" id="IyX-RA-TXB"/>
                                 </connections>
                             </button>
@@ -194,6 +195,9 @@ Boa sorte!</string>
                         <viewLayoutGuide key="safeArea" id="dNL-uK-Yu4"/>
                     </view>
                     <navigationItem key="navigationItem" id="K85-rE-CGW"/>
+                    <connections>
+                        <outlet property="play" destination="50V-Kl-rtX" id="98Y-vS-YMV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isc-IP-6kV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -720,6 +724,7 @@ Boa sorte!</string>
                     </view>
                     <navigationItem key="navigationItem" id="vkF-ch-TNR"/>
                     <connections>
+                        <outlet property="background" destination="c1O-Z7-crr" id="q0E-KL-vdH"/>
                         <outlet property="firstAnswer" destination="jAe-uL-PGz" id="0MS-4d-2dO"/>
                         <outlet property="question" destination="bEV-Ct-RrS" id="mjP-XA-GFe"/>
                         <outlet property="secondAnswer" destination="nBL-wT-xS4" id="CBf-qx-abN"/>
@@ -903,8 +908,8 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="COL-lj-pt1"/>
-        <segue reference="Z0d-No-TaZ"/>
+        <segue reference="IyX-RA-TXB"/>
+        <segue reference="fqd-F5-PGO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>

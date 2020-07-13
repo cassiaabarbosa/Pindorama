@@ -30,6 +30,8 @@ class SelectionViewController: UIViewController {
 		southeast.dataSource = self
 		midwest.delegate = self
 		midwest.dataSource = self
+
+		StateManager.startManager()
     }
 }
 
@@ -53,7 +55,11 @@ extension SelectionViewController: UICollectionViewDataSource {
 		switch collectionView {
 			case north:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NorthCell", for: indexPath) as? NorthCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row])
+					if StateManager.getStateRightAnswers(state: indexPath.row) < 3 {
+						cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row])
+					} else {
+						cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row])
+					}
 					return cell
 			}
 			case northeast:

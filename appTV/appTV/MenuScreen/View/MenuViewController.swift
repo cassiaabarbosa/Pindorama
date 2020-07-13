@@ -10,13 +10,19 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet var play: UIButton!
+	override func viewDidLoad() {
         super.viewDidLoad()
 
+		if let aux = UserDefaults.standard.object(forKey: "stateArray") as? Int {
+			play.setTitle("PLAYYYY\(aux) ", for: .normal)
+		}
         // Do any additional setup after loading the view.
     }
 
-
+	@IBAction func playButton(_ sender: Any) {
+	}
+	
     /*
     // MARK: - Navigation
 
