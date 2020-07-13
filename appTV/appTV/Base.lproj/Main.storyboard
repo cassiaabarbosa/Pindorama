@@ -781,22 +781,63 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secretaria" translatesAutoresizingMaskIntoConstraints="NO" id="d6V-wQ-ifz">
                                 <rect key="frame" x="130" y="240" width="840" height="437"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMj-kM-tJw">
+                                <rect key="frame" x="120" y="902" width="400" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="Omj-HW-ye4"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" backgroundImage="botaoacao">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Menu">
+                                            <attributes>
+                                                <font key="NSFont" size="72" name="SFMono-Semibold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DpI-ap-ieD">
+                                <rect key="frame" x="1400" y="902" width="400" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="0s0-hL-e7f"/>
+                                    <constraint firstAttribute="height" constant="128" id="1Wg-vb-hV3"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" backgroundImage="botaoacao">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Resetar">
+                                            <attributes>
+                                                <font key="NSFont" size="72" name="SFMono-Semibold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.143278718" green="0.16858226060000001" blue="0.34119319920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="lqA-65-q4m" secondAttribute="trailing" id="1iw-Pa-utF"/>
                             <constraint firstItem="vtw-XW-cvP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d6V-wQ-ifz" secondAttribute="trailing" constant="8" symbolic="YES" id="3ze-H2-dVg"/>
+                            <constraint firstItem="DpI-ap-ieD" firstAttribute="top" secondItem="DMj-kM-tJw" secondAttribute="top" id="5bL-TV-kFh"/>
                             <constraint firstItem="g8P-OL-1dw" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="262" id="6Qb-vc-3Pd"/>
                             <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="VR7-ho-1Ie" secondAttribute="trailing" constant="40" id="6Y9-VA-zCD"/>
+                            <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="DpI-ap-ieD" secondAttribute="trailing" constant="30" id="6Zu-bP-Kba"/>
                             <constraint firstItem="hBH-pT-QnM" firstAttribute="top" secondItem="d6V-wQ-ifz" secondAttribute="bottom" constant="343" id="A1z-iE-UF2"/>
                             <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="g8P-OL-1dw" secondAttribute="trailing" constant="40" id="A5G-Vq-TBU"/>
                             <constraint firstItem="hBH-pT-QnM" firstAttribute="top" secondItem="nZT-gr-oBL" secondAttribute="bottom" constant="500" id="AdU-SP-vUM"/>
                             <constraint firstItem="nZT-gr-oBL" firstAttribute="centerX" secondItem="nuh-bR-7Wz" secondAttribute="centerX" id="AjV-q5-uuE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DpI-ap-ieD" secondAttribute="bottom" constant="-10" id="Dwg-Yg-s8K"/>
                             <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="vtw-XW-cvP" secondAttribute="trailing" constant="70" id="JUG-Qy-e1V"/>
                             <constraint firstItem="g8P-OL-1dw" firstAttribute="top" secondItem="VR7-ho-1Ie" secondAttribute="bottom" constant="8" id="Kjh-WE-Iqz"/>
                             <constraint firstItem="d6V-wQ-ifz" firstAttribute="leading" secondItem="mwy-0Q-Y6b" secondAttribute="leading" constant="40" id="LPj-kR-IG3"/>
+                            <constraint firstItem="DpI-ap-ieD" firstAttribute="firstBaseline" secondItem="DMj-kM-tJw" secondAttribute="baseline" id="N16-mB-yY7"/>
                             <constraint firstItem="vtw-XW-cvP" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="60" id="OiK-di-nan"/>
+                            <constraint firstItem="DMj-kM-tJw" firstAttribute="leading" secondItem="mwy-0Q-Y6b" secondAttribute="leading" constant="30" id="Sp3-zR-Ucz"/>
                             <constraint firstItem="d6V-wQ-ifz" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="180" id="aq4-yZ-lyo"/>
+                            <constraint firstItem="DpI-ap-ieD" firstAttribute="baseline" secondItem="DMj-kM-tJw" secondAttribute="firstBaseline" id="bSe-mx-1ge"/>
                             <constraint firstItem="hBH-pT-QnM" firstAttribute="top" secondItem="g8P-OL-1dw" secondAttribute="bottom" constant="262" id="mF6-H3-bRO"/>
                             <constraint firstItem="nZT-gr-oBL" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="25" id="mH4-6k-rMB"/>
                             <constraint firstItem="lqA-65-q4m" firstAttribute="leading" secondItem="nuh-bR-7Wz" secondAttribute="leading" id="pgH-4A-Q7H"/>
@@ -919,6 +960,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
         <image name="planetamenu-1" width="600" height="745"/>
         <image name="planetatutorial" width="1366" height="483"/>
         <image name="presidenteatual" width="840" height="1580"/>
+        <image name="presidenteatualcomfaixa" width="840" height="1580"/>
         <image name="principal" width="840" height="1581"/>
         <image name="principalcomfaixa" width="840" height="1581"/>
         <image name="secretaria" width="840" height="1580"/>
