@@ -7,22 +7,20 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MenuViewController: UIViewController {
-
-	@IBOutlet var play: UIButton!
-	override func viewDidLoad() {
+    var player: AVAudioPlayer?
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-
-		if let aux = UserDefaults.standard.object(forKey: "stateArray") as? Int {
-			play.setTitle("PLAYYYY\(aux) ", for: .normal)
-		}
+        playSound()
+        player?.play()
         // Do any additional setup after loading the view.
     }
-
-	@IBAction func playButton(_ sender: Any) {
-	}
-	
+    override func viewDidDisappear(_ animated: Bool) {
+        player?.stop()
+    }
     /*
     // MARK: - Navigation
 
@@ -32,5 +30,18 @@ class MenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func playSound() {
+        if let soundURL = Bundle.main.path(forResource: "Efeito-INTRO", ofType: "mp3") {
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
+                try AVAudioSession.sharedInstance().setActive(true)
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundURL))
+                player?.numberOfLoops = -1
+            } catch {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Não foi possível encontrar o arquivo ou a configuração está desabilitada")
+        }
+    }
 }

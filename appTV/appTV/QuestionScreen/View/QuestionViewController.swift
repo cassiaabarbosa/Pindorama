@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class QuestionViewController: UIViewController {
 
@@ -20,8 +21,11 @@ class QuestionViewController: UIViewController {
 	var flagImages: [String] = ["AC", "AP", "AM", "PA", "RO", "RR", "TO", "AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE", "PR", "RS", "SC", "ES", "MG", "RJ","SP", "DF", "GO", "MT", "MS"]
 	var viewModel = QuestionViewModel()
 	var generatedAskings: (Asking, ModifiedAsking)?
+    var player: AVAudioPlayer?
+    
 	override func viewDidLoad() {
-		
+		playSound()
+        player?.play()
         super.viewDidLoad()
 		
 		viewModel.setStates()
@@ -87,4 +91,21 @@ class QuestionViewController: UIViewController {
 		}
 		
 	}
+    override func viewDidDisappear(_ animated: Bool) {
+        player?.stop()
+    }
+    func playSound() {
+        if let soundURL = Bundle.main.path(forResource: "Efeito-NORTE", ofType: "mp3") {
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
+                try AVAudioSession.sharedInstance().setActive(true)
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundURL))
+                player?.numberOfLoops = -1
+            } catch {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Não foi possível encontrar o arquivo ou a configuração está desabilitada")
+        }
+    }
 }
