@@ -379,5 +379,42 @@ class QuestionViewModel {
 				return askingState(state: matoGrossoDoSul)
 		}
 	}
+	
+	func setBackground(state: String) -> String {
+		
+		if state == "AC" || state == "AP" || state == "AM" || state == "PA" || state == "RO" || state == "RR" || state == "TO" {
+			return "Norte-background"
+			
+		} else if state == "AL" || state == "BA" || state == "CE" || state == "MA" || state == "PB" || state == "PE" || state == "PI" || state == "RN" || state == "SE" {
+			return "Nordeste-background"
+			
+		} else if state == "PR" || state == "RS" || state == "SC" {
+			return "Sul-background"
+			
+		} else if state == "ES" || state == "RJ" || state == "SP" || state == "MG" {
+			return "Sudeste-background"
+			
+		} else {
+			return "Centro-oeste-background"
+		}
+	}
+	
+	func setMusic(state: String) -> String {
+		if state == "AC" || state == "AP" || state == "AM" || state == "PA" || state == "RO" || state == "RR" || state == "TO" {
+			return "Efeito-NORTE"
+			
+		} else if state == "AL" || state == "BA" || state == "CE" || state == "MA" || state == "PB" || state == "PE" || state == "PI" || state == "RN" || state == "SE" {
+			return "Efeito-NORDESTE"
+			
+		} else if state == "PR" || state == "RS" || state == "SC" {
+			return "Efeito-SUL"
+			
+		} else if state == "ES" || state == "RJ" || state == "SP" || state == "MG" {
+			return "Efeito-SUDESTE"
+			
+		} else {
+			return "Efeito-CENTRO-OESTE"
+		}
+	}
 }
 

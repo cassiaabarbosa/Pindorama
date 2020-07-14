@@ -15,6 +15,7 @@ class QuestionViewController: UIViewController {
 	@IBOutlet var firstAnswer: UIButton!
 	@IBOutlet var secondAnswer: UIButton!
 	@IBOutlet var thirdAnswer: UIButton!
+	@IBOutlet var background: UIImageView!
 	var state: String?
 	var viewModel = QuestionViewModel()
 	var generatedAskings: (Asking, ModifiedAsking)?
@@ -35,6 +36,8 @@ class QuestionViewController: UIViewController {
 		secondAnswer.setTitle(generatedAskings?.1.secondAnswer, for: .normal)
 		
 		thirdAnswer.setTitle(generatedAskings?.1.thirdAnswer, for: .normal)
+		
+		background.image = UIImage(named: viewModel.setBackground(state: state ?? "nil"))
     }
 	
     override func viewDidDisappear(_ animated: Bool) {
@@ -100,11 +103,10 @@ class QuestionViewController: UIViewController {
 			specificVC?.state = state
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}
-		
 	}
 	
     func playSound() {
-        if let soundURL = Bundle.main.path(forResource: "Efeito-NORTE", ofType: "mp3") {
+		if let soundURL = Bundle.main.path(forResource: viewModel.setMusic(state: state ?? "nil"), ofType: "mp3") {
             do {
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
                 try AVAudioSession.sharedInstance().setActive(true)

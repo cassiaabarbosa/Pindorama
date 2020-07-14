@@ -17,8 +17,6 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         playSound()
         player?.play()
-//		UserDefaults.standard.removeObject(forKey: "stateArray")
-
     }
 	
     override func viewDidDisappear(_ animated: Bool) {
