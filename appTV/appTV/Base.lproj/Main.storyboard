@@ -291,7 +291,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f8-Xd-OfU">
-                                <rect key="frame" x="457" y="255" width="257" height="51"/>
+                                <rect key="frame" x="457" y="255" width="257" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nordeste">
                                         <attributes>
@@ -350,7 +350,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OF-fI-1dS">
-                                <rect key="frame" x="100" y="255" width="257" height="51"/>
+                                <rect key="frame" x="100" y="255" width="257" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Norte">
                                         <attributes>
@@ -369,7 +369,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-1h-7zm">
-                                <rect key="frame" x="1527" y="255" width="261" height="101"/>
+                                <rect key="frame" x="1527" y="255" width="261" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Centro-Oeste">
                                         <attributes>
@@ -422,7 +422,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSe-AG-fUo">
-                                <rect key="frame" x="1171" y="255" width="257" height="51"/>
+                                <rect key="frame" x="1171" y="255" width="257" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sudeste">
                                         <attributes>
@@ -475,7 +475,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-EB-MTc">
-                                <rect key="frame" x="814" y="255" width="257" height="51"/>
+                                <rect key="frame" x="814" y="255" width="257" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sul">
                                         <attributes>
@@ -782,14 +782,14 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <rect key="frame" x="130" y="240" width="840" height="437"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMj-kM-tJw">
-                                <rect key="frame" x="120" y="902" width="400" height="128"/>
+                                <rect key="frame" x="120" y="885" width="400" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="Omj-HW-ye4"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="botaoacao">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Menu">
+                                        <fragment content="MENU">
                                             <attributes>
                                                 <font key="NSFont" size="72" name="SFMono-Semibold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -797,17 +797,19 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="sqG-yZ-d3Z" kind="show" id="bqG-ox-4Hq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DpI-ap-ieD">
-                                <rect key="frame" x="1400" y="902" width="400" height="128"/>
+                                <rect key="frame" x="1400" y="885" width="400" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="0s0-hL-e7f"/>
-                                    <constraint firstAttribute="height" constant="128" id="1Wg-vb-hV3"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="botaoacao">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Resetar">
+                                        <fragment content="RESETAR">
                                             <attributes>
                                                 <font key="NSFont" size="72" name="SFMono-Semibold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -821,7 +823,6 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="lqA-65-q4m" secondAttribute="trailing" id="1iw-Pa-utF"/>
                             <constraint firstItem="vtw-XW-cvP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d6V-wQ-ifz" secondAttribute="trailing" constant="8" symbolic="YES" id="3ze-H2-dVg"/>
-                            <constraint firstItem="DpI-ap-ieD" firstAttribute="top" secondItem="DMj-kM-tJw" secondAttribute="top" id="5bL-TV-kFh"/>
                             <constraint firstItem="g8P-OL-1dw" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="262" id="6Qb-vc-3Pd"/>
                             <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="VR7-ho-1Ie" secondAttribute="trailing" constant="40" id="6Y9-VA-zCD"/>
                             <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="DpI-ap-ieD" secondAttribute="trailing" constant="30" id="6Zu-bP-Kba"/>
@@ -829,19 +830,20 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                             <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="g8P-OL-1dw" secondAttribute="trailing" constant="40" id="A5G-Vq-TBU"/>
                             <constraint firstItem="hBH-pT-QnM" firstAttribute="top" secondItem="nZT-gr-oBL" secondAttribute="bottom" constant="500" id="AdU-SP-vUM"/>
                             <constraint firstItem="nZT-gr-oBL" firstAttribute="centerX" secondItem="nuh-bR-7Wz" secondAttribute="centerX" id="AjV-q5-uuE"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="DpI-ap-ieD" secondAttribute="bottom" constant="-10" id="Dwg-Yg-s8K"/>
+                            <constraint firstItem="mwy-0Q-Y6b" firstAttribute="bottom" secondItem="DpI-ap-ieD" secondAttribute="bottom" id="Dwg-Yg-s8K"/>
                             <constraint firstItem="mwy-0Q-Y6b" firstAttribute="trailing" secondItem="vtw-XW-cvP" secondAttribute="trailing" constant="70" id="JUG-Qy-e1V"/>
                             <constraint firstItem="g8P-OL-1dw" firstAttribute="top" secondItem="VR7-ho-1Ie" secondAttribute="bottom" constant="8" id="Kjh-WE-Iqz"/>
+                            <constraint firstItem="DMj-kM-tJw" firstAttribute="top" secondItem="mwy-0Q-Y6b" secondAttribute="top" constant="825" id="LHz-pj-WWF"/>
                             <constraint firstItem="d6V-wQ-ifz" firstAttribute="leading" secondItem="mwy-0Q-Y6b" secondAttribute="leading" constant="40" id="LPj-kR-IG3"/>
-                            <constraint firstItem="DpI-ap-ieD" firstAttribute="firstBaseline" secondItem="DMj-kM-tJw" secondAttribute="baseline" id="N16-mB-yY7"/>
                             <constraint firstItem="vtw-XW-cvP" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="60" id="OiK-di-nan"/>
                             <constraint firstItem="DMj-kM-tJw" firstAttribute="leading" secondItem="mwy-0Q-Y6b" secondAttribute="leading" constant="30" id="Sp3-zR-Ucz"/>
                             <constraint firstItem="d6V-wQ-ifz" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="180" id="aq4-yZ-lyo"/>
-                            <constraint firstItem="DpI-ap-ieD" firstAttribute="baseline" secondItem="DMj-kM-tJw" secondAttribute="firstBaseline" id="bSe-mx-1ge"/>
                             <constraint firstItem="hBH-pT-QnM" firstAttribute="top" secondItem="g8P-OL-1dw" secondAttribute="bottom" constant="262" id="mF6-H3-bRO"/>
                             <constraint firstItem="nZT-gr-oBL" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="25" id="mH4-6k-rMB"/>
                             <constraint firstItem="lqA-65-q4m" firstAttribute="leading" secondItem="nuh-bR-7Wz" secondAttribute="leading" id="pgH-4A-Q7H"/>
                             <constraint firstItem="VR7-ho-1Ie" firstAttribute="leading" secondItem="d6V-wQ-ifz" secondAttribute="trailing" constant="380" id="rwX-nE-nQO"/>
+                            <constraint firstItem="mwy-0Q-Y6b" firstAttribute="bottom" secondItem="DMj-kM-tJw" secondAttribute="bottom" id="uXc-ez-2I6"/>
+                            <constraint firstItem="DpI-ap-ieD" firstAttribute="top" secondItem="mwy-0Q-Y6b" secondAttribute="top" constant="825" id="v91-Da-622"/>
                             <constraint firstItem="VR7-ho-1Ie" firstAttribute="top" secondItem="Dxv-z8-RB6" secondAttribute="bottom" constant="44" id="wr1-Jo-RVf"/>
                             <constraint firstItem="lqA-65-q4m" firstAttribute="top" secondItem="nuh-bR-7Wz" secondAttribute="top" id="zZE-NO-8A4"/>
                             <constraint firstAttribute="bottom" secondItem="lqA-65-q4m" secondAttribute="bottom" id="zwL-yl-M5I"/>
@@ -869,7 +871,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf7-vL-u30">
-                                <rect key="frame" x="790" y="110" width="340" height="172"/>
+                                <rect key="frame" x="790" y="110" width="340" height="112"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Você errou a resposta...">
                                         <attributes>
@@ -882,7 +884,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="presidenteatual" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-RT-ZKC">
-                                <rect key="frame" x="840" y="332" width="240" height="489"/>
+                                <rect key="frame" x="840" y="272" width="240" height="549"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC8-Ut-Cjq">
                                 <rect key="frame" x="640" y="871" width="267" height="99"/>
@@ -945,7 +947,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="IyX-RA-TXB"/>
-        <segue reference="Z0d-No-TaZ"/>
+        <segue reference="fqd-F5-PGO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>
@@ -960,7 +962,6 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
         <image name="planetamenu-1" width="600" height="745"/>
         <image name="planetatutorial" width="1366" height="483"/>
         <image name="presidenteatual" width="840" height="1580"/>
-        <image name="presidenteatualcomfaixa" width="840" height="1580"/>
         <image name="principal" width="840" height="1581"/>
         <image name="principalcomfaixa" width="840" height="1581"/>
         <image name="secretaria" width="840" height="1580"/>

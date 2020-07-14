@@ -15,13 +15,14 @@ class AnswerViewController: UIViewController {
 	@IBOutlet var label: UILabel!
 	@IBOutlet var person: UIImageView!
     var player: AVAudioPlayer?
-
 	var type: String?
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
+		
         playSound()
         player?.play()
+		
 		switch type {
 			case "right":
 				background.image = UIImage(named: "blocorespostacerta")
@@ -37,9 +38,11 @@ class AnswerViewController: UIViewController {
 	@IBAction func nextAsking(_ sender: Any) {
 //		tem que ver se já fez 3 acertos
 	}
+	
     override func viewDidDisappear(_ animated: Bool) {
         player?.stop()
     }
+	
     func playSound() {
         if let soundURL = Bundle.main.path(forResource: "Efeito-ACERTO", ofType: "mp3") {
             do {
