@@ -16,7 +16,6 @@ class QuestionViewController: UIViewController {
 	@IBOutlet var secondAnswer: UIButton!
 	@IBOutlet var thirdAnswer: UIButton!
 	var state: String?
-	var flagImages: [String] = ["AC", "AP", "AM", "PA", "RO", "RR", "TO", "AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE", "PR", "RS", "SC", "ES", "MG", "RJ","SP", "DF", "GO", "MT", "MS"]
 	var viewModel = QuestionViewModel()
 	var generatedAskings: (Asking, ModifiedAsking)?
     var player: AVAudioPlayer?
@@ -37,13 +36,18 @@ class QuestionViewController: UIViewController {
 		
 		thirdAnswer.setTitle(generatedAskings?.1.thirdAnswer, for: .normal)
     }
+	
+    override func viewDidDisappear(_ animated: Bool) {
+        player?.stop()
+    }
 	   
 	@IBAction func firstButtonAction(_ sender: Any) {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		let specificVC = storyboard.instantiateViewController(withIdentifier: "AnswerViewController") as? AnswerViewController
 		if generatedAskings?.0.rightAnswer == generatedAskings?.1.firstAnswer {
 			specificVC?.type = "right"
-			for (i, elemente) in flagImages.enumerated() {
+			specificVC?.state = state
+			for (i, elemente) in viewModel.flagImages.enumerated() {
 				if elemente == state {
 					StateManager.incrementAnswer(state: i)
 					break
@@ -52,6 +56,7 @@ class QuestionViewController: UIViewController {
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}else {
 			specificVC?.type = "wrong"
+			specificVC?.state = state
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}
 	}
@@ -60,8 +65,10 @@ class QuestionViewController: UIViewController {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		let specificVC = storyboard.instantiateViewController(withIdentifier: "AnswerViewController") as? AnswerViewController
 		if generatedAskings?.0.rightAnswer == generatedAskings?.1.secondAnswer {
+			
 			specificVC?.type = "right"
-			for (i, elemente) in flagImages.enumerated() {
+			specificVC?.state = state
+			for (i, elemente) in viewModel.flagImages.enumerated() {
 				if elemente == state {
 					StateManager.incrementAnswer(state: i)
 					break
@@ -70,6 +77,7 @@ class QuestionViewController: UIViewController {
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}else {
 			specificVC?.type = "wrong"
+			specificVC?.state = state
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}
 	}
@@ -79,7 +87,8 @@ class QuestionViewController: UIViewController {
 		let specificVC = storyboard.instantiateViewController(withIdentifier: "AnswerViewController") as? AnswerViewController
 		if generatedAskings?.0.rightAnswer == generatedAskings?.1.thirdAnswer {
 			specificVC?.type = "right"
-			for (i, elemente) in flagImages.enumerated() {
+			specificVC?.state = state
+			for (i, elemente) in viewModel.flagImages.enumerated() {
 				if elemente == state {
 					StateManager.incrementAnswer(state: i)
 					break
@@ -88,14 +97,11 @@ class QuestionViewController: UIViewController {
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}else {
 			specificVC?.type = "wrong"
+			specificVC?.state = state
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}
 		
 	}
-	
-    override func viewDidDisappear(_ animated: Bool) {
-        player?.stop()
-    }
 	
     func playSound() {
         if let soundURL = Bundle.main.path(forResource: "Efeito-NORTE", ofType: "mp3") {

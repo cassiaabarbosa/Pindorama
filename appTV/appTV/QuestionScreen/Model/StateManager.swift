@@ -18,6 +18,7 @@ struct StateManager {
 	}
 	
 	static func incrementAnswer(state: Int) {
+		
 		guard var states = UserDefaults.standard.object(forKey: StateManager.key) as? [Int] else {return }
 		states[state] += 1
 		UserDefaults.standard.set(states, forKey: StateManager.key)

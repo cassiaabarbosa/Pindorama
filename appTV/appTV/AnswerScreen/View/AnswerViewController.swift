@@ -16,6 +16,8 @@ class AnswerViewController: UIViewController {
 	@IBOutlet var person: UIImageView!
     var player: AVAudioPlayer?
 	var type: String?
+	var state: String?
+	var viewModel = AnswerViewModel()
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +38,17 @@ class AnswerViewController: UIViewController {
     }
 	
 	@IBAction func nextAsking(_ sender: Any) {
-//		tem que ver se já fez 3 acertos
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		let index = viewModel.foundState(state: state ?? "nil")
+		
+		if StateManager.getStateRightAnswers(state: index) > 2 {
+			let specificVC = storyboard.instantiateViewController(withIdentifier: "SelectionViewController") as? SelectionViewController
+			self.show(specificVC ?? SelectionViewController(), sender: nil)
+		} else {
+			let specificVC = storyboard.instantiateViewController(withIdentifier: "QuestionViewController") as? QuestionViewController
+			specificVC?.state = state
+			self.show(specificVC ?? QuestionViewController(), sender: nil)
+		}
 	}
 	
     override func viewDidDisappear(_ animated: Bool) {

@@ -66,24 +66,40 @@ extension SelectionViewController: UICollectionViewDataSource {
 			}
 			case northeast:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NortheastCell", for: indexPath) as? NortheastCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 7])
-					return cell
-			}
+						if StateManager.getStateRightAnswers(state: indexPath.row + 7) < 3 {
+							cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 7])
+						} else {
+							cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 7])
+						}
+						return cell
+				}
 			case south:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SouthCell", for: indexPath) as? SouthCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 16])
-					return cell
-			}
+						if StateManager.getStateRightAnswers(state: indexPath.row + 16) < 3 {
+							cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 16])
+						} else {
+							cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 16])
+						}
+						return cell
+				}
 			case southeast:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SoutheastCell", for: indexPath) as? SoutheastCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 19])
-					return cell
-			}
+						if StateManager.getStateRightAnswers(state: indexPath.row + 19) < 3 {
+							cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 19])
+						} else {
+							cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 19])
+						}
+						return cell
+				}
 			default:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MidwestCell", for: indexPath) as? MidwestCollectionCell {
-					cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 23])
-					return cell
-			}
+						if StateManager.getStateRightAnswers(state: indexPath.row + 23) < 3 {
+							cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 23])
+						} else {
+							cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 23])
+						}
+						return cell
+				}
 		}
 		return UICollectionViewCell()
 	}
@@ -112,6 +128,7 @@ extension SelectionViewController: UICollectionViewDelegateFlowLayout {
 		}
 		self.show(specificVC ?? QuestionViewController(), sender: nil)
 	}
+	
     override func viewDidDisappear(_ animated: Bool) {
         player?.stop()
     }
