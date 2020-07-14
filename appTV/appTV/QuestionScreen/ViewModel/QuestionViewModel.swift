@@ -38,6 +38,7 @@ class QuestionViewModel {
 	var matoGrosso: [Asking] = []
 	var matoGrossoDoSul: [Asking] = []
 	
+	var flagImages: [String] = ["AC", "AP", "AM", "PA", "RO", "RR", "TO", "AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE", "PR", "RS", "SC", "ES", "MG", "RJ","SP", "DF", "GO", "MT", "MS"]
 	
 	func setAcre() {
 		acre.append(Asking(question: "Qual a capital do Acre?", rightAnswer: "Rio Branco", secondAnswer: "Acrêlandia", thirdAnswer: "Tarauacá"))
