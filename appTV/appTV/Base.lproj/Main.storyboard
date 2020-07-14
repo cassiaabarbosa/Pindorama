@@ -118,7 +118,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="50V-Kl-rtX">
-                                <rect key="frame" x="695" y="471" width="530" height="170"/>
+                                <rect key="frame" x="695" y="403" width="530" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="zVo-k1-pMA"/>
                                 </constraints>
@@ -138,7 +138,7 @@ Boa sorte!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPs-Sv-UXC">
-                                <rect key="frame" x="694" y="698" width="532" height="170"/>
+                                <rect key="frame" x="694" y="630" width="532" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="e5O-YA-bOE"/>
                                 </constraints>
@@ -158,7 +158,7 @@ Boa sorte!</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OELOPERDIDO-1" translatesAutoresizingMaskIntoConstraints="NO" id="0hD-6O-bK5">
-                                <rect key="frame" x="695" y="153" width="396" height="248"/>
+                                <rect key="frame" x="695" y="90" width="396" height="283"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brazilmapa" translatesAutoresizingMaskIntoConstraints="NO" id="Y1z-1h-34z">
                                 <rect key="frame" x="1118" y="0.0" width="802" height="980"/>
@@ -166,10 +166,29 @@ Boa sorte!</string>
                                     <constraint firstAttribute="width" constant="802" id="M3U-UE-HIF"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koe-qP-hVL">
+                                <rect key="frame" x="694" y="857" width="532" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="ye9-jw-4zN"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" backgroundImage="botaoacao">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="RESETAR">
+                                            <attributes>
+                                                <font key="NSFont" size="72" name="SFMono-Semibold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.017766641449999999" green="0.15238171819999999" blue="0.1843188107" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="50V-Kl-rtX" firstAttribute="top" secondItem="0hD-6O-bK5" secondAttribute="bottom" constant="70" id="7m2-hr-u90"/>
+                            <constraint firstItem="koe-qP-hVL" firstAttribute="top" secondItem="KPs-Sv-UXC" secondAttribute="bottom" constant="57" id="5mA-8p-sKH"/>
+                            <constraint firstItem="50V-Kl-rtX" firstAttribute="top" secondItem="0hD-6O-bK5" secondAttribute="bottom" constant="30" id="7m2-hr-u90"/>
                             <constraint firstItem="lc2-hl-vBd" firstAttribute="leading" secondItem="31u-4Z-VWO" secondAttribute="leading" constant="79" id="8h0-RT-Jwl"/>
                             <constraint firstItem="Y1z-1h-34z" firstAttribute="leading" secondItem="FFP-gh-FC3" secondAttribute="trailing" constant="310" id="93H-Ik-amB"/>
                             <constraint firstItem="dNL-uK-Yu4" firstAttribute="trailing" secondItem="50V-Kl-rtX" secondAttribute="trailing" constant="605" id="CTG-5b-thF"/>
@@ -181,12 +200,14 @@ Boa sorte!</string>
                             <constraint firstItem="KPs-Sv-UXC" firstAttribute="leading" secondItem="lc2-hl-vBd" secondAttribute="trailing" constant="298" id="OuA-FG-TS8"/>
                             <constraint firstItem="Y1z-1h-34z" firstAttribute="leading" secondItem="0hD-6O-bK5" secondAttribute="trailing" constant="27" id="PSR-cv-uyv"/>
                             <constraint firstItem="lc2-hl-vBd" firstAttribute="top" secondItem="myD-wr-DhK" secondAttribute="bottom" constant="451" id="QWd-gf-wnH"/>
+                            <constraint firstItem="dNL-uK-Yu4" firstAttribute="trailing" secondItem="koe-qP-hVL" secondAttribute="trailing" constant="604" id="StL-dF-AaR"/>
                             <constraint firstItem="50V-Kl-rtX" firstAttribute="leading" secondItem="lc2-hl-vBd" secondAttribute="trailing" constant="299" id="UVS-xd-iZH"/>
                             <constraint firstItem="0hD-6O-bK5" firstAttribute="leading" secondItem="dNL-uK-Yu4" secondAttribute="leading" constant="605" id="VXh-qb-GxW"/>
                             <constraint firstAttribute="bottom" secondItem="FFP-gh-FC3" secondAttribute="bottom" constant="-226" id="YRh-up-xda"/>
                             <constraint firstAttribute="trailing" secondItem="Y1z-1h-34z" secondAttribute="trailing" id="Z1V-fs-BGf"/>
-                            <constraint firstItem="0hD-6O-bK5" firstAttribute="top" secondItem="myD-wr-DhK" secondAttribute="bottom" constant="93" id="ceL-ZR-kRu"/>
-                            <constraint firstItem="jJb-MM-uby" firstAttribute="top" secondItem="KPs-Sv-UXC" secondAttribute="bottom" constant="152" id="cqO-qB-GKi"/>
+                            <constraint firstItem="0hD-6O-bK5" firstAttribute="top" secondItem="myD-wr-DhK" secondAttribute="bottom" constant="30" id="ceL-ZR-kRu"/>
+                            <constraint firstItem="jJb-MM-uby" firstAttribute="top" secondItem="KPs-Sv-UXC" secondAttribute="bottom" constant="220" id="cqO-qB-GKi"/>
+                            <constraint firstItem="koe-qP-hVL" firstAttribute="leading" secondItem="lc2-hl-vBd" secondAttribute="trailing" constant="298" id="fuq-b3-ODh"/>
                             <constraint firstItem="Y1z-1h-34z" firstAttribute="top" secondItem="31u-4Z-VWO" secondAttribute="top" id="gr1-tc-GNA"/>
                             <constraint firstItem="lc2-hl-vBd" firstAttribute="leading" secondItem="31u-4Z-VWO" secondAttribute="leadingMargin" constant="-27" id="pId-Q7-m6c"/>
                             <constraint firstAttribute="bottomMargin" secondItem="lc2-hl-vBd" secondAttribute="bottom" constant="-60" id="who-Dg-pC3"/>
@@ -291,7 +312,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f8-Xd-OfU">
-                                <rect key="frame" x="457" y="255" width="257" height="49"/>
+                                <rect key="frame" x="457" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nordeste">
                                         <attributes>
@@ -350,7 +371,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OF-fI-1dS">
-                                <rect key="frame" x="100" y="255" width="257" height="49"/>
+                                <rect key="frame" x="100" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Norte">
                                         <attributes>
@@ -369,7 +390,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-1h-7zm">
-                                <rect key="frame" x="1527" y="255" width="261" height="49"/>
+                                <rect key="frame" x="1527" y="255" width="261" height="101"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Centro-Oeste">
                                         <attributes>
@@ -422,7 +443,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSe-AG-fUo">
-                                <rect key="frame" x="1171" y="255" width="257" height="49"/>
+                                <rect key="frame" x="1171" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sudeste">
                                         <attributes>
@@ -475,7 +496,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-EB-MTc">
-                                <rect key="frame" x="814" y="255" width="257" height="49"/>
+                                <rect key="frame" x="814" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sul">
                                         <attributes>
@@ -871,7 +892,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf7-vL-u30">
-                                <rect key="frame" x="790" y="110" width="340" height="112"/>
+                                <rect key="frame" x="790" y="110" width="340" height="172"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Você errou a resposta...">
                                         <attributes>
@@ -884,7 +905,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="presidenteatual" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-RT-ZKC">
-                                <rect key="frame" x="840" y="272" width="240" height="549"/>
+                                <rect key="frame" x="840" y="332" width="240" height="489"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC8-Ut-Cjq">
                                 <rect key="frame" x="640" y="871" width="267" height="99"/>
