@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		871260DB24BCFE8A002265AA /* Efeito-ACERTO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 871260D924BCFE8A002265AA /* Efeito-ACERTO.mp3 */; };
-		871260DC24BCFE8A002265AA /* Efeito-ERRO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 871260DA24BCFE8A002265AA /* Efeito-ERRO.mp3 */; };
 		874174F724BCE07A00E81ED0 /* Efeito-CENTRO-OESTE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874174EF24BCE07900E81ED0 /* Efeito-CENTRO-OESTE.mp3 */; };
 		874174F824BCE07A00E81ED0 /* Efeito-VITORIA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874174F024BCE07900E81ED0 /* Efeito-VITORIA.mp3 */; };
 		874174F924BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874174F124BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 */; };
@@ -16,6 +14,9 @@
 		874174FC24BCE07A00E81ED0 /* Efeito-SUDESTE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874174F424BCE07A00E81ED0 /* Efeito-SUDESTE.mp3 */; };
 		874174FE24BCE07A00E81ED0 /* Efeito-NORTE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874174F624BCE07A00E81ED0 /* Efeito-NORTE.mp3 */; };
 		8741750324BCE59100E81ED0 /* Efeito-INTRO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8741750224BCE59100E81ED0 /* Efeito-INTRO.mp3 */; };
+		87E16F8A24BE2CC600396300 /* Efeito-TUTORIAL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87E16F8924BE2CC600396300 /* Efeito-TUTORIAL.mp3 */; };
+		87E16F8C24BE2CCF00396300 /* Efeito-ERRO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87E16F8B24BE2CCF00396300 /* Efeito-ERRO.mp3 */; };
+		87E16F8E24BE2CF200396300 /* Efeito-ACERTO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87E16F8D24BE2CF200396300 /* Efeito-ACERTO.mp3 */; };
 		CB2FB07724B64B78007F893B /* Asking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2FB07624B64B78007F893B /* Asking.swift */; };
 		CB2FB07924B64C97007F893B /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2FB07824B64C97007F893B /* QuestionViewModel.swift */; };
 		CB453A9224B8E067009EF0E8 /* ModifiedAsking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB453A9124B8E067009EF0E8 /* ModifiedAsking.swift */; };
@@ -36,13 +37,12 @@
 		CBDDE77A24B5369D00D3CAE2 /* SouthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE77924B5369D00D3CAE2 /* SouthCollectionCell.swift */; };
 		CBDDE77C24B536AC00D3CAE2 /* SoutheastCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE77B24B536AC00D3CAE2 /* SoutheastCollectionCell.swift */; };
 		CBDDE77E24B536BD00D3CAE2 /* MidwestCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE77D24B536BD00D3CAE2 /* MidwestCollectionCell.swift */; };
+		CBDE3DCE24BE26F10041094D /* AnswerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DCD24BE26F10041094D /* AnswerViewModel.swift */; };
 		CBE61E0224B8F505000C91B3 /* SF-Mono-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBE61E0124B8F473000C91B3 /* SF-Mono-Semibold.otf */; };
 		CBE61E0924B9036C000C91B3 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE61E0824B9036C000C91B3 /* AnswerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		871260D924BCFE8A002265AA /* Efeito-ACERTO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-ACERTO.mp3"; sourceTree = "<group>"; };
-		871260DA24BCFE8A002265AA /* Efeito-ERRO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-ERRO.mp3"; sourceTree = "<group>"; };
 		874174EF24BCE07900E81ED0 /* Efeito-CENTRO-OESTE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-CENTRO-OESTE.mp3"; sourceTree = "<group>"; };
 		874174F024BCE07900E81ED0 /* Efeito-VITORIA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-VITORIA.mp3"; sourceTree = "<group>"; };
 		874174F124BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-NORDESTE.mp3"; sourceTree = "<group>"; };
@@ -50,6 +50,9 @@
 		874174F424BCE07A00E81ED0 /* Efeito-SUDESTE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-SUDESTE.mp3"; sourceTree = "<group>"; };
 		874174F624BCE07A00E81ED0 /* Efeito-NORTE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-NORTE.mp3"; sourceTree = "<group>"; };
 		8741750224BCE59100E81ED0 /* Efeito-INTRO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-INTRO.mp3"; sourceTree = "<group>"; };
+		87E16F8924BE2CC600396300 /* Efeito-TUTORIAL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-TUTORIAL.mp3"; sourceTree = "<group>"; };
+		87E16F8B24BE2CCF00396300 /* Efeito-ERRO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Efeito-ERRO.mp3"; path = "../../../../../../../Desktop/Efeito-ERRO.mp3"; sourceTree = "<group>"; };
+		87E16F8D24BE2CF200396300 /* Efeito-ACERTO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Efeito-ACERTO.mp3"; path = "../../../../../../../Desktop/Efeito-ACERTO.mp3"; sourceTree = "<group>"; };
 		CB2FB07624B64B78007F893B /* Asking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asking.swift; sourceTree = "<group>"; };
 		CB2FB07824B64C97007F893B /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		CB453A9124B8E067009EF0E8 /* ModifiedAsking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedAsking.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		CBDDE77924B5369D00D3CAE2 /* SouthCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthCollectionCell.swift; sourceTree = "<group>"; };
 		CBDDE77B24B536AC00D3CAE2 /* SoutheastCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoutheastCollectionCell.swift; sourceTree = "<group>"; };
 		CBDDE77D24B536BD00D3CAE2 /* MidwestCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidwestCollectionCell.swift; sourceTree = "<group>"; };
+		CBDE3DCD24BE26F10041094D /* AnswerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnswerViewModel.swift; path = appTV/QuestionScreen/Model/AnswerViewModel.swift; sourceTree = SOURCE_ROOT; };
 		CBE61E0124B8F473000C91B3 /* SF-Mono-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Semibold.otf"; sourceTree = "<group>"; };
 		CBE61E0824B9036C000C91B3 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,9 +96,10 @@
 			children = (
 				8741750224BCE59100E81ED0 /* Efeito-INTRO.mp3 */,
 				874174EF24BCE07900E81ED0 /* Efeito-CENTRO-OESTE.mp3 */,
+				87E16F8924BE2CC600396300 /* Efeito-TUTORIAL.mp3 */,
 				874174F124BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 */,
-				871260D924BCFE8A002265AA /* Efeito-ACERTO.mp3 */,
-				871260DA24BCFE8A002265AA /* Efeito-ERRO.mp3 */,
+				87E16F8D24BE2CF200396300 /* Efeito-ACERTO.mp3 */,
+				87E16F8B24BE2CCF00396300 /* Efeito-ERRO.mp3 */,
 				874174F624BCE07A00E81ED0 /* Efeito-NORTE.mp3 */,
 				874174F424BCE07A00E81ED0 /* Efeito-SUDESTE.mp3 */,
 				874174F324BCE07A00E81ED0 /* Efeito-SUL.mp3 */,
@@ -323,6 +328,7 @@
 		CBE61E0424B90328000C91B3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CBDE3DCD24BE26F10041094D /* AnswerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -400,18 +406,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				871260DC24BCFE8A002265AA /* Efeito-ERRO.mp3 in Resources */,
+				87E16F8C24BE2CCF00396300 /* Efeito-ERRO.mp3 in Resources */,
 				874174FB24BCE07A00E81ED0 /* Efeito-SUL.mp3 in Resources */,
 				CBB8E48824B21BA4002F017E /* LaunchScreen.storyboard in Resources */,
 				874174FC24BCE07A00E81ED0 /* Efeito-SUDESTE.mp3 in Resources */,
 				CBB8E48524B21BA4002F017E /* Assets.xcassets in Resources */,
 				CBE61E0224B8F505000C91B3 /* SF-Mono-Semibold.otf in Resources */,
+				87E16F8A24BE2CC600396300 /* Efeito-TUTORIAL.mp3 in Resources */,
 				874174F724BCE07A00E81ED0 /* Efeito-CENTRO-OESTE.mp3 in Resources */,
 				CBB8E48024B21BA2002F017E /* Main.storyboard in Resources */,
 				874174F924BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 in Resources */,
 				8741750324BCE59100E81ED0 /* Efeito-INTRO.mp3 in Resources */,
 				874174F824BCE07A00E81ED0 /* Efeito-VITORIA.mp3 in Resources */,
-				871260DB24BCFE8A002265AA /* Efeito-ACERTO.mp3 in Resources */,
+				87E16F8E24BE2CF200396300 /* Efeito-ACERTO.mp3 in Resources */,
 				874174FE24BCE07A00E81ED0 /* Efeito-NORTE.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDE3DCE24BE26F10041094D /* AnswerViewModel.swift in Sources */,
 				CBB2335824B3A81100227391 /* SelectionViewController.swift in Sources */,
 				CBDDE77C24B536AC00D3CAE2 /* SoutheastCollectionCell.swift in Sources */,
 				CBDDE77624B5367F00D3CAE2 /* NorthCollectionCell.swift in Sources */,
@@ -591,7 +599,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cassia.apptv;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CassiaABarbosa.apptv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -609,7 +617,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cassia.apptv;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CassiaABarbosa.apptv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
