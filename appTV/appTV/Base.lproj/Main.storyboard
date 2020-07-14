@@ -612,7 +612,7 @@ Boa sorte!</string>
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c1O-Z7-crr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c1O-Z7-crr">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocopergunta" translatesAutoresizingMaskIntoConstraints="NO" id="R4b-cP-TEd">
@@ -720,6 +720,7 @@ Boa sorte!</string>
                     </view>
                     <navigationItem key="navigationItem" id="vkF-ch-TNR"/>
                     <connections>
+                        <outlet property="background" destination="c1O-Z7-crr" id="Iqc-li-kCV"/>
                         <outlet property="firstAnswer" destination="jAe-uL-PGz" id="0MS-4d-2dO"/>
                         <outlet property="question" destination="bEV-Ct-RrS" id="mjP-XA-GFe"/>
                         <outlet property="secondAnswer" destination="nBL-wT-xS4" id="CBf-qx-abN"/>
@@ -947,7 +948,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="IyX-RA-TXB"/>
-        <segue reference="9HN-dY-vtb"/>
+        <segue reference="fqd-F5-PGO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>
