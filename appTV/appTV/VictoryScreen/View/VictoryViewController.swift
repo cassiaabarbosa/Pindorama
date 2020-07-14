@@ -18,6 +18,9 @@ class VictoryViewController: UIViewController {
 		playSound()
 	}
 	
+	@IBAction func resetAction(_ sender: Any) {
+	}
+	
 	func playSound() {
 		if let soundURL = Bundle.main.path(forResource: "Efeito-VITORIA", ofType: "mp3") {
 			do {

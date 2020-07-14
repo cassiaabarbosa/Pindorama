@@ -183,6 +183,9 @@ Boa sorte!</string>
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="resetAction:" destination="sqG-yZ-d3Z" eventType="primaryActionTriggered" id="Bg8-Ta-9MS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.017766641449999999" green="0.15238171819999999" blue="0.1843188107" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -312,7 +315,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f8-Xd-OfU">
-                                <rect key="frame" x="457" y="255" width="257" height="51"/>
+                                <rect key="frame" x="457" y="255" width="257" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nordeste">
                                         <attributes>
@@ -371,7 +374,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OF-fI-1dS">
-                                <rect key="frame" x="100" y="255" width="257" height="51"/>
+                                <rect key="frame" x="100" y="255" width="257" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Norte">
                                         <attributes>
@@ -390,7 +393,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-1h-7zm">
-                                <rect key="frame" x="1527" y="255" width="261" height="101"/>
+                                <rect key="frame" x="1527" y="255" width="261" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Centro-Oeste">
                                         <attributes>
@@ -443,7 +446,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSe-AG-fUo">
-                                <rect key="frame" x="1171" y="255" width="257" height="51"/>
+                                <rect key="frame" x="1171" y="255" width="257" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sudeste">
                                         <attributes>
@@ -496,7 +499,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-EB-MTc">
-                                <rect key="frame" x="814" y="255" width="257" height="51"/>
+                                <rect key="frame" x="814" y="255" width="257" height="49"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sul">
                                         <attributes>
@@ -839,6 +842,9 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="resetAction:" destination="L0g-nd-Ffy" eventType="primaryActionTriggered" id="7Lv-oL-Db8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.143278718" green="0.16858226060000001" blue="0.34119319920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -885,7 +891,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                         <viewControllerLayoutGuide type="top" id="HR4-5G-hsy"/>
                         <viewControllerLayoutGuide type="bottom" id="uIe-tx-jBd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="McT-xP-dcy">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="McT-xP-dcy">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -893,7 +899,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf7-vL-u30">
-                                <rect key="frame" x="790" y="110" width="340" height="172"/>
+                                <rect key="frame" x="790" y="110" width="340" height="112"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Você errou a resposta...">
                                         <attributes>
@@ -906,7 +912,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="presidenteatual" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-RT-ZKC">
-                                <rect key="frame" x="840" y="332" width="240" height="489"/>
+                                <rect key="frame" x="840" y="272" width="240" height="549"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC8-Ut-Cjq">
                                 <rect key="frame" x="640" y="871" width="267" height="99"/>
@@ -968,8 +974,8 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IyX-RA-TXB"/>
-        <segue reference="fqd-F5-PGO"/>
+        <segue reference="COL-lj-pt1"/>
+        <segue reference="Z0d-No-TaZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>

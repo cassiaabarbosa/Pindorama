@@ -19,7 +19,11 @@ class MenuViewController: UIViewController {
         player?.play()
     }
 	
-    override func viewDidDisappear(_ animated: Bool) {
+	@IBAction func resetAction(_ sender: Any) {
+//		resetar
+	}
+	
+	override func viewDidDisappear(_ animated: Bool) {
         player?.stop()
     }
 	
