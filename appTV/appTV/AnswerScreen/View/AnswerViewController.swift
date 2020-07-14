@@ -22,18 +22,19 @@ class AnswerViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 		
-        playSound()
-        player?.play()
-		
 		switch type {
 			case "right":
 				background.image = UIImage(named: "blocorespostacerta")
 				label.text = "Você acertou a resposta..."
 				person.image = UIImage(named: "presidentebravoatualcomfaixa")
+				playSound(music: "Efeito-ACERTO")
+				player?.play()
 			default:
 				background.image = UIImage(named: "blocorespostaerrada")
 				label.text = "Você errou a resposta..."
 				person.image = UIImage(named: "presidenteatualcomfaixa")
+				playSound(music: "Efeito-ERRO")
+				player?.play()
 		}
     }
 	
@@ -55,8 +56,8 @@ class AnswerViewController: UIViewController {
         player?.stop()
     }
 	
-    func playSound() {
-        if let soundURL = Bundle.main.path(forResource: "Efeito-ACERTO", ofType: "mp3") {
+	func playSound(music: String) {
+        if let soundURL = Bundle.main.path(forResource: music, ofType: "mp3") {
             do {
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
                 try AVAudioSession.sharedInstance().setActive(true)

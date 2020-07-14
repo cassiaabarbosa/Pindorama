@@ -18,8 +18,8 @@
 		CB2FB07724B64B78007F893B /* Asking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2FB07624B64B78007F893B /* Asking.swift */; };
 		CB2FB07924B64C97007F893B /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2FB07824B64C97007F893B /* QuestionViewModel.swift */; };
 		CB453A9224B8E067009EF0E8 /* ModifiedAsking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB453A9124B8E067009EF0E8 /* ModifiedAsking.swift */; };
-		CB886D2824BE321700120FA0 /* Efeito-ACERTO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB886D2724BE321600120FA0 /* Efeito-ACERTO.mp3 */; };
-		CB886D2A24BE322600120FA0 /* Efeito-ERRO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB886D2924BE322600120FA0 /* Efeito-ERRO.mp3 */; };
+		CB886D3124BE389200120FA0 /* Efeito-ACERTO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB886D2F24BE389200120FA0 /* Efeito-ACERTO.mp3 */; };
+		CB886D3224BE389200120FA0 /* Efeito-ERRO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB886D3024BE389200120FA0 /* Efeito-ERRO.mp3 */; };
 		CB901E3524BD136C006B10AC /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB901E3424BD136C006B10AC /* StateManager.swift */; };
 		CBB2334424B39BE100227391 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2334324B39BE100227391 /* TutorialViewController.swift */; };
 		CBB2335624B3A54700227391 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2335524B3A54700227391 /* MenuViewController.swift */; };
@@ -54,8 +54,8 @@
 		CB2FB07624B64B78007F893B /* Asking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asking.swift; sourceTree = "<group>"; };
 		CB2FB07824B64C97007F893B /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		CB453A9124B8E067009EF0E8 /* ModifiedAsking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedAsking.swift; sourceTree = "<group>"; };
-		CB886D2724BE321600120FA0 /* Efeito-ACERTO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-ACERTO.mp3"; sourceTree = "<group>"; };
-		CB886D2924BE322600120FA0 /* Efeito-ERRO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-ERRO.mp3"; sourceTree = "<group>"; };
+		CB886D2F24BE389200120FA0 /* Efeito-ACERTO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-ACERTO.mp3"; sourceTree = SOURCE_ROOT; };
+		CB886D3024BE389200120FA0 /* Efeito-ERRO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-ERRO.mp3"; sourceTree = SOURCE_ROOT; };
 		CB901E3424BD136C006B10AC /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateManager.swift; path = appTV/QuestionScreen/Model/StateManager.swift; sourceTree = SOURCE_ROOT; };
 		CBB2334324B39BE100227391 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		CBB2335524B3A54700227391 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -94,13 +94,13 @@
 		874174FF24BCE0A400E81ED0 /* musicas */ = {
 			isa = PBXGroup;
 			children = (
-				CB886D2724BE321600120FA0 /* Efeito-ACERTO.mp3 */,
 				8741750224BCE59100E81ED0 /* Efeito-INTRO.mp3 */,
 				874174EF24BCE07900E81ED0 /* Efeito-CENTRO-OESTE.mp3 */,
-				CB886D2924BE322600120FA0 /* Efeito-ERRO.mp3 */,
 				87E16F8924BE2CC600396300 /* Efeito-TUTORIAL.mp3 */,
 				874174F124BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 */,
 				874174F624BCE07A00E81ED0 /* Efeito-NORTE.mp3 */,
+				CB886D2F24BE389200120FA0 /* Efeito-ACERTO.mp3 */,
+				CB886D3024BE389200120FA0 /* Efeito-ERRO.mp3 */,
 				874174F424BCE07A00E81ED0 /* Efeito-SUDESTE.mp3 */,
 				874174F324BCE07A00E81ED0 /* Efeito-SUL.mp3 */,
 				874174F024BCE07900E81ED0 /* Efeito-VITORIA.mp3 */,
@@ -417,8 +417,8 @@
 				874174F924BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 in Resources */,
 				8741750324BCE59100E81ED0 /* Efeito-INTRO.mp3 in Resources */,
 				874174F824BCE07A00E81ED0 /* Efeito-VITORIA.mp3 in Resources */,
-				CB886D2824BE321700120FA0 /* Efeito-ACERTO.mp3 in Resources */,
-				CB886D2A24BE322600120FA0 /* Efeito-ERRO.mp3 in Resources */,
+				CB886D3124BE389200120FA0 /* Efeito-ACERTO.mp3 in Resources */,
+				CB886D3224BE389200120FA0 /* Efeito-ERRO.mp3 in Resources */,
 				874174FE24BCE07A00E81ED0 /* Efeito-NORTE.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
