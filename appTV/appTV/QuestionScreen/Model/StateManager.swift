@@ -9,7 +9,9 @@
 import Foundation
 
 struct StateManager {
+	
 	private static let key = "stateArray"
+	
 	static func getStateRightAnswers(state: Int) -> Int {
 		guard let states = UserDefaults.standard.object(forKey: StateManager.key) as? [Int] else {return -1}
 		return states[state]
