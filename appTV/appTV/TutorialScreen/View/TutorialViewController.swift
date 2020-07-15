@@ -18,7 +18,7 @@ class TutorialViewController: UIViewController {
     }
 	
 	func playSound() {
-        if let soundURL = Bundle.main.path(forResource: "Efeito-ACERTO", ofType: "mp3") {
+        if let soundURL = Bundle.main.path(forResource: "Efeito-TUTORIAL", ofType: "mp3") {
             do {
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
                 try AVAudioSession.sharedInstance().setActive(true)

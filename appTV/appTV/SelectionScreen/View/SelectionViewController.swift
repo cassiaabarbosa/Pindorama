@@ -34,6 +34,7 @@ class SelectionViewController: UIViewController {
 		midwest.dataSource = self
         playSound()
         player?.play()
+        StateManager.startManager()
     }
 }
 
