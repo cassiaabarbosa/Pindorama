@@ -32,9 +32,9 @@ class SelectionViewController: UIViewController {
 		southeast.dataSource = self
 		midwest.delegate = self
 		midwest.dataSource = self
-        playSound()
-        player?.play()
-        StateManager.startManager()
+    playSound()
+    player?.play()
+		StateManager.startManager()
     }
 }
 
@@ -53,7 +53,7 @@ extension SelectionViewController: UICollectionViewDataSource {
 				return 4
 		}
 	}
-//	precisa fazer das outras regiões
+
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		switch collectionView {
 			case north:

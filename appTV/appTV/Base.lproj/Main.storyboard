@@ -94,7 +94,7 @@ Boa sorte!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2676" y="-2325"/>
+            <point key="canvasLocation" x="5402" y="-2489"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="LSu-WE-cgb">
@@ -185,7 +185,7 @@ Boa sorte!</string>
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="resetAction:" destination="sqG-yZ-d3Z" eventType="primaryActionTriggered" id="Bg8-Ta-9MS"/>
+                                    <segue destination="jci-Ih-TIX" kind="show" id="70G-W4-gHC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIa-tY-YlU">
@@ -229,7 +229,7 @@ Boa sorte!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isc-IP-6kV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2676" y="62"/>
+            <point key="canvasLocation" x="1278" y="-52"/>
         </scene>
         <!--Selection View Controller-->
         <scene sceneID="UOb-dF-m2q">
@@ -630,7 +630,7 @@ Boa sorte!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1h-hJ-HfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5321" y="-751"/>
+            <point key="canvasLocation" x="5321" y="-52"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="dpr-mc-Utt">
@@ -761,7 +761,7 @@ Boa sorte!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="da1-DY-zrb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5321" y="1966"/>
+            <point key="canvasLocation" x="7828" y="-52"/>
         </scene>
         <!--Victory View Controller-->
         <scene sceneID="tsx-lX-92N">
@@ -851,7 +851,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="resetAction:" destination="L0g-nd-Ffy" eventType="primaryActionTriggered" id="7Lv-oL-Db8"/>
+                                    <segue destination="jci-Ih-TIX" kind="show" id="boU-cz-x6Y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -889,7 +889,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vj5-dY-QWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5336" y="3897"/>
+            <point key="canvasLocation" x="1278" y="4444"/>
         </scene>
         <!--Answer View Controller-->
         <scene sceneID="0hM-JB-KXP">
@@ -978,12 +978,12 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpB-fa-98q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7963" y="1966"/>
+            <point key="canvasLocation" x="10312" y="-52"/>
         </scene>
-        <!--View Controller-->
+        <!--Reset View Controlle-->
         <scene sceneID="5DQ-1W-TbD">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="jci-Ih-TIX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResetViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jci-Ih-TIX" customClass="ResetViewControlle" customModule="appTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ugr-rP-54H"/>
                         <viewControllerLayoutGuide type="bottom" id="2bX-QT-7TJ"/>
@@ -998,7 +998,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQT-Po-SVw">
                                 <rect key="frame" x="590" y="586" width="740" height="115"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Isso apagará todo o seu progresso">
+                                    <fragment content="Isso apagará todo o seu progresso até agora ...">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="48" name="SFMono-Semibold"/>
@@ -1008,25 +1008,44 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nj-Pt-gqF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Nj-Pt-gqF">
                                 <rect key="frame" x="640" y="871" width="267" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="yl0-DU-u5x"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="SIM" backgroundImage="botaoacao">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" backgroundImage="botaoacao">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="NÃO">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <font key="NSFont" size="48" name="SFMono-Semibold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="nextAsking:" destination="jci-Ih-TIX" eventType="primaryActionTriggered" id="8sT-lr-cMr"/>
+                                    <segue destination="sqG-yZ-d3Z" kind="show" id="cu0-sf-cvo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6li-Dg-LeI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6li-Dg-LeI">
                                 <rect key="frame" x="1013" y="871" width="267" height="99"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="NÃO" backgroundImage="botaoacao">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" backgroundImage="botaoacao">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="SIM">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <font key="NSFont" size="48" name="SFMono-Semibold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="resetAction:" destination="jci-Ih-TIX" eventType="primaryActionTriggered" id="OLU-jc-9NN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGg-hM-28B">
                                 <rect key="frame" x="590" y="301" width="740" height="115"/>
@@ -1065,19 +1084,17 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tLp-cB-ynh"/>
                     </view>
-                    <connections>
-                        <outlet property="background" destination="Gjf-G6-NV5" id="YuC-0p-Ag6"/>
-                        <outlet property="label" destination="eGg-hM-28B" id="uwb-za-LVw"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="Kn3-cY-odd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHj-Zr-6w7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7963" y="3458"/>
+            <point key="canvasLocation" x="5321" y="1995"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="boU-cz-x6Y"/>
         <segue reference="IyX-RA-TXB"/>
-        <segue reference="fqd-F5-PGO"/>
+        <segue reference="9HN-dY-vtb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>
