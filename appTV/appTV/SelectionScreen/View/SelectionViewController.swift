@@ -32,8 +32,8 @@ class SelectionViewController: UIViewController {
 		southeast.dataSource = self
 		midwest.delegate = self
 		midwest.dataSource = self
-    playSound()
-    player?.play()
+		playSound()
+		player?.play()
 		StateManager.startManager()
     }
 }
