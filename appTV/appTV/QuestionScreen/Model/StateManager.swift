@@ -10,7 +10,7 @@ import Foundation
 
 struct StateManager {
 	
-	private static let key = "stateArray"
+	static let key = "stateArray"
 	
 	static func getStateRightAnswers(state: Int) -> Int {
 		guard let states = UserDefaults.standard.object(forKey: StateManager.key) as? [Int] else {return -1}
@@ -18,7 +18,6 @@ struct StateManager {
 	}
 	
 	static func incrementAnswer(state: Int) {
-		
 		guard var states = UserDefaults.standard.object(forKey: StateManager.key) as? [Int] else {return }
 		states[state] += 1
 		UserDefaults.standard.set(states, forKey: StateManager.key)
