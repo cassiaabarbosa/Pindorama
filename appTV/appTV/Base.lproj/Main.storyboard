@@ -972,6 +972,100 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
             </objects>
             <point key="canvasLocation" x="7963" y="1966"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="5DQ-1W-TbD">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="jci-Ih-TIX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ugr-rP-54H"/>
+                        <viewControllerLayoutGuide type="bottom" id="2bX-QT-7TJ"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8Ag-JL-yDm">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocorespostaerrada" translatesAutoresizingMaskIntoConstraints="NO" id="Gjf-G6-NV5">
+                                <rect key="frame" x="590" y="60" width="740" height="960"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQT-Po-SVw">
+                                <rect key="frame" x="590" y="589" width="740" height="112"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Isso apagará todo o seu progresso">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="48" name="SFMono-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nj-Pt-gqF">
+                                <rect key="frame" x="640" y="871" width="267" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="yl0-DU-u5x"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="SIM" backgroundImage="botaoacao">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextAsking:" destination="jci-Ih-TIX" eventType="primaryActionTriggered" id="8sT-lr-cMr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6li-Dg-LeI">
+                                <rect key="frame" x="1013" y="871" width="267" height="99"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="NÃO" backgroundImage="botaoacao">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGg-hM-28B">
+                                <rect key="frame" x="590" y="307" width="740" height="112"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Você deseja mesmo resetar o jogo?">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="48" name="SFMono-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tLp-cB-ynh" firstAttribute="trailing" secondItem="WQT-Po-SVw" secondAttribute="trailing" constant="500" id="34P-nB-rJG"/>
+                            <constraint firstItem="6Nj-Pt-gqF" firstAttribute="top" secondItem="WQT-Po-SVw" secondAttribute="bottom" constant="170" id="4L5-zD-TIh"/>
+                            <constraint firstItem="tLp-cB-ynh" firstAttribute="bottom" secondItem="6li-Dg-LeI" secondAttribute="bottom" constant="50" id="4mz-n1-o5F"/>
+                            <constraint firstItem="tLp-cB-ynh" firstAttribute="bottom" secondItem="Gjf-G6-NV5" secondAttribute="bottom" id="JyQ-Xm-zGK"/>
+                            <constraint firstItem="tLp-cB-ynh" firstAttribute="trailing" secondItem="Gjf-G6-NV5" secondAttribute="trailing" constant="500" id="NcR-g6-5eL"/>
+                            <constraint firstItem="6Nj-Pt-gqF" firstAttribute="bottom" secondItem="Gjf-G6-NV5" secondAttribute="bottom" constant="-50" id="SeH-EK-5bf"/>
+                            <constraint firstItem="6Nj-Pt-gqF" firstAttribute="width" secondItem="6li-Dg-LeI" secondAttribute="width" id="TFs-HF-DT6"/>
+                            <constraint firstItem="6li-Dg-LeI" firstAttribute="leading" secondItem="6Nj-Pt-gqF" secondAttribute="trailing" constant="106" id="UYV-oQ-NHR"/>
+                            <constraint firstItem="Gjf-G6-NV5" firstAttribute="top" secondItem="tLp-cB-ynh" secondAttribute="top" id="XiD-Fk-TLb"/>
+                            <constraint firstItem="eGg-hM-28B" firstAttribute="leading" secondItem="tLp-cB-ynh" secondAttribute="leading" constant="500" id="ecz-KZ-tts"/>
+                            <constraint firstItem="WQT-Po-SVw" firstAttribute="leading" secondItem="tLp-cB-ynh" secondAttribute="leading" constant="500" id="enb-mE-LFL"/>
+                            <constraint firstItem="6li-Dg-LeI" firstAttribute="top" secondItem="WQT-Po-SVw" secondAttribute="bottom" constant="170" id="nqA-DW-nlV"/>
+                            <constraint firstItem="tLp-cB-ynh" firstAttribute="trailing" secondItem="eGg-hM-28B" secondAttribute="trailing" constant="500" id="oVG-Zn-gvB"/>
+                            <constraint firstItem="6Nj-Pt-gqF" firstAttribute="leading" secondItem="Gjf-G6-NV5" secondAttribute="leading" constant="50" id="oYG-J2-bI2"/>
+                            <constraint firstItem="6li-Dg-LeI" firstAttribute="trailing" secondItem="Gjf-G6-NV5" secondAttribute="trailing" constant="-50" id="plI-40-i8g"/>
+                            <constraint firstItem="WQT-Po-SVw" firstAttribute="top" secondItem="eGg-hM-28B" secondAttribute="bottom" constant="170" id="sR1-fj-DKp"/>
+                            <constraint firstItem="Gjf-G6-NV5" firstAttribute="leading" secondItem="tLp-cB-ynh" secondAttribute="leading" constant="500" id="yOP-wQ-xxZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tLp-cB-ynh"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="Gjf-G6-NV5" id="YuC-0p-Ag6"/>
+                        <outlet property="label" destination="eGg-hM-28B" id="uwb-za-LVw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHj-Zr-6w7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7963" y="3458"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="COL-lj-pt1"/>
