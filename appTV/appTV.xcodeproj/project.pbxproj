@@ -17,6 +17,7 @@
 		874174FE24BCE07A00E81ED0 /* Efeito-NORTE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874174F624BCE07A00E81ED0 /* Efeito-NORTE.mp3 */; };
 		8741750324BCE59100E81ED0 /* Efeito-INTRO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8741750224BCE59100E81ED0 /* Efeito-INTRO.mp3 */; };
 		87E16F8A24BE2CC600396300 /* Efeito-TUTORIAL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87E16F8924BE2CC600396300 /* Efeito-TUTORIAL.mp3 */; };
+		CB05CF7224C0BB41000FA2C6 /* WonStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05CF7124C0BB41000FA2C6 /* WonStateViewController.swift */; };
 		CB2FB07724B64B78007F893B /* Asking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2FB07624B64B78007F893B /* Asking.swift */; };
 		CB2FB07924B64C97007F893B /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2FB07824B64C97007F893B /* QuestionViewModel.swift */; };
 		CB453A9224B8E067009EF0E8 /* ModifiedAsking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB453A9124B8E067009EF0E8 /* ModifiedAsking.swift */; };
@@ -54,6 +55,7 @@
 		874174F624BCE07A00E81ED0 /* Efeito-NORTE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-NORTE.mp3"; sourceTree = "<group>"; };
 		8741750224BCE59100E81ED0 /* Efeito-INTRO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-INTRO.mp3"; sourceTree = "<group>"; };
 		87E16F8924BE2CC600396300 /* Efeito-TUTORIAL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-TUTORIAL.mp3"; sourceTree = "<group>"; };
+		CB05CF7124C0BB41000FA2C6 /* WonStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonStateViewController.swift; sourceTree = "<group>"; };
 		CB2FB07624B64B78007F893B /* Asking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asking.swift; sourceTree = "<group>"; };
 		CB2FB07824B64C97007F893B /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		CB453A9124B8E067009EF0E8 /* ModifiedAsking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedAsking.swift; sourceTree = "<group>"; };
@@ -108,6 +110,38 @@
 				874174F024BCE07900E81ED0 /* Efeito-VITORIA.mp3 */,
 			);
 			path = musicas;
+			sourceTree = "<group>";
+		};
+		CB05CF6D24C0BAF6000FA2C6 /* WonStateScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CB05CF7024C0BB2C000FA2C6 /* Model */,
+				CB05CF6F24C0BB27000FA2C6 /* View */,
+				CB05CF6E24C0BB1F000FA2C6 /* ViewModel */,
+			);
+			path = WonStateScreen;
+			sourceTree = "<group>";
+		};
+		CB05CF6E24C0BB1F000FA2C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB05CF6F24C0BB27000FA2C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB05CF7124C0BB41000FA2C6 /* WonStateViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB05CF7024C0BB2C000FA2C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CBB12BEE24BF8D5300C1F6CD /* ResetScreen */ = {
@@ -338,6 +372,7 @@
 				CBB2334B24B3A2A000227391 /* QuestionScreen */,
 				CBE61E0324B90315000C91B3 /* AnswerScreen */,
 				CBB2335B24B3A8BB00227391 /* VictoryScreen */,
+				CB05CF6D24C0BAF6000FA2C6 /* WonStateScreen */,
 				CBB12BEE24BF8D5300C1F6CD /* ResetScreen */,
 				CBB8E47A24B21BA2002F017E /* AppDelegate.swift */,
 				CBB8E47E24B21BA2002F017E /* Main.storyboard */,
@@ -468,6 +503,7 @@
 				CBDE3DCE24BE26F10041094D /* AnswerViewModel.swift in Sources */,
 				CBB2335824B3A81100227391 /* SelectionViewController.swift in Sources */,
 				CBDDE77C24B536AC00D3CAE2 /* SoutheastCollectionCell.swift in Sources */,
+				CB05CF7224C0BB41000FA2C6 /* WonStateViewController.swift in Sources */,
 				CBDDE77624B5367F00D3CAE2 /* NorthCollectionCell.swift in Sources */,
 				CBDDE77424B52F5700D3CAE2 /* SelectionViewModel.swift in Sources */,
 				CBB2334424B39BE100227391 /* TutorialViewController.swift in Sources */,

@@ -11,7 +11,7 @@
         <!--Tutorial View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="TutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TutorialViewController" customModule="appTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TutorialViewController" customModule="Pindorama" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -99,7 +99,7 @@ Boa sorte!</string>
         <!--Menu View Controller-->
         <scene sceneID="LSu-WE-cgb">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sqG-yZ-d3Z" customClass="MenuViewController" customModule="appTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sqG-yZ-d3Z" customClass="MenuViewController" customModule="Pindorama" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="myD-wr-DhK"/>
                         <viewControllerLayoutGuide type="bottom" id="jJb-MM-uby"/>
@@ -234,7 +234,7 @@ Boa sorte!</string>
         <!--Selection View Controller-->
         <scene sceneID="UOb-dF-m2q">
             <objects>
-                <viewController storyboardIdentifier="SelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ceD-dA-s9y" customClass="SelectionViewController" customModule="appTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ceD-dA-s9y" customClass="SelectionViewController" customModule="Pindorama" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DEv-5T-kgJ"/>
                         <viewControllerLayoutGuide type="bottom" id="3ht-So-CqT"/>
@@ -282,7 +282,7 @@ Boa sorte!</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="MidwestCell" id="ACy-4B-MMF" customClass="MidwestCollectionCell" customModule="appTV" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="MidwestCell" id="ACy-4B-MMF" customClass="MidwestCollectionCell" customModule="Pindorama" customModuleProvider="target">
                                         <rect key="frame" x="36" y="0.0" width="200" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ApQ-yt-EuC">
@@ -323,7 +323,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f8-Xd-OfU">
-                                <rect key="frame" x="457" y="255" width="257" height="49"/>
+                                <rect key="frame" x="457" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nordeste">
                                         <attributes>
@@ -353,7 +353,7 @@ Boa sorte!</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="NorthCell" id="y7v-16-X3G" customClass="NorthCollectionCell" customModule="appTV" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="NorthCell" id="y7v-16-X3G" customClass="NorthCollectionCell" customModule="Pindorama" customModuleProvider="target">
                                         <rect key="frame" x="38.5" y="0.0" width="200" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TYZ-tp-EGW">
@@ -382,7 +382,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OF-fI-1dS">
-                                <rect key="frame" x="100" y="255" width="257" height="49"/>
+                                <rect key="frame" x="100" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Norte">
                                         <attributes>
@@ -401,7 +401,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-1h-7zm">
-                                <rect key="frame" x="1527" y="255" width="261" height="49"/>
+                                <rect key="frame" x="1527" y="255" width="261" height="101"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Centro-Oeste">
                                         <attributes>
@@ -425,7 +425,7 @@ Boa sorte!</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="SoutheastCell" id="vui-wP-uZe" customClass="SoutheastCollectionCell" customModule="appTV" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="SoutheastCell" id="vui-wP-uZe" customClass="SoutheastCollectionCell" customModule="Pindorama" customModuleProvider="target">
                                         <rect key="frame" x="38.5" y="0.0" width="200" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3B7-Zm-aaD">
@@ -454,7 +454,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSe-AG-fUo">
-                                <rect key="frame" x="1171" y="255" width="257" height="49"/>
+                                <rect key="frame" x="1171" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sudeste">
                                         <attributes>
@@ -478,7 +478,7 @@ Boa sorte!</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="SouthCell" id="MWF-WQ-md5" customClass="SouthCollectionCell" customModule="appTV" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="SouthCell" id="MWF-WQ-md5" customClass="SouthCollectionCell" customModule="Pindorama" customModuleProvider="target">
                                         <rect key="frame" x="38.5" y="0.0" width="200" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eMe-9s-lgd">
@@ -507,7 +507,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-EB-MTc">
-                                <rect key="frame" x="814" y="255" width="257" height="49"/>
+                                <rect key="frame" x="814" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sul">
                                         <attributes>
@@ -531,7 +531,7 @@ Boa sorte!</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="NortheastCell" id="mxD-Z6-hXa" customClass="NortheastCollectionCell" customModule="appTV" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="NortheastCell" id="mxD-Z6-hXa" customClass="NortheastCollectionCell" customModule="Pindorama" customModuleProvider="target">
                                         <rect key="frame" x="38.5" y="0.0" width="200" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pTO-GM-gSY">
@@ -635,7 +635,7 @@ Boa sorte!</string>
         <!--Question View Controller-->
         <scene sceneID="dpr-mc-Utt">
             <objects>
-                <viewController storyboardIdentifier="QuestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yHt-Rw-qak" customClass="QuestionViewController" customModule="appTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yHt-Rw-qak" customClass="QuestionViewController" customModule="Pindorama" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cXP-WP-5tH"/>
                         <viewControllerLayoutGuide type="bottom" id="6p4-DK-aRA"/>
@@ -766,7 +766,7 @@ Boa sorte!</string>
         <!--Victory View Controller-->
         <scene sceneID="tsx-lX-92N">
             <objects>
-                <viewController storyboardIdentifier="VictoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L0g-nd-Ffy" customClass="VictoryViewController" customModule="appTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VictoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L0g-nd-Ffy" customClass="VictoryViewController" customModule="Pindorama" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dxv-z8-RB6"/>
                         <viewControllerLayoutGuide type="bottom" id="hBH-pT-QnM"/>
@@ -894,7 +894,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
         <!--Answer View Controller-->
         <scene sceneID="0hM-JB-KXP">
             <objects>
-                <viewController storyboardIdentifier="AnswerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="idB-de-lXl" customClass="AnswerViewController" customModule="appTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnswerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="idB-de-lXl" customClass="AnswerViewController" customModule="Pindorama" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HR4-5G-hsy"/>
                         <viewControllerLayoutGuide type="bottom" id="uIe-tx-jBd"/>
@@ -907,7 +907,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf7-vL-u30">
-                                <rect key="frame" x="790" y="110" width="340" height="112"/>
+                                <rect key="frame" x="790" y="110" width="340" height="172"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Você errou a resposta...">
                                         <attributes>
@@ -920,7 +920,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="presidenteatual" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-RT-ZKC">
-                                <rect key="frame" x="840" y="272" width="240" height="549"/>
+                                <rect key="frame" x="840" y="332" width="240" height="489"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC8-Ut-Cjq">
                                 <rect key="frame" x="640" y="871" width="267" height="99"/>
@@ -978,12 +978,12 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpB-fa-98q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10312" y="-52"/>
+            <point key="canvasLocation" x="10185" y="-1770"/>
         </scene>
         <!--Reset View Controlle-->
         <scene sceneID="5DQ-1W-TbD">
             <objects>
-                <viewController storyboardIdentifier="ResetViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jci-Ih-TIX" customClass="ResetViewControlle" customModule="appTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResetViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jci-Ih-TIX" customClass="ResetViewControlle" customModule="Pindorama" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ugr-rP-54H"/>
                         <viewControllerLayoutGuide type="bottom" id="2bX-QT-7TJ"/>
@@ -996,7 +996,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQT-Po-SVw">
-                                <rect key="frame" x="590" y="589" width="740" height="112"/>
+                                <rect key="frame" x="590" y="586" width="740" height="115"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Isso apagará todo o seu progresso até agora ...">
                                         <attributes>
@@ -1048,7 +1048,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGg-hM-28B">
-                                <rect key="frame" x="590" y="307" width="740" height="112"/>
+                                <rect key="frame" x="590" y="301" width="740" height="115"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Você deseja mesmo resetar o jogo?">
                                         <attributes>
@@ -1090,11 +1090,29 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
             </objects>
             <point key="canvasLocation" x="5321" y="1995"/>
         </scene>
+        <!--Won State View Controller-->
+        <scene sceneID="FAu-wJ-SKJ">
+            <objects>
+                <viewController storyboardIdentifier="WonStateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zLT-Wm-kEy" customClass="WonStateViewController" customModule="Pindorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9nB-fX-FOs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uba-fE-tMo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gzH-gr-NVJ" customClass="Wo">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FDm-iu-adz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFs-Br-lmn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10185" y="1535"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="boU-cz-x6Y"/>
         <segue reference="IyX-RA-TXB"/>
-        <segue reference="cu0-sf-cvo"/>
+        <segue reference="Z0d-No-TaZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>
