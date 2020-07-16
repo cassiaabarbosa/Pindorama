@@ -288,7 +288,8 @@ class QuestionViewModel {
 	
 	func askingState(state: [Asking]) -> (Asking?, ModifiedAsking?)  {
 
-		let choosenAsking = state.randomElement()
+		let choosenAsking = state.reversed().randomElement()
+		
 		var possibleAnswers: [String?] = [choosenAsking?.rightAnswer, choosenAsking?.secondAnswer, choosenAsking?.thirdAnswer]
 		
 		let firstButton: String! = possibleAnswers.randomElement()!
