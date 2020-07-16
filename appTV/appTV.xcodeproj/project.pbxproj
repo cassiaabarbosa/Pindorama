@@ -64,7 +64,7 @@
 		CBB2335724B3A81100227391 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		CBB2335924B3A88900227391 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		CBB2335F24B3A8E900227391 /* VictoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryViewController.swift; sourceTree = "<group>"; };
-		CBB8E47724B21BA2002F017E /* appTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB8E47724B21BA2002F017E /* Pindorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pindorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB8E47A24B21BA2002F017E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBB8E47F24B21BA2002F017E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB8E48224B21BA2002F017E /* appTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = appTV.xcdatamodel; sourceTree = "<group>"; };
@@ -323,7 +323,7 @@
 		CBB8E47824B21BA2002F017E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBB8E47724B21BA2002F017E /* appTV.app */,
+				CBB8E47724B21BA2002F017E /* Pindorama.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -400,7 +400,7 @@
 			);
 			name = appTV;
 			productName = appTV;
-			productReference = CBB8E47724B21BA2002F017E /* appTV.app */;
+			productReference = CBB8E47724B21BA2002F017E /* Pindorama.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -411,7 +411,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = com.CassiaABarbosa;
+				ORGANIZATIONNAME = com.cassiaabarbosa;
 				TargetAttributes = {
 					CBB8E47624B21BA2002F017E = {
 						CreatedOnToolsVersion = 11.5;
@@ -628,15 +628,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = W76FRTKWHT;
 				INFOPLIST_FILE = appTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CassiaABarbosa.apptv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiaabarbosa.pindorama;
+				PRODUCT_NAME = Pindorama;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -646,15 +649,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = W76FRTKWHT;
 				INFOPLIST_FILE = appTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CassiaABarbosa.apptv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiaabarbosa.pindorama;
+				PRODUCT_NAME = Pindorama;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};

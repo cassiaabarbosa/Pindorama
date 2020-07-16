@@ -17,6 +17,10 @@ class TutorialViewController: UIViewController {
 		player?.play()
     }
 	
+	override func viewDidDisappear(_ animated: Bool) {
+        player?.stop()
+    }
+	
 	func playSound() {
         if let soundURL = Bundle.main.path(forResource: "Efeito-TUTORIAL", ofType: "mp3") {
             do {
