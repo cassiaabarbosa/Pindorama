@@ -9,15 +9,18 @@
 import UIKit
 import AVFoundation
 
+//background.image = UIImage(named: viewModel.setBackground(state: state ?? "nil"))
 class AnswerViewController: UIViewController {
 
 	@IBOutlet var background: UIImageView!
 	@IBOutlet var label: UILabel!
 	@IBOutlet var person: UIImageView!
+    @IBOutlet weak var backgroundStateRegion: UIImageView!
     var player: AVAudioPlayer?
 	var type: String?
 	var state: String?
 	var viewModel = AnswerViewModel()
+    var questionViewModel = QuestionViewModel()
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,7 @@ class AnswerViewController: UIViewController {
 				background.image = UIImage(named: "blocorespostacerta")
 				label.text = "Você acertou a resposta..."
 				person.image = UIImage(named: "presidentebravoatualcomfaixa")
+                backgroundStateRegion.image = UIImage(named: questionViewModel.setBackground(state: state ?? "nil"))
 				playSound(music: "Efeito-ACERTO")
 				player?.play()
 				var count:Int = 0
@@ -43,6 +47,7 @@ class AnswerViewController: UIViewController {
 			
 			default:
 				background.image = UIImage(named: "blocorespostaerrada")
+                backgroundStateRegion.image = UIImage(named: questionViewModel.setBackground(state: state ?? "nil"))
 				label.text = "Você errou a resposta..."
 				person.image = UIImage(named: "presidenteatualcomfaixa")
 				playSound(music: "Efeito-ERRO")

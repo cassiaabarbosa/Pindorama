@@ -903,6 +903,9 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aqJ-rg-c1p">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocorespostaerrada" translatesAutoresizingMaskIntoConstraints="NO" id="i9N-r2-Hzb">
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
@@ -949,7 +952,9 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="aqJ-rg-c1p" firstAttribute="top" secondItem="McT-xP-dcy" secondAttribute="top" id="229-uO-UiU"/>
                             <constraint firstItem="hZC-RT-ZKC" firstAttribute="top" secondItem="Vf7-vL-u30" secondAttribute="bottom" constant="50" id="3Zj-Od-cAa"/>
+                            <constraint firstAttribute="bottom" secondItem="aqJ-rg-c1p" secondAttribute="bottom" id="7Wr-wK-oo1"/>
                             <constraint firstItem="zNv-s3-K68" firstAttribute="trailing" secondItem="i9N-r2-Hzb" secondAttribute="trailing" constant="500" id="7pb-PY-OKJ"/>
                             <constraint firstItem="nhs-9o-CJH" firstAttribute="leading" secondItem="VC8-Ut-Cjq" secondAttribute="trailing" constant="106" id="9uj-Nb-Xo9"/>
                             <constraint firstItem="Vf7-vL-u30" firstAttribute="leading" secondItem="i9N-r2-Hzb" secondAttribute="leading" constant="200" id="AzA-FA-V5V"/>
@@ -963,15 +968,18 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                             <constraint firstItem="i9N-r2-Hzb" firstAttribute="leading" secondItem="zNv-s3-K68" secondAttribute="leading" constant="500" id="cgs-7k-wn2"/>
                             <constraint firstItem="i9N-r2-Hzb" firstAttribute="top" secondItem="Vf7-vL-u30" secondAttribute="top" constant="-50" id="fnW-Zl-8e4"/>
                             <constraint firstItem="VC8-Ut-Cjq" firstAttribute="bottom" secondItem="i9N-r2-Hzb" secondAttribute="bottom" constant="-50" id="h6K-hB-IJF"/>
+                            <constraint firstItem="aqJ-rg-c1p" firstAttribute="leading" secondItem="McT-xP-dcy" secondAttribute="leading" id="lZd-HQ-67G"/>
                             <constraint firstItem="hZC-RT-ZKC" firstAttribute="trailing" secondItem="i9N-r2-Hzb" secondAttribute="trailing" constant="-250" id="p2a-nm-1JS"/>
                             <constraint firstItem="VC8-Ut-Cjq" firstAttribute="leading" secondItem="i9N-r2-Hzb" secondAttribute="leading" constant="50" id="pey-Zx-36U"/>
                             <constraint firstItem="hZC-RT-ZKC" firstAttribute="leading" secondItem="i9N-r2-Hzb" secondAttribute="leading" constant="250" id="r09-GH-LXY"/>
+                            <constraint firstAttribute="trailing" secondItem="aqJ-rg-c1p" secondAttribute="trailing" id="uIw-Iq-Y74"/>
                             <constraint firstItem="zNv-s3-K68" firstAttribute="bottom" secondItem="nhs-9o-CJH" secondAttribute="bottom" constant="50" id="wtv-NR-DgT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zNv-s3-K68"/>
                     </view>
                     <connections>
                         <outlet property="background" destination="i9N-r2-Hzb" id="JTv-1t-rDE"/>
+                        <outlet property="backgroundStateRegion" destination="aqJ-rg-c1p" id="ZPW-hh-cSs"/>
                         <outlet property="label" destination="Vf7-vL-u30" id="nys-Cc-fjO"/>
                         <outlet property="person" destination="hZC-RT-ZKC" id="8qU-Hn-qKw"/>
                     </connections>
@@ -1198,7 +1206,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
     <inferredMetricsTieBreakers>
         <segue reference="boU-cz-x6Y"/>
         <segue reference="COL-lj-pt1"/>
-        <segue reference="bqG-ox-4Hq"/>
+        <segue reference="Z0d-No-TaZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>
