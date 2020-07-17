@@ -323,7 +323,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f8-Xd-OfU">
-                                <rect key="frame" x="457" y="255" width="257" height="49"/>
+                                <rect key="frame" x="457" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nordeste">
                                         <attributes>
@@ -382,7 +382,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OF-fI-1dS">
-                                <rect key="frame" x="100" y="255" width="257" height="49"/>
+                                <rect key="frame" x="100" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Norte">
                                         <attributes>
@@ -401,7 +401,7 @@ Boa sorte!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-1h-7zm">
-                                <rect key="frame" x="1527" y="255" width="261" height="49"/>
+                                <rect key="frame" x="1527" y="255" width="261" height="101"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Centro-Oeste">
                                         <attributes>
@@ -454,7 +454,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSe-AG-fUo">
-                                <rect key="frame" x="1171" y="255" width="257" height="49"/>
+                                <rect key="frame" x="1171" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sudeste">
                                         <attributes>
@@ -507,7 +507,7 @@ Boa sorte!</string>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-EB-MTc">
-                                <rect key="frame" x="814" y="255" width="257" height="49"/>
+                                <rect key="frame" x="814" y="255" width="257" height="51"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sul">
                                         <attributes>
@@ -907,7 +907,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf7-vL-u30">
-                                <rect key="frame" x="790" y="110" width="340" height="112"/>
+                                <rect key="frame" x="790" y="110" width="340" height="172"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Você errou a resposta...">
                                         <attributes>
@@ -920,7 +920,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="presidenteatual" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-RT-ZKC">
-                                <rect key="frame" x="840" y="272" width="240" height="549"/>
+                                <rect key="frame" x="840" y="332" width="240" height="489"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC8-Ut-Cjq">
                                 <rect key="frame" x="640" y="871" width="267" height="99"/>
@@ -996,7 +996,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQT-Po-SVw">
-                                <rect key="frame" x="590" y="589" width="740" height="112"/>
+                                <rect key="frame" x="590" y="586" width="740" height="115"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Isso apagará todo o seu progresso até agora ...">
                                         <attributes>
@@ -1048,7 +1048,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGg-hM-28B">
-                                <rect key="frame" x="590" y="307" width="740" height="112"/>
+                                <rect key="frame" x="590" y="301" width="740" height="115"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Você deseja mesmo resetar o jogo?">
                                         <attributes>
@@ -1101,6 +1101,92 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                     <view key="view" contentMode="scaleToFill" id="gzH-gr-NVJ" customClass="Wo">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bL8-BJ-ReT" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confetes-background" translatesAutoresizingMaskIntoConstraints="NO" id="7hz-B4-sx2" userLabel="confetes">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocoestadoganho" translatesAutoresizingMaskIntoConstraints="NO" id="l5y-uB-RyZ">
+                                <rect key="frame" x="390" y="80" width="1140" height="340"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hasteestadoganho" translatesAutoresizingMaskIntoConstraints="NO" id="R3q-bU-K71">
+                                <rect key="frame" x="105" y="567" width="86" height="513"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="AC" translatesAutoresizingMaskIntoConstraints="NO" id="60R-pU-eG7">
+                                <rect key="frame" x="150" y="600" width="470" height="330"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wno-Vr-lgC">
+                                <rect key="frame" x="390" y="244" width="1140" height="84"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Você conquistou esse estado!">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="72" name="SFMono-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="72" name="SFMono-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="use-ny-seV">
+                                <rect key="frame" x="390" y="160" width="1140" height="84"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Parabéns!">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="72" name="SFMono-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="secretariaestadoganho" translatesAutoresizingMaskIntoConstraints="NO" id="wsF-QJ-IuV">
+                                <rect key="frame" x="965" y="378" width="840" height="702"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FDm-iu-adz" firstAttribute="bottom" secondItem="l5y-uB-RyZ" secondAttribute="bottom" constant="600" id="00A-RF-Tij"/>
+                            <constraint firstItem="Wno-Vr-lgC" firstAttribute="top" secondItem="use-ny-seV" secondAttribute="bottom" id="2rP-hg-v1P"/>
+                            <constraint firstAttribute="trailing" secondItem="bL8-BJ-ReT" secondAttribute="trailing" id="4js-us-L3w"/>
+                            <constraint firstItem="FDm-iu-adz" firstAttribute="trailing" secondItem="Wno-Vr-lgC" secondAttribute="trailing" constant="300" id="4tK-H2-1jL"/>
+                            <constraint firstItem="l5y-uB-RyZ" firstAttribute="top" secondItem="FDm-iu-adz" secondAttribute="top" constant="20" id="4vg-Gy-rp8"/>
+                            <constraint firstItem="l5y-uB-RyZ" firstAttribute="leading" secondItem="FDm-iu-adz" secondAttribute="leading" constant="300" id="9H1-fn-syp"/>
+                            <constraint firstAttribute="bottom" secondItem="bL8-BJ-ReT" secondAttribute="bottom" id="D7B-gV-QSG"/>
+                            <constraint firstItem="FDm-iu-adz" firstAttribute="trailing" secondItem="l5y-uB-RyZ" secondAttribute="trailing" constant="300" id="EeP-UB-OnJ"/>
+                            <constraint firstItem="wsF-QJ-IuV" firstAttribute="leading" secondItem="60R-pU-eG7" secondAttribute="trailing" constant="345" id="HMw-9m-3UR"/>
+                            <constraint firstItem="60R-pU-eG7" firstAttribute="leading" secondItem="FDm-iu-adz" secondAttribute="leading" constant="60" id="JmN-Dw-z27"/>
+                            <constraint firstItem="wsF-QJ-IuV" firstAttribute="top" secondItem="Wno-Vr-lgC" secondAttribute="bottom" constant="50" id="KLp-lW-T03"/>
+                            <constraint firstItem="use-ny-seV" firstAttribute="leading" secondItem="FDm-iu-adz" secondAttribute="leading" constant="300" id="Kez-r9-zxy"/>
+                            <constraint firstItem="bL8-BJ-ReT" firstAttribute="top" secondItem="gzH-gr-NVJ" secondAttribute="top" id="LZI-T0-yit"/>
+                            <constraint firstItem="use-ny-seV" firstAttribute="top" secondItem="gzH-gr-NVJ" secondAttribute="top" constant="160" id="Lbt-Rt-Iur"/>
+                            <constraint firstAttribute="trailing" secondItem="7hz-B4-sx2" secondAttribute="trailing" id="NDs-co-SYP"/>
+                            <constraint firstItem="FDm-iu-adz" firstAttribute="trailing" secondItem="wsF-QJ-IuV" secondAttribute="trailing" constant="25" id="OcE-Ch-QNY"/>
+                            <constraint firstAttribute="bottom" secondItem="60R-pU-eG7" secondAttribute="bottom" constant="150" id="QaN-ZF-l1i"/>
+                            <constraint firstItem="bL8-BJ-ReT" firstAttribute="leading" secondItem="gzH-gr-NVJ" secondAttribute="leading" id="WBg-UO-leJ"/>
+                            <constraint firstItem="7hz-B4-sx2" firstAttribute="leading" secondItem="gzH-gr-NVJ" secondAttribute="leading" id="Xuq-4N-oEs"/>
+                            <constraint firstItem="60R-pU-eG7" firstAttribute="top" secondItem="l5y-uB-RyZ" secondAttribute="bottom" constant="180" id="YqN-7O-2Is"/>
+                            <constraint firstAttribute="bottom" secondItem="R3q-bU-K71" secondAttribute="bottom" id="bS3-ev-8tU"/>
+                            <constraint firstItem="Wno-Vr-lgC" firstAttribute="leading" secondItem="FDm-iu-adz" secondAttribute="leading" constant="300" id="fEy-Oh-kwa"/>
+                            <constraint firstItem="R3q-bU-K71" firstAttribute="leading" secondItem="FDm-iu-adz" secondAttribute="leading" constant="15" id="rXy-fP-N2m"/>
+                            <constraint firstAttribute="bottom" secondItem="wsF-QJ-IuV" secondAttribute="bottom" id="tvB-hZ-BCe"/>
+                            <constraint firstAttribute="bottom" secondItem="7hz-B4-sx2" secondAttribute="bottom" id="wzv-6J-iWV"/>
+                            <constraint firstItem="FDm-iu-adz" firstAttribute="trailing" secondItem="use-ny-seV" secondAttribute="trailing" constant="300" id="xzi-aH-ktZ"/>
+                            <constraint firstItem="7hz-B4-sx2" firstAttribute="top" secondItem="gzH-gr-NVJ" secondAttribute="top" id="y0R-oT-2Or"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FDm-iu-adz"/>
                     </view>
                 </viewController>
@@ -1117,17 +1203,21 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
     <resources>
         <image name="AC" width="1000" height="700"/>
         <image name="backgroundvitoria" width="3168" height="2234"/>
+        <image name="blocoestadoganho" width="2386" height="706"/>
         <image name="blocopergunta" width="1383" height="582"/>
         <image name="blocoregiao" width="508" height="1811"/>
         <image name="blocorespostaerrada" width="1366" height="1931"/>
         <image name="blocovitoriamensagem" width="1001" height="481"/>
         <image name="botaoacao" width="798" height="253"/>
         <image name="brazilmapa" width="745" height="980"/>
+        <image name="confetes-background" width="3168" height="2234"/>
+        <image name="hasteestadoganho" width="86" height="513"/>
         <image name="planetamenu-1" width="600" height="745"/>
         <image name="planetatutorial" width="1366" height="483"/>
         <image name="presidenteatual" width="840" height="1580"/>
         <image name="principal" width="840" height="1581"/>
         <image name="principalcomfaixa" width="840" height="1581"/>
         <image name="secretaria" width="840" height="1580"/>
+        <image name="secretariaestadoganho" width="840" height="1594"/>
     </resources>
 </document>
