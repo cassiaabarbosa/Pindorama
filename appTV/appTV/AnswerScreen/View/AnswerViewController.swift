@@ -59,8 +59,9 @@ class AnswerViewController: UIViewController {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		let index = viewModel.foundState(state: state ?? "nil")
 		if StateManager.getStateRightAnswers(state: index) > 2 {
-			let specificVC = storyboard.instantiateViewController(withIdentifier: "SelectionViewController") as? SelectionViewController
-			self.show(specificVC ?? SelectionViewController(), sender: nil)
+			let specificVC = storyboard.instantiateViewController(withIdentifier: "WonStateViewController") as? WonStateViewController
+			specificVC?.state = state
+			self.show(specificVC ?? WonStateViewController(), sender: nil)
 		} else {
 			let specificVC = storyboard.instantiateViewController(withIdentifier: "QuestionViewController") as? QuestionViewController
 			specificVC?.state = state

@@ -9,9 +9,20 @@
 import UIKit
 
 class WonStateViewController: UIViewController {
+	
+	var state: String?
+	var viewModel = WonStateViewModel()
+	@IBOutlet var nameState: UILabel!
+	@IBOutlet var background: UIImageView!
+	@IBOutlet var flag: UIImageView!
 
-    override func viewDidLoad() {
+	override func viewDidLoad() {
         super.viewDidLoad()
+		let visual = viewModel.generateVisuals(state: state!)
+		nameState.text = visual.0
+		background.image = UIImage(named: visual.1)
+		flag.image = UIImage(named: visual.2)
+
 
     }
 
