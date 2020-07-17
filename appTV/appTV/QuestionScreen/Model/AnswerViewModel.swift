@@ -20,4 +20,5 @@ class AnswerViewModel {
 		}
 		return -1
 	}
+	
 }
