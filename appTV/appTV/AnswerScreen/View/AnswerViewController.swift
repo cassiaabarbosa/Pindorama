@@ -14,10 +14,12 @@ class AnswerViewController: UIViewController {
 	@IBOutlet var background: UIImageView!
 	@IBOutlet var label: UILabel!
 	@IBOutlet var person: UIImageView!
+    @IBOutlet weak var backgroundStates: UIImageView!
     var player: AVAudioPlayer?
 	var type: String?
 	var state: String?
 	var viewModel = AnswerViewModel()
+    var questionViewModel = QuestionViewModel()
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,8 @@ class AnswerViewController: UIViewController {
 		switch type {
 			case "right":
 				background.image = UIImage(named: "blocorespostacerta")
+                backgroundStates.image = UIImage(named: questionViewModel.setBackground(state: state ?? "nil"))
+                backgroundStates.alpha = 0.5
 				label.text = "Você acertou a resposta..."
 				person.image = UIImage(named: "presidentebravoatualcomfaixa")
 				playSound(music: "Efeito-ACERTO")
@@ -43,6 +47,8 @@ class AnswerViewController: UIViewController {
 			
 			default:
 				background.image = UIImage(named: "blocorespostaerrada")
+                backgroundStates.image = UIImage(named: questionViewModel.setBackground(state: state ?? "nil"))
+                backgroundStates.alpha = 0.5
 				label.text = "Você errou a resposta..."
 				person.image = UIImage(named: "presidenteatualcomfaixa")
 				playSound(music: "Efeito-ERRO")

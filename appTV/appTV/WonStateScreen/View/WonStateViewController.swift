@@ -21,6 +21,7 @@ class WonStateViewController: UIViewController {
 		let visual = viewModel.generateVisuals(state: state!)
 		nameState.text = visual.0
 		background.image = UIImage(named: visual.1)
+        background.alpha = 0.5
 		flag.image = UIImage(named: visual.2)
 
 

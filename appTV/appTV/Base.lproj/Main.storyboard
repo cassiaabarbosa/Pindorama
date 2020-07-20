@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqG-yZ-d3Z">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqG-yZ-d3Z">
     <device id="appleTV" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -559,9 +559,8 @@ Boa sorte!</string>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stK-e8-tku">
-                                <rect key="frame" x="182" y="112" width="653" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stK-e8-tku">
+                                <rect key="frame" x="90" y="110" width="653" height="58"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Selecione um Estado...">
                                         <attributes>
@@ -582,6 +581,7 @@ Boa sorte!</string>
                             <constraint firstItem="PJb-ch-tiA" firstAttribute="leading" secondItem="ogs-3A-wOj" secondAttribute="trailing" constant="80" id="4dD-fW-WGu"/>
                             <constraint firstItem="jp1-1B-aaF" firstAttribute="leading" secondItem="vGT-yB-8IS" secondAttribute="trailing" constant="80" id="7YS-DQ-l23"/>
                             <constraint firstItem="3OF-fI-1dS" firstAttribute="leading" secondItem="ZWO-f9-cwo" secondAttribute="leading" constant="10" id="9Gw-sA-gB5"/>
+                            <constraint firstItem="stK-e8-tku" firstAttribute="top" secondItem="ZWO-f9-cwo" secondAttribute="top" constant="50" id="9Hl-fL-Cbi"/>
                             <constraint firstItem="0PA-1h-7zm" firstAttribute="leading" secondItem="PJb-ch-tiA" secondAttribute="trailing" constant="54" id="B43-ft-G73"/>
                             <constraint firstItem="PMc-3y-6O9" firstAttribute="leading" secondItem="PJb-ch-tiA" secondAttribute="trailing" constant="45" id="B6w-P5-cf6"/>
                             <constraint firstItem="3OF-fI-1dS" firstAttribute="top" secondItem="ZWO-f9-cwo" secondAttribute="top" constant="195" id="C7j-6s-3Wq"/>
@@ -603,8 +603,10 @@ Boa sorte!</string>
                             <constraint firstItem="Ud0-Ig-AAe" firstAttribute="top" secondItem="ZWO-f9-cwo" secondAttribute="top" constant="180" id="Wv5-Jz-2X7"/>
                             <constraint firstItem="ZWO-f9-cwo" firstAttribute="trailing" secondItem="D3f-MP-nrP" secondAttribute="trailing" id="XyU-za-hHA"/>
                             <constraint firstItem="jp1-1B-aaF" firstAttribute="top" secondItem="ZWO-f9-cwo" secondAttribute="top" constant="180" id="Z8l-S6-ReA"/>
+                            <constraint firstItem="PLc-jE-Enm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="stK-e8-tku" secondAttribute="trailing" constant="60" symbolic="YES" id="bYC-FN-uws"/>
                             <constraint firstItem="PJb-ch-tiA" firstAttribute="top" secondItem="PLc-jE-Enm" secondAttribute="bottom" constant="30" id="cYZ-tN-5fv"/>
                             <constraint firstItem="jp1-1B-aaF" firstAttribute="trailing" secondItem="3f8-Xd-OfU" secondAttribute="trailing" constant="45" id="d1L-J0-Tdt"/>
+                            <constraint firstItem="stK-e8-tku" firstAttribute="leading" secondItem="ZWO-f9-cwo" secondAttribute="leading" id="dlN-0g-QEl"/>
                             <constraint firstItem="PJb-ch-tiA" firstAttribute="trailing" secondItem="PSe-AG-fUo" secondAttribute="trailing" constant="45" id="eQd-yC-alz"/>
                             <constraint firstItem="ZWO-f9-cwo" firstAttribute="trailing" secondItem="0PA-1h-7zm" secondAttribute="trailing" constant="42" id="efy-5S-ddj"/>
                             <constraint firstItem="o1V-EB-MTc" firstAttribute="leading" secondItem="jp1-1B-aaF" secondAttribute="trailing" constant="55" id="fdv-Fa-7Ry"/>
@@ -916,6 +918,9 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wm4-aX-Z7x" userLabel="BackgroundStates">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocorespostaerrada" translatesAutoresizingMaskIntoConstraints="NO" id="i9N-r2-Hzb">
                                 <rect key="frame" x="590" y="60" width="740" height="960"/>
                             </imageView>
@@ -962,12 +967,15 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wm4-aX-Z7x" firstAttribute="top" secondItem="McT-xP-dcy" secondAttribute="top" id="0qA-5V-cOg"/>
                             <constraint firstItem="hZC-RT-ZKC" firstAttribute="top" secondItem="Vf7-vL-u30" secondAttribute="bottom" constant="50" id="3Zj-Od-cAa"/>
+                            <constraint firstAttribute="bottom" secondItem="wm4-aX-Z7x" secondAttribute="bottom" id="3nG-XX-Suy"/>
                             <constraint firstItem="zNv-s3-K68" firstAttribute="trailing" secondItem="i9N-r2-Hzb" secondAttribute="trailing" constant="500" id="7pb-PY-OKJ"/>
                             <constraint firstItem="nhs-9o-CJH" firstAttribute="leading" secondItem="VC8-Ut-Cjq" secondAttribute="trailing" constant="106" id="9uj-Nb-Xo9"/>
                             <constraint firstItem="Vf7-vL-u30" firstAttribute="leading" secondItem="i9N-r2-Hzb" secondAttribute="leading" constant="200" id="AzA-FA-V5V"/>
                             <constraint firstItem="nhs-9o-CJH" firstAttribute="trailing" secondItem="i9N-r2-Hzb" secondAttribute="trailing" constant="-50" id="CCP-Kb-m96"/>
                             <constraint firstItem="zNv-s3-K68" firstAttribute="bottom" secondItem="i9N-r2-Hzb" secondAttribute="bottom" id="Fll-4J-sHS"/>
+                            <constraint firstItem="wm4-aX-Z7x" firstAttribute="leading" secondItem="McT-xP-dcy" secondAttribute="leading" id="Gp4-Ba-c0b"/>
                             <constraint firstItem="VC8-Ut-Cjq" firstAttribute="top" secondItem="hZC-RT-ZKC" secondAttribute="bottom" constant="50" id="LZq-Wc-odQ"/>
                             <constraint firstItem="nhs-9o-CJH" firstAttribute="top" secondItem="hZC-RT-ZKC" secondAttribute="bottom" constant="50" id="MMq-5P-eGj"/>
                             <constraint firstItem="VC8-Ut-Cjq" firstAttribute="width" secondItem="nhs-9o-CJH" secondAttribute="width" id="Nre-u1-v2g"/>
@@ -976,6 +984,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                             <constraint firstItem="i9N-r2-Hzb" firstAttribute="leading" secondItem="zNv-s3-K68" secondAttribute="leading" constant="500" id="cgs-7k-wn2"/>
                             <constraint firstItem="i9N-r2-Hzb" firstAttribute="top" secondItem="Vf7-vL-u30" secondAttribute="top" constant="-50" id="fnW-Zl-8e4"/>
                             <constraint firstItem="VC8-Ut-Cjq" firstAttribute="bottom" secondItem="i9N-r2-Hzb" secondAttribute="bottom" constant="-50" id="h6K-hB-IJF"/>
+                            <constraint firstAttribute="trailing" secondItem="wm4-aX-Z7x" secondAttribute="trailing" id="ohl-QG-lyc"/>
                             <constraint firstItem="hZC-RT-ZKC" firstAttribute="trailing" secondItem="i9N-r2-Hzb" secondAttribute="trailing" constant="-250" id="p2a-nm-1JS"/>
                             <constraint firstItem="VC8-Ut-Cjq" firstAttribute="leading" secondItem="i9N-r2-Hzb" secondAttribute="leading" constant="50" id="pey-Zx-36U"/>
                             <constraint firstItem="hZC-RT-ZKC" firstAttribute="leading" secondItem="i9N-r2-Hzb" secondAttribute="leading" constant="250" id="r09-GH-LXY"/>
@@ -985,6 +994,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                     </view>
                     <connections>
                         <outlet property="background" destination="i9N-r2-Hzb" id="JTv-1t-rDE"/>
+                        <outlet property="backgroundStates" destination="wm4-aX-Z7x" id="fY8-pb-Sdw"/>
                         <outlet property="label" destination="Vf7-vL-u30" id="nys-Cc-fjO"/>
                         <outlet property="person" destination="hZC-RT-ZKC" id="8qU-Hn-qKw"/>
                     </connections>
@@ -1115,10 +1125,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bL8-BJ-ReT" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confetes-background" translatesAutoresizingMaskIntoConstraints="NO" id="7hz-B4-sx2" userLabel="confetes">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bL8-BJ-ReT" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocoestadoganho" translatesAutoresizingMaskIntoConstraints="NO" id="l5y-uB-RyZ">
@@ -1151,38 +1158,65 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="secretariaestadoganho" translatesAutoresizingMaskIntoConstraints="NO" id="wsF-QJ-IuV">
                                 <rect key="frame" x="965" y="430" width="840" height="650"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eO6-XF-dfs">
+                                <rect key="frame" x="735" y="895" width="450" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="1CW-Wf-fQk"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" backgroundImage="botaoacao">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Continuar">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="64" name="SFMono-Regular"/>
+                                                <font key="NSOriginalFont" size="64" name="SFMono-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="ceD-dA-s9y" kind="show" id="XQC-8t-0gA"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confetes-background" translatesAutoresizingMaskIntoConstraints="NO" id="tbz-5Q-1s4">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="FDm-iu-adz" firstAttribute="bottom" secondItem="l5y-uB-RyZ" secondAttribute="bottom" constant="600" id="00A-RF-Tij"/>
+                            <constraint firstItem="eO6-XF-dfs" firstAttribute="bottom" secondItem="FDm-iu-adz" secondAttribute="bottom" id="1wk-d0-75j"/>
                             <constraint firstAttribute="trailing" secondItem="bL8-BJ-ReT" secondAttribute="trailing" id="4js-us-L3w"/>
                             <constraint firstItem="FDm-iu-adz" firstAttribute="trailing" secondItem="Wno-Vr-lgC" secondAttribute="trailing" constant="350" id="4tK-H2-1jL"/>
                             <constraint firstItem="l5y-uB-RyZ" firstAttribute="top" secondItem="FDm-iu-adz" secondAttribute="top" constant="20" id="4vg-Gy-rp8"/>
                             <constraint firstItem="l5y-uB-RyZ" firstAttribute="leading" secondItem="FDm-iu-adz" secondAttribute="leading" constant="300" id="9H1-fn-syp"/>
                             <constraint firstAttribute="bottom" secondItem="bL8-BJ-ReT" secondAttribute="bottom" id="D7B-gV-QSG"/>
                             <constraint firstItem="FDm-iu-adz" firstAttribute="trailing" secondItem="l5y-uB-RyZ" secondAttribute="trailing" constant="300" id="EeP-UB-OnJ"/>
+                            <constraint firstAttribute="bottom" secondItem="tbz-5Q-1s4" secondAttribute="bottom" id="Gh2-CN-nuY"/>
                             <constraint firstItem="wsF-QJ-IuV" firstAttribute="top" secondItem="Wno-Vr-lgC" secondAttribute="bottom" constant="50" id="H85-nm-nSQ"/>
                             <constraint firstItem="wsF-QJ-IuV" firstAttribute="leading" secondItem="60R-pU-eG7" secondAttribute="trailing" constant="345" id="HMw-9m-3UR"/>
+                            <constraint firstItem="eO6-XF-dfs" firstAttribute="centerX" secondItem="gzH-gr-NVJ" secondAttribute="centerX" id="JSt-Nt-9oF"/>
                             <constraint firstItem="60R-pU-eG7" firstAttribute="leading" secondItem="FDm-iu-adz" secondAttribute="leading" constant="60" id="JmN-Dw-z27"/>
                             <constraint firstItem="bL8-BJ-ReT" firstAttribute="top" secondItem="gzH-gr-NVJ" secondAttribute="top" id="LZI-T0-yit"/>
                             <constraint firstItem="Wno-Vr-lgC" firstAttribute="top" secondItem="9nB-fX-FOs" secondAttribute="bottom" constant="30" id="MQM-Uq-5l0"/>
-                            <constraint firstAttribute="trailing" secondItem="7hz-B4-sx2" secondAttribute="trailing" id="NDs-co-SYP"/>
                             <constraint firstItem="FDm-iu-adz" firstAttribute="trailing" secondItem="wsF-QJ-IuV" secondAttribute="trailing" constant="25" id="OcE-Ch-QNY"/>
                             <constraint firstAttribute="bottom" secondItem="60R-pU-eG7" secondAttribute="bottom" constant="150" id="QaN-ZF-l1i"/>
+                            <constraint firstAttribute="trailing" secondItem="tbz-5Q-1s4" secondAttribute="trailing" id="Qhj-2x-z7O"/>
                             <constraint firstItem="wsF-QJ-IuV" firstAttribute="top" secondItem="l5y-uB-RyZ" secondAttribute="top" constant="350" id="T2m-Fg-kaR"/>
                             <constraint firstItem="bL8-BJ-ReT" firstAttribute="leading" secondItem="gzH-gr-NVJ" secondAttribute="leading" id="WBg-UO-leJ"/>
-                            <constraint firstItem="7hz-B4-sx2" firstAttribute="leading" secondItem="gzH-gr-NVJ" secondAttribute="leading" id="Xuq-4N-oEs"/>
+                            <constraint firstItem="tbz-5Q-1s4" firstAttribute="top" secondItem="gzH-gr-NVJ" secondAttribute="top" id="XDL-B9-ciB"/>
                             <constraint firstItem="60R-pU-eG7" firstAttribute="top" secondItem="l5y-uB-RyZ" secondAttribute="bottom" constant="180" id="YqN-7O-2Is"/>
                             <constraint firstAttribute="bottom" secondItem="R3q-bU-K71" secondAttribute="bottom" id="bS3-ev-8tU"/>
+                            <constraint firstItem="tbz-5Q-1s4" firstAttribute="leading" secondItem="gzH-gr-NVJ" secondAttribute="leading" id="ddz-Hz-uGz"/>
                             <constraint firstItem="Wno-Vr-lgC" firstAttribute="leading" secondItem="FDm-iu-adz" secondAttribute="leading" constant="350" id="fEy-Oh-kwa"/>
                             <constraint firstItem="R3q-bU-K71" firstAttribute="leading" secondItem="FDm-iu-adz" secondAttribute="leading" constant="15" id="rXy-fP-N2m"/>
+                            <constraint firstItem="eO6-XF-dfs" firstAttribute="top" secondItem="l5y-uB-RyZ" secondAttribute="bottom" constant="475" id="t2L-3i-9JF"/>
                             <constraint firstAttribute="bottom" secondItem="wsF-QJ-IuV" secondAttribute="bottom" id="tvB-hZ-BCe"/>
-                            <constraint firstAttribute="bottom" secondItem="7hz-B4-sx2" secondAttribute="bottom" id="wzv-6J-iWV"/>
-                            <constraint firstItem="7hz-B4-sx2" firstAttribute="top" secondItem="gzH-gr-NVJ" secondAttribute="top" id="y0R-oT-2Or"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FDm-iu-adz"/>
                     </view>
                     <connections>
-                        <outlet property="background" destination="7hz-B4-sx2" id="N4a-5U-rTs"/>
+                        <outlet property="background" destination="bL8-BJ-ReT" id="6dV-oP-WvR"/>
                         <outlet property="flag" destination="60R-pU-eG7" id="NP4-h9-LbH"/>
                         <outlet property="nameState" destination="Wno-Vr-lgC" id="GM8-wJ-J5C"/>
                     </connections>
@@ -1194,8 +1228,8 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="70G-W4-gHC"/>
-        <segue reference="IyX-RA-TXB"/>
-        <segue reference="fqd-F5-PGO"/>
+        <segue reference="XQC-8t-0gA"/>
+        <segue reference="9HN-dY-vtb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>
