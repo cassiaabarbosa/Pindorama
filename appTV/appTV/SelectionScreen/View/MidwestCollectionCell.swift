@@ -10,6 +10,7 @@ import UIKit
 
 class MidwestCollectionCell: UICollectionViewCell {
 	@IBOutlet var stateFlag: UIImageView!
+	@IBOutlet var name: UILabel!
 	override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
 		if context.nextFocusedView === self{
 			UIView.animate(withDuration: 0.1, animations: { () -> Void in

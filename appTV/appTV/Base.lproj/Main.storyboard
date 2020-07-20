@@ -292,10 +292,18 @@ Boa sorte!</string>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AC" translatesAutoresizingMaskIntoConstraints="NO" id="0Kf-SZ-cSW">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mato Grosso do Sul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJx-6I-OQY">
-                                                    <rect key="frame" x="0.0" y="104" width="200" height="46"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJx-6I-OQY">
+                                                    <rect key="frame" x="0.0" y="130" width="200" height="20"/>
+                                                    <color key="backgroundColor" red="0.01310980413" green="0.1211493984" blue="0.1451020241" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Mato Grosso do Sul">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="SFMono-Semibold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -314,6 +322,7 @@ Boa sorte!</string>
                                         <viewLayoutGuide key="safeArea" id="TrZ-nF-Ctl"/>
                                         <size key="customSize" width="200" height="150"/>
                                         <connections>
+                                            <outlet property="name" destination="yJx-6I-OQY" id="aZu-jN-raK"/>
                                             <outlet property="stateFlag" destination="0Kf-SZ-cSW" id="v9J-20-O7G"/>
                                         </connections>
                                     </collectionViewCell>
@@ -372,11 +381,28 @@ Boa sorte!</string>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AC" translatesAutoresizingMaskIntoConstraints="NO" id="lTO-y7-a90">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9t-4M-ASC">
+                                                    <rect key="frame" x="0.0" y="130" width="200" height="20"/>
+                                                    <color key="backgroundColor" red="0.01310980413" green="0.1211493984" blue="0.1451020241" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Mato Grosso do Sul">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="SFMono-Semibold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="D9t-4M-ASC" secondAttribute="trailing" id="CSR-u0-TTS"/>
                                                 <constraint firstItem="lAl-Dg-CBX" firstAttribute="trailing" secondItem="lTO-y7-a90" secondAttribute="trailing" id="H3H-bU-b3w"/>
                                                 <constraint firstItem="lTO-y7-a90" firstAttribute="top" secondItem="lAl-Dg-CBX" secondAttribute="top" id="Rqh-yq-o3q"/>
+                                                <constraint firstItem="D9t-4M-ASC" firstAttribute="leading" secondItem="lAl-Dg-CBX" secondAttribute="leading" id="VR6-du-gyi"/>
                                                 <constraint firstItem="lAl-Dg-CBX" firstAttribute="bottom" secondItem="lTO-y7-a90" secondAttribute="bottom" id="bMv-7Z-JS3"/>
+                                                <constraint firstItem="lAl-Dg-CBX" firstAttribute="bottom" secondItem="D9t-4M-ASC" secondAttribute="bottom" id="irb-oN-p95"/>
                                                 <constraint firstItem="lTO-y7-a90" firstAttribute="leading" secondItem="lAl-Dg-CBX" secondAttribute="leading" id="zun-6l-pNU"/>
                                             </constraints>
                                             <viewLayoutGuide key="safeArea" id="lAl-Dg-CBX"/>
@@ -385,6 +411,7 @@ Boa sorte!</string>
                                         <viewLayoutGuide key="safeArea" id="AoX-qM-GzL"/>
                                         <size key="customSize" width="200" height="150"/>
                                         <connections>
+                                            <outlet property="name" destination="D9t-4M-ASC" id="xAh-pv-j3a"/>
                                             <outlet property="stateFlag" destination="lTO-y7-a90" id="slQ-wx-Dd4"/>
                                         </connections>
                                     </collectionViewCell>
@@ -444,12 +471,29 @@ Boa sorte!</string>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AC" translatesAutoresizingMaskIntoConstraints="NO" id="1vh-aS-mCR">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pln-tb-f9J">
+                                                    <rect key="frame" x="0.0" y="130" width="200" height="20"/>
+                                                    <color key="backgroundColor" red="0.01310980413" green="0.1211493984" blue="0.1451020241" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Mato Grosso do Sul">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="SFMono-Semibold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="1vh-aS-mCR" firstAttribute="leading" secondItem="ZWs-xY-9yg" secondAttribute="leading" id="6Uz-8j-KM1"/>
                                                 <constraint firstItem="ZWs-xY-9yg" firstAttribute="trailing" secondItem="1vh-aS-mCR" secondAttribute="trailing" id="AAj-pB-I7R"/>
+                                                <constraint firstItem="ZWs-xY-9yg" firstAttribute="bottom" secondItem="pln-tb-f9J" secondAttribute="bottom" id="EcJ-V4-sRg"/>
                                                 <constraint firstItem="ZWs-xY-9yg" firstAttribute="bottom" secondItem="1vh-aS-mCR" secondAttribute="bottom" id="FGN-SF-f2Z"/>
+                                                <constraint firstAttribute="trailing" secondItem="pln-tb-f9J" secondAttribute="trailing" id="GS0-8D-SgN"/>
                                                 <constraint firstItem="1vh-aS-mCR" firstAttribute="top" secondItem="ZWs-xY-9yg" secondAttribute="top" id="moN-sr-Ear"/>
+                                                <constraint firstItem="pln-tb-f9J" firstAttribute="leading" secondItem="ZWs-xY-9yg" secondAttribute="leading" id="vCG-N4-6He"/>
                                             </constraints>
                                             <viewLayoutGuide key="safeArea" id="ZWs-xY-9yg"/>
                                         </collectionViewCellContentView>
@@ -457,6 +501,7 @@ Boa sorte!</string>
                                         <viewLayoutGuide key="safeArea" id="Aeq-bW-ijv"/>
                                         <size key="customSize" width="200" height="150"/>
                                         <connections>
+                                            <outlet property="name" destination="pln-tb-f9J" id="fe5-Os-Dfd"/>
                                             <outlet property="stateFlag" destination="1vh-aS-mCR" id="ENy-bu-aea"/>
                                         </connections>
                                     </collectionViewCell>
@@ -497,12 +542,29 @@ Boa sorte!</string>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AC" translatesAutoresizingMaskIntoConstraints="NO" id="Re4-Ff-8KU">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AY4-g7-8Ko">
+                                                    <rect key="frame" x="0.0" y="130" width="200" height="20"/>
+                                                    <color key="backgroundColor" red="0.01310980413" green="0.1211493984" blue="0.1451020241" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Mato Grosso do Sul">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="SFMono-Semibold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="wpl-Ie-l0T" firstAttribute="bottom" secondItem="Re4-Ff-8KU" secondAttribute="bottom" id="1jo-eV-8f2"/>
                                                 <constraint firstItem="Re4-Ff-8KU" firstAttribute="top" secondItem="wpl-Ie-l0T" secondAttribute="top" id="R7a-vh-mjx"/>
+                                                <constraint firstAttribute="trailing" secondItem="AY4-g7-8Ko" secondAttribute="trailing" id="UDo-T5-Ga9"/>
+                                                <constraint firstItem="wpl-Ie-l0T" firstAttribute="bottom" secondItem="AY4-g7-8Ko" secondAttribute="bottom" id="WIL-Bf-Nol"/>
                                                 <constraint firstItem="Re4-Ff-8KU" firstAttribute="leading" secondItem="wpl-Ie-l0T" secondAttribute="leading" id="gCa-2l-5MY"/>
                                                 <constraint firstItem="wpl-Ie-l0T" firstAttribute="trailing" secondItem="Re4-Ff-8KU" secondAttribute="trailing" id="qf8-iU-pp1"/>
+                                                <constraint firstItem="AY4-g7-8Ko" firstAttribute="leading" secondItem="wpl-Ie-l0T" secondAttribute="leading" id="vu2-O4-BoE"/>
                                             </constraints>
                                             <viewLayoutGuide key="safeArea" id="wpl-Ie-l0T"/>
                                         </collectionViewCellContentView>
@@ -510,6 +572,7 @@ Boa sorte!</string>
                                         <viewLayoutGuide key="safeArea" id="2sa-GZ-zLo"/>
                                         <size key="customSize" width="200" height="150"/>
                                         <connections>
+                                            <outlet property="name" destination="AY4-g7-8Ko" id="Qlh-Rw-mPj"/>
                                             <outlet property="stateFlag" destination="Re4-Ff-8KU" id="RxC-SP-E5v"/>
                                         </connections>
                                     </collectionViewCell>
@@ -550,11 +613,28 @@ Boa sorte!</string>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AC" translatesAutoresizingMaskIntoConstraints="NO" id="RjZ-wr-tgS">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZg-b8-Qui">
+                                                    <rect key="frame" x="0.0" y="130" width="200" height="20"/>
+                                                    <color key="backgroundColor" red="0.01310980413" green="0.1211493984" blue="0.1451020241" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Mato Grosso do Sul">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="SFMono-Semibold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RjZ-wr-tgS" firstAttribute="top" secondItem="Xh3-7b-cQd" secondAttribute="top" id="Mhm-dW-CUW"/>
+                                                <constraint firstAttribute="trailing" secondItem="JZg-b8-Qui" secondAttribute="trailing" id="RBE-3r-v7O"/>
+                                                <constraint firstItem="JZg-b8-Qui" firstAttribute="leading" secondItem="Xh3-7b-cQd" secondAttribute="leading" id="bot-mV-sCO"/>
                                                 <constraint firstItem="Xh3-7b-cQd" firstAttribute="bottom" secondItem="RjZ-wr-tgS" secondAttribute="bottom" id="g6H-Zh-uZA"/>
                                                 <constraint firstItem="RjZ-wr-tgS" firstAttribute="leading" secondItem="Xh3-7b-cQd" secondAttribute="leading" id="gaA-fR-3Ej"/>
+                                                <constraint firstItem="Xh3-7b-cQd" firstAttribute="bottom" secondItem="JZg-b8-Qui" secondAttribute="bottom" id="wU0-Yw-1sG"/>
                                                 <constraint firstItem="Xh3-7b-cQd" firstAttribute="trailing" secondItem="RjZ-wr-tgS" secondAttribute="trailing" id="ycz-IZ-3Pu"/>
                                             </constraints>
                                             <viewLayoutGuide key="safeArea" id="Xh3-7b-cQd"/>
@@ -563,6 +643,7 @@ Boa sorte!</string>
                                         <viewLayoutGuide key="safeArea" id="ubU-6P-sZU"/>
                                         <size key="customSize" width="200" height="150"/>
                                         <connections>
+                                            <outlet property="name" destination="JZg-b8-Qui" id="X5Z-HX-zbR"/>
                                             <outlet property="stateFlag" destination="RjZ-wr-tgS" id="ZgS-Kz-eaT"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1238,7 +1319,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
     <inferredMetricsTieBreakers>
         <segue reference="boU-cz-x6Y"/>
         <segue reference="XQC-8t-0gA"/>
-        <segue reference="bqG-ox-4Hq"/>
+        <segue reference="9HN-dY-vtb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>
