@@ -41,16 +41,16 @@ class QuestionViewModel {
 	var flagImages: [String] = ["AC", "AP", "AM", "PA", "RO", "RR", "TO", "AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE", "PR", "RS", "SC", "ES", "MG", "RJ","SP", "DF", "GO", "MT", "MS"]
 	
 	func setAcre() {
-		acre.append(Asking(question: "Qual a capital do Acre?", rightAnswer: "Rio Branco", secondAnswer: "Acrêlandia", thirdAnswer: "Tarauacá"))
-		acre.append(Asking(question: "Com quais países o Acre faz divisa?", rightAnswer: "Bolívia e Peru", secondAnswer: "Bolivia e Venezuela", thirdAnswer: "Chile e Argentina"))
+		acre.append(Asking(question: "Qual a capital do Acre?", rightAnswer: "Rio Branco", secondAnswer: "Acrelândia", thirdAnswer: "Tarauacá"))
+		acre.append(Asking(question: "Com quais países o Acre faz divisa?", rightAnswer: "Bolívia e Peru", secondAnswer: "Bolívia e Venezuela", thirdAnswer: "Chile e Argentina"))
 		acre.append(Asking(question: "Qual ex-presidente brasileiro promoveu o Acre a estado?", rightAnswer: "João Goulart", secondAnswer: "Jânio Quadros", thirdAnswer: "Castelo Branco"))
-		acre.append(Asking(question: "Qual forma de relevo é predominantemente no território do Acre?", rightAnswer: "Planalto", secondAnswer: "Planície", thirdAnswer: "Montanhas"))
+		acre.append(Asking(question: "Qual forma de relevo é predominante no território do Acre?", rightAnswer: "Planalto", secondAnswer: "Planície", thirdAnswer: "Montanhas"))
 		acre.append(Asking(question: "Das comidas típicas listadas qual é pertencente ao Acre?", rightAnswer: "Pirarucu à Casaca ao leite de castanhas", secondAnswer: "Pato no Tucupi", thirdAnswer: "Buchada de boi"))
 	}
 	
 	func setAmapa() {
 		amapa.append(Asking(question: "Qual a capital do Amapá?", rightAnswer: "Macapá", secondAnswer: "Boa Vista", thirdAnswer: "Porto Velho"))
-		amapa.append(Asking(question: "Nas áreas do Amapá perto do litoral, qual é as vegetação predominante?", rightAnswer: "Mangue", secondAnswer: "Floresta Amazônica", thirdAnswer: "Pantanal"))
+		amapa.append(Asking(question: "Nas áreas do Amapá perto do litoral, qual é a vegetação predominante?", rightAnswer: "Mangue", secondAnswer: "Floresta Amazônica", thirdAnswer: "Pantanal"))
 		amapa.append(Asking(question: "Das comidas típicas listadas qual é pertencente ao Amapá?", rightAnswer: "Tacacá", secondAnswer: "Pescada Gurijuba", thirdAnswer: "Tucunaré na brasa"))
 		amapa.append(Asking(question: "Qual o clima predominante do Amapá?", rightAnswer: "Equatorial", secondAnswer: "Tropical", thirdAnswer: "Subtropical"))
 		amapa.append(Asking(question: "Qual o nome da unidade de relevo que vai do leste a oeste, desde o Amapá até a Venezuela?", rightAnswer: "Planícies Amapaenses", secondAnswer: "Planícies Litorâneas", thirdAnswer: "Platô das Guianas"))
@@ -98,10 +98,10 @@ class QuestionViewModel {
 	
 	func setAlagoas() {
 		alagoas.append(Asking(question: "Qual a capital do Alagoas?", rightAnswer: "Maceió", secondAnswer: "Arapiraca", thirdAnswer: "Penedo"))
-		alagoas.append(Asking(question: "Qual o nome do folguedo tradicional alagoano?", rightAnswer: "Guerreiro", secondAnswer: "Bumba-meu-boi", thirdAnswer: "Afoxé"))
+		alagoas.append(Asking(question: "Qual o nome do folguedo (festa) tradicional alagoano?", rightAnswer: "Guerreiro", secondAnswer: "Bumba-meu-boi", thirdAnswer: "Afoxé"))
 		alagoas.append(Asking(question: "Qual é o nome do mais emblemático quilombo atualmente localizado na região do Alagoas?", rightAnswer: "Quilombo dos Palmares", secondAnswer: "Quilombo dos Guerreiros", thirdAnswer: "Quilombo da União"))
-		alagoas.append(Asking(question: "Antes de sua emancipação o territorio de Alagoas pertencia a outro estado. Qual?", rightAnswer: "Pernambuco", secondAnswer: "Bahia", thirdAnswer: "Ceará"))
-		alagoas.append(Asking(question: "Quais eram as tribos que habitavam o território do Alagoas antes da chegadas dos portugueses?", rightAnswer: "Tupis e Caétes", secondAnswer: "Guaranis e Tupis", thirdAnswer: "Caiapós e Tupinambás"))
+		alagoas.append(Asking(question: "Antes de sua emancipação o território de Alagoas pertencia a outro estado. Qual?", rightAnswer: "Pernambuco", secondAnswer: "Bahia", thirdAnswer: "Ceará"))
+		alagoas.append(Asking(question: "Quais eram as tribos que habitavam no território de Alagoas antes da chegada dos portugueses?", rightAnswer: "Tupis e Caétes", secondAnswer: "Guaranis e Tupis", thirdAnswer: "Caiapós e Tupinambás"))
 	}
 	
 	func setBahia() {
@@ -114,7 +114,7 @@ class QuestionViewModel {
 	
 	func setCeara() {
 		ceara.append(Asking(question: "Em que ano o Ceará aboliu a escravatura?", rightAnswer: "1884", secondAnswer: "1894", thirdAnswer: "1904"))
-		ceara.append(Asking(question: "Por que chapada do Aripari é tão importante para o Brasil?", rightAnswer: "É um dos depósitos de fósseis paleontológicos mais ricos e importantes do mundo, que se destaca de outros países, principalmente, pela preservação dos esqueletos.", secondAnswer: "Porque abrange os maiores rios do Brasil", thirdAnswer: "Porque foi o primeiro local onde os portugueses ancoaram quando aqui chegaram"))
+		ceara.append(Asking(question: "Por que chapada do Arapari é tão importante para o Brasil?", rightAnswer: "É um dos depósitos de fósseis paleontológicos mais ricos e importantes do mundo", secondAnswer: "Porque abrange os maiores rios do Brasil", thirdAnswer: "Porque foi o primeiro local onde os portugueses ancoraram"))
 		ceara.append(Asking(question: "Qual a capital do Ceará?", rightAnswer: "Fortaleza", secondAnswer: "Jericoacoara", thirdAnswer: "Natal"))
 		ceara.append(Asking(question: "Qual é o rio mais longo do Ceará?", rightAnswer: "Jaguaribe", secondAnswer: "Choró", thirdAnswer: "São Francisco"))
 		ceara.append(Asking(question: "Qual o clima do Ceará?", rightAnswer: "Semiárido", secondAnswer: "Tropical", thirdAnswer: "Equatorial"))
@@ -122,7 +122,7 @@ class QuestionViewModel {
 	
 	func setMaranhao() {
 		maranhao.append(Asking(question: "Qual a capital do Maranhão?", rightAnswer: "São Luís", secondAnswer: "São Paulo", thirdAnswer: "São Pedro"))
-		maranhao.append(Asking(question: "A cidada de de São Luís foi fundada por...", rightAnswer: "Franceses", secondAnswer: "Portugueses", thirdAnswer: "Holandeses"))
+		maranhao.append(Asking(question: "A cidade de São Luís foi fundada por...", rightAnswer: "Franceses", secondAnswer: "Portugueses", thirdAnswer: "Holandeses"))
 		maranhao.append(Asking(question: "Qual desses Estados faz fronteira com o Maranhão?", rightAnswer: "Pará", secondAnswer: "Amapá", thirdAnswer: "Ceará"))
 		maranhao.append(Asking(question: "Em termos de área territorial, qual posição do Maranhão?", rightAnswer: "Oitava", secondAnswer: "Quarta", thirdAnswer: "Terceira"))
 		maranhao.append(Asking(question: "Por que os Lençóis Maranhenses são tão importantes para o meio ambiente?", rightAnswer: "Porque possui mangues, restingas e dunas", secondAnswer: "Porque possui a maior fauna de peixes do Brasil", thirdAnswer: "Porque possui a maior Floresta Tropical do Mundo"))
@@ -133,7 +133,7 @@ class QuestionViewModel {
 		paraiba.append(Asking(question: "Qual o nome do extremo oriente do Brasil, localizado na Paraíba?", rightAnswer: "Ponta do Seixas", secondAnswer: "Ponta Grossa", thirdAnswer: "Ponta do Sol"))
 		paraiba.append(Asking(question: "Qual o nome do sítio paleontológico que existe na Paraíba, onde registra-se a maior incidência de pegadas de dinossauro no mundo?", rightAnswer: "Vale dos Dinossauros", secondAnswer: "Vale da Praia", thirdAnswer: "Vale do Rio Doce"))
 		paraiba.append(Asking(question: "Em que cidade da Paraíba é realizada a maior festa de São João do mundo?", rightAnswer: "Campina Grande", secondAnswer: "Campinas", thirdAnswer: "Campina do Norte"))
-		paraiba.append(Asking(question: "A palavra 'Nego na bandeira da Paraíba...", rightAnswer: "Simboliza a rejeição do político João Pessoa à candidatura de Júlio Prestes à Presidência", secondAnswer: " Simboliza a rejeição de práticas escravistas no perído do Brasil Imperial", thirdAnswer: " Simboliza que a rejeição ao racismo fortemente contido no Estado"))
+		paraiba.append(Asking(question: "A palavra 'Nego na bandeira da Paraíba...", rightAnswer: "Simboliza a rejeição do político João Pessoa à candidatura de Júlio Prestes", secondAnswer: "Simboliza a rejeição de práticas escravistas no período do Brasil Imperial", thirdAnswer: "Simboliza que a rejeição ao racismo fortemente contido no Estado"))
 	}
 	
 	func setPernambuco() {
@@ -146,15 +146,15 @@ class QuestionViewModel {
 	
 	func setPiaui() {
 		piaui.append(Asking(question: "Qual a capital do Piauí?", rightAnswer: "Teresina", secondAnswer: "Palmas", thirdAnswer: "Maceió"))
-		piaui.append(Asking(question: "Entre os Patrimônios Culturais do Estado do Piauí, podemos destacar...", rightAnswer: "Cajuína, uma bebida feita à base de suco de caju", secondAnswer: "Cafeína, uma substância presente no café", thirdAnswer: "Codeína, um fármaco produzido a partir de um alcalóide"))
-		piaui.append(Asking(question: "Qual o nome do local onde foram encontradas pinturas rupestres no Piauí?", rightAnswer: "Serra da Capivara", secondAnswer: "Serra da Manriqueira", thirdAnswer: "Serra do Brasil"))
+		piaui.append(Asking(question: "Entre os Patrimônios Culturais do Estado do Piauí, podemos destacar...", rightAnswer: "Cajuína, uma bebida feita à base de suco de caju", secondAnswer: "Cafeína, uma substância presente no café", thirdAnswer: "Codeína, um fármaco produzido a partir de um alcaloide"))
+		piaui.append(Asking(question: "Qual o nome do local onde foram encontradas pinturas rupestres no Piauí?", rightAnswer: "Serra da Capivara", secondAnswer: "Serra da Mantiqueira", thirdAnswer: "Serra do Brasil"))
 		piaui.append(Asking(question: "Qual o nome da cidade que foi a primeira capital do Piauí?", rightAnswer: "Oieiras", secondAnswer: "Oliveiras", thirdAnswer: "Cabreiras"))
 		piaui.append(Asking(question: " Qual foi a revolta que ocorreu em 1838 até 1841 na região do Piauí e Maranhão?", rightAnswer: "Balaiada", secondAnswer: "Revolta da vacina", thirdAnswer: "Cabanagem"))
 	}
 	
 	func setRioGrandeDoNorte() {
 		rioGrandeDoNorte.append(Asking(question: "Qual a capital do Rio Grande do Norte?", rightAnswer: "Natal", secondAnswer: "Recife", thirdAnswer: "Palmas"))
-		rioGrandeDoNorte.append(Asking(question: "Qual é o nome da base de lançamentos das forças áreas localizada proxima a Natal?", rightAnswer: "Barreira do Inferno", secondAnswer: "Cabo Canaveral", thirdAnswer: "Base Aérea de Natal"))
+		rioGrandeDoNorte.append(Asking(question: "Qual é o nome da base de lançamentos das forças áreas localizada próxima a Natal?", rightAnswer: "Barreira do Inferno", secondAnswer: "Cabo Canaveral", thirdAnswer: "Base Aérea de Natal"))
 		rioGrandeDoNorte.append(Asking(question: "O Rio Grando do Norte é conhecido por suas...", rightAnswer: "Dunas", secondAnswer: "Florestas", thirdAnswer: "Pradarias"))
 		rioGrandeDoNorte.append(Asking(question: "Qual é o nome da fortificação construída em 1598 na atual região da cidade de Natal?", rightAnswer: "Fortaleza dos Reis Magos", secondAnswer: "Forte São Marcelo", thirdAnswer: "Castelo Garcia D'Avilla"))
 		rioGrandeDoNorte.append(Asking(question: "Qual é a comida típica mais famosa do Rio Grande do Norte?", rightAnswer: "Carne de Sol", secondAnswer: "Bobó de Camarão", thirdAnswer: "Churrasco"))
