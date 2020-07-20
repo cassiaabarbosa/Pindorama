@@ -15,5 +15,4 @@ class SelectionViewModel {
 	var flagImages: [String] = ["AC", "AP", "AM", "PA", "RO", "RR", "TO", "AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE", "PR", "RS", "SC", "ES", "MG", "RJ","SP", "DF", "GO", "MT", "MS"]
 	
 	var names: [String] = ["Acre","Amapá", "Amazonas", "Pará", "Rondônia", "Roraima", "Tocantins", "Alagoas", "Bahia", "Ceará", "Maranhão", "Paraíba", "Pernambuco", "Piauí", "Rio Grande do Norte", "Sergipe", "Paraná", "Rio Grande do Sul", "Santa Catarina", "Espírito Santo", "Minas Gerais", "Rio de Janeiro", "São Paulo", "Destrito Federal", "Goiás", "Mato Grosso" ,"Mato Grosso do Sul"]
-
 }
