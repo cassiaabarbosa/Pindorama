@@ -18,7 +18,8 @@ class VictoryViewController: UIViewController {
 		playSound()
 	}
 	
-	@IBAction func resetAction(_ sender: Any) {
+	override func viewDidDisappear(_ animated: Bool) {
+		player?.stop()
 	}
 	
 	func playSound() {
