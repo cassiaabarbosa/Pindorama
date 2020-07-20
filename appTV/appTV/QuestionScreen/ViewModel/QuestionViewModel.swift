@@ -46,6 +46,7 @@ class QuestionViewModel {
 		acre.append(Asking(question: "Qual ex-presidente brasileiro promoveu o Acre a estado?", rightAnswer: "João Goulart", secondAnswer: "Jânio Quadros", thirdAnswer: "Castelo Branco"))
 		acre.append(Asking(question: "Qual forma de relevo é predominante no território do Acre?", rightAnswer: "Planalto", secondAnswer: "Planície", thirdAnswer: "Montanhas"))
 		acre.append(Asking(question: "Das comidas típicas listadas qual é pertencente ao Acre?", rightAnswer: "Pirarucu à Casaca ao leite de castanhas", secondAnswer: "Pato no Tucupi", thirdAnswer: "Buchada de boi"))
+		acre.shuffle()
 	}
 	
 	func setAmapa() {
@@ -286,9 +287,26 @@ class QuestionViewModel {
 		setMatoGrossoDoSul()
 	}
 	
-	func askingState(state: [Asking]) -> (Asking?, ModifiedAsking?)  {
+	func getIndex(inputedState: String) -> Int{
+		for (index, state) in flagImages.enumerated() {
+			if inputedState == state {
+				return index
+			}
+		}
+		return -1
+	}
+	
+	func askingState(state: [Asking], initial: String) -> (Asking?, ModifiedAsking?)  {
 
-		let choosenAsking = state.reversed().randomElement()
+		let stateIndex = getIndex(inputedState: initial)
+		
+		var choosenAsking: Asking?
+		
+		if (StateManager.getStateRightAnswers(state: stateIndex) + 1) > 4 {
+			choosenAsking = state[(StateManager.getStateRightAnswers(state: stateIndex) + 1)%4]
+		} else {
+			choosenAsking = state[(StateManager.getStateRightAnswers(state: stateIndex) + 1)]
+		}
 		
 		var possibleAnswers: [String?] = [choosenAsking?.rightAnswer, choosenAsking?.secondAnswer, choosenAsking?.thirdAnswer]
 		
@@ -325,59 +343,59 @@ class QuestionViewModel {
 	func generateAsking(state: String) -> (Asking?, ModifiedAsking?) {
 		switch state {
 			case "AC":
-				return askingState(state: acre)
+				return askingState(state: acre, initial: state)
 			case "AP":
-				return askingState(state: amapa)
+				return askingState(state: amapa, initial: state)
 			case "AM":
-				return askingState(state: amazonas)
+				return askingState(state: amazonas, initial: state)
 			case "PA":
-				return askingState(state: para)
+				return askingState(state: para, initial: state)
 			case "RO":
-				return askingState(state: rondonia)
+				return askingState(state: rondonia, initial: state)
 			case "RR":
-				return askingState(state: roraima)
+				return askingState(state: roraima, initial: state)
 			case "TO":
-				return askingState(state: tocantins)
+				return askingState(state: tocantins, initial: state)
 			case "AL":
-				return askingState(state: alagoas)
+				return askingState(state: alagoas, initial: state)
 			case "BA":
-				return askingState(state: bahia)
+				return askingState(state: bahia, initial: state)
 			case "CE":
-				return askingState(state: ceara)
+				return askingState(state: ceara, initial: state)
 			case "MA":
-				return askingState(state: maranhao)
+				return askingState(state: maranhao, initial: state)
 			case "PB":
-				return askingState(state: paraiba)
+				return askingState(state: paraiba, initial: state)
 			case "PE":
-				return askingState(state: pernambuco)
+				return askingState(state: pernambuco, initial: state)
 			case "PI":
-				return askingState(state: piaui)
+				return askingState(state: piaui, initial: state)
 			case "RN":
-				return askingState(state: rioGrandeDoNorte)
+				return askingState(state: rioGrandeDoNorte, initial: state)
 			case "SE":
-				return askingState(state: sergipe)
+				return askingState(state: sergipe, initial: state)
 			case "PR":
-				return askingState(state: parana)
+				return askingState(state: parana, initial: state)
 			case "RS":
-				return askingState(state: rioGrandeDoSul)
+				return askingState(state: rioGrandeDoSul, initial: state)
 			case "SC":
-				return askingState(state: santaCatarina)
+				return askingState(state: santaCatarina, initial: state)
 			case "ES":
-				return askingState(state: espiritoSanto)
+				return askingState(state: espiritoSanto, initial: state)
 			case "MG":
-				return askingState(state: minasGerais)
+				return askingState(state: minasGerais, initial: state)
 			case "RJ":
-				return askingState(state: rioDeJaneiro)
+				return askingState(state: rioDeJaneiro, initial: state)
 			case "SP":
-				return askingState(state: saoPaulo)
+				return askingState(state: saoPaulo, initial: state)
 			case "DF":
-				return askingState(state: distritoFederal)
+				return askingState(state: distritoFederal, initial: state)
 			case "GO":
-				return askingState(state: goias)
+				return askingState(state: goias, initial: state)
 			case "MT":
-				return askingState(state: matoGrosso)
+				return askingState(state: matoGrosso, initial: state)
 			default:
-				return askingState(state: matoGrossoDoSul)
+				return askingState(state: matoGrossoDoSul, initial: state)
 		}
 	}
 	
