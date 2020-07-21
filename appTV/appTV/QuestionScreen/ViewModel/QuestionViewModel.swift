@@ -46,7 +46,6 @@ class QuestionViewModel {
 		acre.append(Asking(question: "Qual ex-presidente brasileiro promoveu o Acre a estado?", rightAnswer: "João Goulart", secondAnswer: "Jânio Quadros", thirdAnswer: "Castelo Branco"))
 		acre.append(Asking(question: "Qual forma de relevo é predominante no território do Acre?", rightAnswer: "Planalto", secondAnswer: "Planície", thirdAnswer: "Montanhas"))
 		acre.append(Asking(question: "Das comidas típicas listadas qual é pertencente ao Acre?", rightAnswer: "Pirarucu à Casaca ao leite de castanhas", secondAnswer: "Pato no Tucupi", thirdAnswer: "Buchada de boi"))
-		acre.shuffle()
 	}
 	
 	func setAmapa() {
@@ -302,10 +301,10 @@ class QuestionViewModel {
 		
 		var choosenAsking: Asking?
 		
-		if (StateManager.getStateRightAnswers(state: stateIndex) + 1) > 4 {
-			choosenAsking = state[(StateManager.getStateRightAnswers(state: stateIndex) + 1)%4]
+		if (StateManager.getStateRightAnswers(state: stateIndex) + 1) > 3 {
+			choosenAsking = state[(StateManager.getStateRightAnswers(state: stateIndex) + 1)%5]
 		} else {
-			choosenAsking = state[(StateManager.getStateRightAnswers(state: stateIndex) + 1)]
+			choosenAsking = state.shuffled().randomElement()
 		}
 		
 		var possibleAnswers: [String?] = [choosenAsking?.rightAnswer, choosenAsking?.secondAnswer, choosenAsking?.thirdAnswer]
