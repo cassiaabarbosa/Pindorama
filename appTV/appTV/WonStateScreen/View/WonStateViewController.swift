@@ -43,7 +43,7 @@ class WonStateViewController: UIViewController {
 				print(error.localizedDescription)
 			}
 		} else {
-			
+			print("Não foi possível encontrar o arquivo ou a configuração está desabilitada")
 		}
 	}
 }
