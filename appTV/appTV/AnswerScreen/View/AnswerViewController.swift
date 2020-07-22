@@ -33,18 +33,6 @@ class AnswerViewController: UIViewController {
 				person.image = UIImage(named: "presidentebravoatualcomfaixa")
 				playSound(music: "Efeito-ACERTO")
 				player?.play()
-				var count:Int = 0
-				for i in 0..<27 {
-					if StateManager.getStateRightAnswers(state: i) > 2 {
-						count+=1
-					}
-				}
-				if count == 27 {
-					let storyboard = UIStoryboard(name: "Main", bundle: nil)
-					let specificVC = storyboard.instantiateViewController(withIdentifier: "VictoryViewController") as? VictoryViewController
-					self.show(specificVC ?? VictoryViewController(), sender: nil)
-			}
-			
 			default:
 				background.image = UIImage(named: "blocorespostaerrada")
                 backgroundStates.image = UIImage(named: questionViewModel.setBackground(state: state ?? "nil"))
@@ -58,15 +46,26 @@ class AnswerViewController: UIViewController {
 	
 	@IBAction func nextAsking(_ sender: Any) {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		let index = viewModel.foundState(state: state ?? "nil")
-		if StateManager.getStateRightAnswers(state: index) > 2 {
-			let specificVC = storyboard.instantiateViewController(withIdentifier: "WonStateViewController") as? WonStateViewController
-			specificVC?.state = state
-			self.show(specificVC ?? WonStateViewController(), sender: nil)
+		var count:Int = 0
+		for i in 0..<27 {
+			if StateManager.getStateRightAnswers(state: i) > 2 {
+				count+=1
+			}
+		}
+		if count == 27 {
+			let specificVC = storyboard.instantiateViewController(withIdentifier: "VictoryViewController") as? VictoryViewController
+			self.show(specificVC ?? VictoryViewController(), sender: nil)
 		} else {
-			let specificVC = storyboard.instantiateViewController(withIdentifier: "QuestionViewController") as? QuestionViewController
-			specificVC?.state = state
-			self.show(specificVC ?? QuestionViewController(), sender: nil)
+			let index = viewModel.foundState(state: state ?? "nil")
+			if StateManager.getStateRightAnswers(state: index) > 2 {
+				let specificVC = storyboard.instantiateViewController(withIdentifier: "WonStateViewController") as? WonStateViewController
+				specificVC?.state = state
+				self.show(specificVC ?? WonStateViewController(), sender: nil)
+			} else {
+				let specificVC = storyboard.instantiateViewController(withIdentifier: "QuestionViewController") as? QuestionViewController
+				specificVC?.state = state
+				self.show(specificVC ?? QuestionViewController(), sender: nil)
+			}
 		}
 	}
 	
