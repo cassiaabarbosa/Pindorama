@@ -52,7 +52,7 @@ class QuestionViewController: UIViewController {
 			specificVC?.state = state
 			for (i, elemente) in viewModel.flagImages.enumerated() {
 				if elemente == state {
-					StateManager.incrementAnswer(state: i)
+					StateManager.incrementAnswer(state: i, key: StateManager.key)
 					break
 				}
 			}
@@ -73,7 +73,7 @@ class QuestionViewController: UIViewController {
 			specificVC?.state = state
 			for (i, elemente) in viewModel.flagImages.enumerated() {
 				if elemente == state {
-					StateManager.incrementAnswer(state: i)
+					StateManager.incrementAnswer(state: i, key: StateManager.key)
 					break
 				}
 			}
@@ -93,7 +93,7 @@ class QuestionViewController: UIViewController {
 			specificVC?.state = state
 			for (i, elemente) in viewModel.flagImages.enumerated() {
 				if elemente == state {
-					StateManager.incrementAnswer(state: i)
+					StateManager.incrementAnswer(state: i, key: StateManager.key)
 					break
 				}
 			}

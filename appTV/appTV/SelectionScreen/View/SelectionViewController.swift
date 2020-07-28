@@ -59,7 +59,7 @@ extension SelectionViewController: UICollectionViewDataSource {
 			case north:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NorthCell", for: indexPath) as? NorthCollectionCell {
 					cell.name.text = viewModel.names[indexPath.row]
-					if StateManager.getStateRightAnswers(state: indexPath.row) < 3 {
+					if StateManager.getStateRightAnswers(state: indexPath.row, key: StateManager.key) < 3 {
 						cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row])
 					} else {
 						cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row])
@@ -69,7 +69,7 @@ extension SelectionViewController: UICollectionViewDataSource {
 			case northeast:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NortheastCell", for: indexPath) as? NortheastCollectionCell {
 					cell.name.text = viewModel.names[indexPath.row + 7]
-					if StateManager.getStateRightAnswers(state: indexPath.row + 7) < 3 {
+					if StateManager.getStateRightAnswers(state: indexPath.row + 7, key: StateManager.key) < 3 {
 						cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 7])
 					} else {
 						cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 7])
@@ -79,7 +79,7 @@ extension SelectionViewController: UICollectionViewDataSource {
 			case south:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SouthCell", for: indexPath) as? SouthCollectionCell {
 					cell.name.text = viewModel.names[indexPath.row + 16]
-					if StateManager.getStateRightAnswers(state: indexPath.row + 16) < 3 {
+					if StateManager.getStateRightAnswers(state: indexPath.row + 16, key: StateManager.key) < 3 {
 						cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 16])
 					} else {
 						cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 16])
@@ -89,7 +89,7 @@ extension SelectionViewController: UICollectionViewDataSource {
 			case southeast:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SoutheastCell", for: indexPath) as? SoutheastCollectionCell {
 					cell.name.text = viewModel.names[indexPath.row + 19]
-					if StateManager.getStateRightAnswers(state: indexPath.row + 19) < 3 {
+					if StateManager.getStateRightAnswers(state: indexPath.row + 19, key: StateManager.key) < 3 {
 						cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 19])
 					} else {
 						cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 19])
@@ -99,7 +99,7 @@ extension SelectionViewController: UICollectionViewDataSource {
 			default:
 				if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MidwestCell", for: indexPath) as? MidwestCollectionCell {
 					cell.name.text = viewModel.names[indexPath.row + 23]
-					if StateManager.getStateRightAnswers(state: indexPath.row + 23) < 3 {
+					if StateManager.getStateRightAnswers(state: indexPath.row + 23, key: StateManager.key) < 3 {
 						cell.stateFlag.image = UIImage(named: viewModel.flagBlackImages[indexPath.row + 23])
 					} else {
 						cell.stateFlag.image = UIImage(named: viewModel.flagImages[indexPath.row + 23])
