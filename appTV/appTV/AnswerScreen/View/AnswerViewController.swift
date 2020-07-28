@@ -46,9 +46,11 @@ class AnswerViewController: UIViewController {
 	
 	@IBAction func nextAsking(_ sender: Any) {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		var count:Int = 0
+		var count: Int = 0
+		let index = viewModel.foundState(state: state ?? "nil")
+		StateManager.incrementAnswer(state: index, key: StateManager.randomKey)
 		for i in 0..<27 {
-			if StateManager.getStateRightAnswers(state: i) > 2 {
+			if StateManager.getStateRightAnswers(state: i, key: StateManager.key) > 2 {
 				count+=1
 			}
 		}
@@ -56,8 +58,7 @@ class AnswerViewController: UIViewController {
 			let specificVC = storyboard.instantiateViewController(withIdentifier: "VictoryViewController") as? VictoryViewController
 			self.show(specificVC ?? VictoryViewController(), sender: nil)
 		} else {
-			let index = viewModel.foundState(state: state ?? "nil")
-			if StateManager.getStateRightAnswers(state: index) > 2 {
+			if StateManager.getStateRightAnswers(state: index, key: StateManager.key) > 2 {
 				let specificVC = storyboard.instantiateViewController(withIdentifier: "WonStateViewController") as? WonStateViewController
 				specificVC?.state = state
 				self.show(specificVC ?? WonStateViewController(), sender: nil)

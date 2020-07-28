@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqG-yZ-d3Z">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqG-yZ-d3Z">
     <device id="appleTV" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -1319,8 +1319,8 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="boU-cz-x6Y"/>
-        <segue reference="IyX-RA-TXB"/>
-        <segue reference="bqG-ox-4Hq"/>
+        <segue reference="XQC-8t-0gA"/>
+        <segue reference="fqd-F5-PGO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>

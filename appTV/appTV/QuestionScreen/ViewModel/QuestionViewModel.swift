@@ -299,15 +299,9 @@ class QuestionViewModel {
 
 		let stateIndex = getIndex(inputedState: initial)
 		
-		var choosenAsking: Asking?
+		let choosenAsking = state[(StateManager.getStateRightAnswers(state: stateIndex, key: StateManager.randomKey))%5]
 		
-		if (StateManager.getStateRightAnswers(state: stateIndex) + 1) > 3 {
-			choosenAsking = state[(StateManager.getStateRightAnswers(state: stateIndex) + 1)%5]
-		} else {
-			choosenAsking = state.shuffled().randomElement()
-		}
-		
-		var possibleAnswers: [String?] = [choosenAsking?.rightAnswer, choosenAsking?.secondAnswer, choosenAsking?.thirdAnswer]
+		var possibleAnswers: [String?] = [choosenAsking.rightAnswer, choosenAsking.secondAnswer, choosenAsking.thirdAnswer]
 		
 		let firstButton: String! = possibleAnswers.randomElement()!
 		for index in 0...2 {
@@ -334,7 +328,7 @@ class QuestionViewModel {
 			}
 		}
 		
-		let modifiedAsking = ModifiedAsking(question: choosenAsking!.question, firstAnswer: firstButton, secondAnswer: secondButton, thirdAnswer: thirdButton)
+		let modifiedAsking = ModifiedAsking(question: choosenAsking.question, firstAnswer: firstButton, secondAnswer: secondButton, thirdAnswer: thirdButton)
 		
 		return(choosenAsking, modifiedAsking)
 	}
