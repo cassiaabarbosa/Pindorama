@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6D138EEF24BF781A00580464 /* Efeito-ACERTO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D138EED24BF781900580464 /* Efeito-ACERTO.mp3 */; };
 		6D138EF024BF781A00580464 /* Efeito-ERRO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D138EEE24BF781A00580464 /* Efeito-ERRO.mp3 */; };
+		6D59FCE024D093EE00DF8B39 /* VictoryScreenButtonFocused.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59FCDF24D093EE00DF8B39 /* VictoryScreenButtonFocused.swift */; };
 		874174F724BCE07A00E81ED0 /* Efeito-CENTRO-OESTE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874174EF24BCE07900E81ED0 /* Efeito-CENTRO-OESTE.mp3 */; };
 		874174F824BCE07A00E81ED0 /* Efeito-VITORIA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874174F024BCE07900E81ED0 /* Efeito-VITORIA.mp3 */; };
 		874174F924BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 874174F124BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		6D138EED24BF781900580464 /* Efeito-ACERTO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-ACERTO.mp3"; sourceTree = "<group>"; };
 		6D138EEE24BF781A00580464 /* Efeito-ERRO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-ERRO.mp3"; sourceTree = "<group>"; };
+		6D59FCDF24D093EE00DF8B39 /* VictoryScreenButtonFocused.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryScreenButtonFocused.swift; sourceTree = "<group>"; };
 		874174EF24BCE07900E81ED0 /* Efeito-CENTRO-OESTE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-CENTRO-OESTE.mp3"; sourceTree = "<group>"; };
 		874174F024BCE07900E81ED0 /* Efeito-VITORIA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-VITORIA.mp3"; sourceTree = "<group>"; };
 		874174F124BCE07A00E81ED0 /* Efeito-NORDESTE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Efeito-NORDESTE.mp3"; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				CBB2335F24B3A8E900227391 /* VictoryViewController.swift */,
+				6D59FCDF24D093EE00DF8B39 /* VictoryScreenButtonFocused.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				CB901E3524BD136C006B10AC /* StateManager.swift in Sources */,
 				CBDDE77E24B536BD00D3CAE2 /* MidwestCollectionCell.swift in Sources */,
 				CBE61E0924B9036C000C91B3 /* AnswerViewController.swift in Sources */,
+				6D59FCE024D093EE00DF8B39 /* VictoryScreenButtonFocused.swift in Sources */,
 				CBB2335A24B3A88900227391 /* QuestionViewController.swift in Sources */,
 				CBB12BF424BF8D9D00C1F6CD /* ResetViewController.swift in Sources */,
 				CBB8E48324B21BA2002F017E /* appTV.xcdatamodeld in Sources */,
