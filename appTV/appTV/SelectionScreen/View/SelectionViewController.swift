@@ -30,8 +30,6 @@ class SelectionViewController: AudioPlayer {
 		southeast.dataSource = self
 		midwest.delegate = self
 		midwest.dataSource = self
-		StateManager.startManager()
-		
     }
 	
 	override var musicName: String { AudioManager.introducao }

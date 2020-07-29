@@ -11,4 +11,5 @@ import UIKit
 class TutorialViewController: AudioPlayer {
 	    
 	override var musicName: String { AudioManager.tutorial }
+
 }

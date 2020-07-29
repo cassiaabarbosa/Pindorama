@@ -22,7 +22,7 @@ struct AudioManager {
 	static let sudeste = "Efeito-SUDESTE"
 	static let sul = "Efeito-SUL"
 	static let vitoria = "Efeito-VITORIA"
-	static var player: AVAudioPlayer?
+	static var player: AVAudioPlayer = AVAudioPlayer()
 	
 	static func playSound(name: String) {
         if let soundURL = Bundle.main.path(forResource: name, ofType: "mp3") {
@@ -30,7 +30,7 @@ struct AudioManager {
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
                 try AVAudioSession.sharedInstance().setActive(true)
 				player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundURL))
-				player?.numberOfLoops = -1
+				player.numberOfLoops = -1
             } catch {
                 print(error.localizedDescription)
             }

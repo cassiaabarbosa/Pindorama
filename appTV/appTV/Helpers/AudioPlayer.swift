@@ -18,9 +18,10 @@ class AudioPlayer: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		AudioManager.playSound(name: self.musicName)
-		AudioManager.player?.play()
+		AudioManager.player.play()
+		StateManager.startManager()
 	}
 	override func viewWillDisappear(_ animated: Bool) {
-		AudioManager.player?.stop()
+		AudioManager.player.stop()
 	}
 }
