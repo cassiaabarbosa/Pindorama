@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqG-yZ-d3Z">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqG-yZ-d3Z">
     <device id="appleTV" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -32,13 +32,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocovitoriamensagem" translatesAutoresizingMaskIntoConstraints="NO" id="RDp-0F-dUA">
                                 <rect key="frame" x="490" y="100" width="570" height="720"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-xw-A1N">
-                                <rect key="frame" x="515" y="110" width="515" height="710"/>
-                                <string key="text">Olá, eu sou a Secretária do Brasil e vou te ajudar a se tornar Governador/a dos Estados.
- 
-Você deverá responder corretamente 3 de 5 perguntas a respeito de cada Estado brasileiro. 
-Vence quando você tornar-se o Governador de todos os Estados.  
-Boa sorte!</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-xw-A1N">
+                                <rect key="frame" x="515" y="110" width="508" height="710"/>
+                                <mutableString key="text">Olá, eu sou a Secretária do Brasil e vou te ajudar a se tornar Presidente/a do Brasil!!!
+Respondendo corretamente 3 de 5 perguntas a respeito de um Estado, você se torna Governador/a desse Estado.
+Vence quando você tornar-se Governador/a de todos os Estados e consequentemente, Presidente/a do Brasil!!! 
+Boa sorte!</mutableString>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -73,7 +72,7 @@ Boa sorte!</string>
                             <constraint firstItem="RDp-0F-dUA" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="40" id="9tb-Tb-sIG"/>
                             <constraint firstItem="nGr-q2-tA1" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="450" id="BEN-4w-Ljq"/>
                             <constraint firstItem="RDp-0F-dUA" firstAttribute="leading" secondItem="0Vk-Wa-uIq" secondAttribute="trailing" constant="50" id="FdT-UP-uJW"/>
-                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="wrb-xw-A1N" secondAttribute="trailing" constant="800" id="LRH-Ue-6VW"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="wrb-xw-A1N" secondAttribute="trailing" constant="807" id="LRH-Ue-6VW"/>
                             <constraint firstItem="nGr-q2-tA1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O7i-Yf-IWz"/>
                             <constraint firstItem="uRH-8m-jCY" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" id="QWG-0z-aGj"/>
                             <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="nGr-q2-tA1" secondAttribute="bottom" constant="-60" id="UcB-dr-p0f"/>
@@ -367,7 +366,7 @@ Boa sorte!</string>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="30" id="0pp-Rc-aq2">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="10"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -416,6 +415,10 @@ Boa sorte!</string>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6gp-AH-MkP">
+                                    <rect key="frame" x="0.0" y="150" width="277" height="10"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OF-fI-1dS">
                                 <rect key="frame" x="100" y="255" width="257" height="49"/>
@@ -599,7 +602,7 @@ Boa sorte!</string>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="30" id="fdC-ZA-1Mm">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="10"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -648,6 +651,10 @@ Boa sorte!</string>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="M18-Ru-nMB">
+                                    <rect key="frame" x="0.0" y="150" width="277" height="10"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stK-e8-tku">
                                 <rect key="frame" x="90" y="110" width="495" height="56"/>
@@ -900,9 +907,34 @@ Boa sorte!</string>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">PARABÉNS!
-Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da República!</string>
+Você conquistou todos os Estados e acabou se tornando  PRESIDENTE</string>
                                         <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="30" name="SFMono-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="/A">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="30" name="SFMono-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" da República!">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="30" name="SFMono-Regular"/>
                                             <real key="NSKern" value="0.0"/>
                                             <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
@@ -919,7 +951,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secretaria" translatesAutoresizingMaskIntoConstraints="NO" id="d6V-wQ-ifz">
                                 <rect key="frame" x="130" y="240" width="840" height="437"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMj-kM-tJw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMj-kM-tJw" customClass="VictoryScreenButtonFocused" customModule="Pindorama" customModuleProvider="target">
                                 <rect key="frame" x="120" y="885" width="400" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="Omj-HW-ye4"/>
@@ -939,7 +971,7 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
                                     <segue destination="sqG-yZ-d3Z" kind="show" id="bqG-ox-4Hq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DpI-ap-ieD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DpI-ap-ieD" customClass="VictoryScreenButtonFocused" customModule="Pindorama" customModuleProvider="target">
                                 <rect key="frame" x="1400" y="885" width="400" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="0s0-hL-e7f"/>
@@ -1319,8 +1351,8 @@ Você conquistou todos os Estados e acabou se tornando o PRESIDENTE da Repúblic
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="boU-cz-x6Y"/>
-        <segue reference="XQC-8t-0gA"/>
-        <segue reference="Z0d-No-TaZ"/>
+        <segue reference="COL-lj-pt1"/>
+        <segue reference="9HN-dY-vtb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AC" width="1000" height="700"/>

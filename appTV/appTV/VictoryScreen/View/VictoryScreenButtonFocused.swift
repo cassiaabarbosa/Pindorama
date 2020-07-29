@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class buttonFocusedView: UIButton {
+class VictoryScreenButtonFocused: UIButton {
     
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         if context.nextFocusedView === self{
@@ -23,5 +23,4 @@ class buttonFocusedView: UIButton {
             })
         }
     }
-    
 }

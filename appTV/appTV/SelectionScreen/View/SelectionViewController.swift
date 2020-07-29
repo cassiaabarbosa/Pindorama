@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import AVFoundation
 
-class SelectionViewController: UIViewController {
+class SelectionViewController: AudioPlayer {
 
 	@IBOutlet var north: UICollectionView!
 	@IBOutlet var northeast: UICollectionView!
@@ -17,7 +16,6 @@ class SelectionViewController: UIViewController {
 	@IBOutlet var southeast: UICollectionView!
 	@IBOutlet var midwest: UICollectionView!
 	var viewModel = SelectionViewModel()
-    var player: AVAudioPlayer?
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +30,11 @@ class SelectionViewController: UIViewController {
 		southeast.dataSource = self
 		midwest.delegate = self
 		midwest.dataSource = self
-		playSound()
-		player?.play()
 		StateManager.startManager()
+		
     }
+	
+	override var musicName: String { AudioManager.introducao }
 }
 
 extension SelectionViewController: UICollectionViewDataSource {
@@ -47,8 +46,6 @@ extension SelectionViewController: UICollectionViewDataSource {
 				return 9
 			case south:
 				return 3
-			case southeast:
-				return	4
 			default:
 				return 4
 		}
@@ -133,25 +130,6 @@ extension SelectionViewController: UICollectionViewDelegateFlowLayout {
 				specificVC?.state = viewModel.flagImages[indexPath.row + 23]
 		}
 		self.show(specificVC ?? QuestionViewController(), sender: nil)
-	}
-	
-	override func viewDidDisappear(_ animated: Bool) {
-		player?.stop()
-	}
-	
-	func playSound() {
-		if let soundURL = Bundle.main.path(forResource: "Efeito-INTRO", ofType: "mp3") {
-			do {
-				try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
-				try AVAudioSession.sharedInstance().setActive(true)
-				player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundURL))
-				player?.numberOfLoops = -1
-			} catch {
-				print(error.localizedDescription)
-			}
-		} else {
-			print("Não foi possível encontrar o arquivo ou a configuração está desabilitada")
-		}
 	}
 }
 

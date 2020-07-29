@@ -22,6 +22,5 @@ class ResetViewControlle: UIViewController {
 		let storyBoard = UIStoryboard(name: "Main", bundle: nil)
 		let viewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController
 		self.show(viewController ?? MenuViewController(), sender: nil)
-
 	}
 }

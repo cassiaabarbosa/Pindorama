@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class QuestionViewController: UIViewController {
+class QuestionViewController: AudioPlayer {
 
 	@IBOutlet var question: UILabel!
 	@IBOutlet var firstAnswer: UIButton!
@@ -19,11 +19,8 @@ class QuestionViewController: UIViewController {
 	var state: String?
 	var viewModel = QuestionViewModel()
 	var generatedAskings: (Asking, ModifiedAsking)?
-    var player: AVAudioPlayer?
     
 	override func viewDidLoad() {
-		playSound()
-        player?.play()
         super.viewDidLoad()
 		
 		viewModel.setStates()
@@ -40,10 +37,9 @@ class QuestionViewController: UIViewController {
 		background.image = UIImage(named: viewModel.setBackground(state: state ?? "nil"))
     }
 	
-    override func viewDidDisappear(_ animated: Bool) {
-        player?.stop()
-    }
-	   
+	override var musicName: String { viewModel.setMusic(state: state ?? "nil")}
+	
+     
 	@IBAction func firstButtonAction(_ sender: Any) {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		let specificVC = storyboard.instantiateViewController(withIdentifier: "AnswerViewController") as? AnswerViewController
@@ -104,19 +100,5 @@ class QuestionViewController: UIViewController {
 			self.show(specificVC ?? QuestionViewController(), sender: nil)
 		}
 	}
-	
-    func playSound() {
-		if let soundURL = Bundle.main.path(forResource: viewModel.setMusic(state: state ?? "nil"), ofType: "mp3") {
-            do {
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
-                try AVAudioSession.sharedInstance().setActive(true)
-                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundURL))
-                player?.numberOfLoops = -1
-            } catch {
-                print(error.localizedDescription)
-            }
-        } else {
-            print("Não foi possível encontrar o arquivo ou a configuração está desabilitada")
-        }
-    }
 }
+  
