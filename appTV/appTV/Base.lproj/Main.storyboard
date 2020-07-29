@@ -907,9 +907,9 @@ Boa sorte!</string>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">PARABÉNS!
-Você conquistou todos os Estados e acabou se tornando  PRESIDENTE/A da República!</string>
+Você conquistou todos os Estados e acabou se tornando PRESIDENTE/A da República!</string>
                                         <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="28" name="SFMono-Semibold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
